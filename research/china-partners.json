@@ -1,0 +1,51 @@
+[
+ {
+  "country": "Russia",
+  "lat": 55.75,
+  "lon": 37.62,
+  "reason": "China supplies roughly 90% of Russia's sanctioned tech imports, including microelectronics.",
+  "sources": [
+   {
+    "title": "China now supplies 90% of Russia's sanctioned tech imports (Bloomberg via Moscow Times)",
+    "url": "https://www.themoscowtimes.com/2026/08/04/china-now-supplies-90-of-russias-sanctioned-tech-imports-bloomberg",
+    "date": "2026-08-04"
+   }
+  ]
+ },
+ {
+  "country": "Myanmar",
+  "lat": 19.76,
+  "lon": 96.08,
+  "reason": "Rebel-held Kachin mines ship heavy rare earth ore to China for processing.",
+  "sources": [
+   {
+    "title": "Reuters via Republic of Mining: Myanmar rebels disrupt China rare earth trade",
+    "url": "https://republicofmining.com/2025/03/28/insight-myanmar-rebels-disrupt-china-rare-earth-trade-sparking-regional-scramble-by-devjyot-ghoshal-poppy-mcpherson-amy-lv-and-neha-arora-reuters-march-27-2025",
+    "date": "2025-03-27"
+   },
+   {
+    "title": "ISP-Myanmar: Conflict Economy of Myanmar Rare Earth",
+    "url": "https://ispmyanmar.com/wp-content/uploads/2025/04/Conflict_Economy_Myanmar_Rare_Earth_ENG.pdf",
+    "date": "2025-04-01"
+   }
+  ]
+ },
+ {
+  "country": "Democratic Republic of the Congo",
+  "lat": -4.04,
+  "lon": 21.76,
+  "reason": "Chinese firms such as CMOC own major cobalt and copper mines whose output is refined in China.",
+  "sources": [
+   {
+    "title": "China's CMOC eyes further growth in Congo after taking cobalt crown",
+    "url": "https://www.mining.com/web/chinas-cmoc-eyes-further-growth-in-congo-and-beyond-after-taking-cobalt-crown/",
+    "date": "2024-02-07"
+   },
+   {
+    "title": "Caixin: China Digs In to Boost Mining in DRC",
+    "url": "https://www.caixinglobal.com/2024-11-18/cover-story-china-digs-in-to-boost-mining-in-democratic-republic-of-congo-102258572.html",
+    "date": "2024-11-18"
+   }
+  ]
+ }
+]

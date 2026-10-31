@@ -1,0 +1,826 @@
+[
+ {
+  "id": "supermicro-liaw-indictment",
+  "name": "Super Micro servers: Liaw indictment ($2.5B)",
+  "category": "datacenter-hardware",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Super Micro HQ, San Jose",
+   "country": "United States",
+   "lat": 37.34,
+   "lon": -121.89
+  },
+  "via": [
+   {
+    "site": "Taipei",
+    "country": "Taiwan",
+    "lat": 25.03,
+    "lon": 121.56
+   },
+   {
+    "site": "Singapore",
+    "country": "Singapore",
+    "lat": 1.35,
+    "lon": 103.82
+   }
+  ],
+  "to": {
+   "site": "Shenzhen",
+   "country": "China",
+   "lat": 22.54,
+   "lon": 114.06
+  },
+  "what_it_is": "Servers built in the US with Nvidia AI chips were allegedly sold to a Southeast Asian 'pass-through' company and then sent on to Chinese buyers.",
+  "used_for": "Training and running large AI models in China",
+  "status": "leaking",
+  "status_detail": "CHARGED, NOT PROVEN. Super Micro co-founder Wally Liaw and Steven Chang were indicted in SDNY in March 2026 (export-control conspiracy, smuggling, defrauding the US). Liaw pleaded not guilty. Contractor Ting-Wei Sun pleaded guilty on Oct 8, 2026 (sentencing set Sept 2027). Super Micro itself is not charged and says it is cooperating. The Taiwan and Singapore transit legs come from reporting and the route listed here is approximate.",
+  "evidence": "Prosecutors allege about $2.5B of servers (Nvidia B200, H100, H200) shipped since 2024; fake 'dummy' servers were allegedly staged to fool inspectors.",
+  "proof": "charged",
+  "contested": false,
+  "sources": [
+   {
+    "title": "CNBC: Super Micro co-founder indicted on Nvidia smuggling charges leaves board",
+    "url": "https://www.cnbc.com/2026/03/20/super-micro-co-founder-leaves-board.html",
+    "date": "2026-03-20"
+   },
+   {
+    "title": "Tom's Hardware: Liaw pleads not guilty",
+    "url": "https://www.tomshardware.com/tech-industry/super-micro-co-founder-wally-liaw-pleads-not-guilty-to-nvidia-smuggling-charges",
+    "date": "2026-03-24"
+   },
+   {
+    "title": "US News/Reuters: Super Micro contractor pleads guilty",
+    "url": "https://money.usnews.com/investing/news/articles/2026-10-09/super-micro-contractor-pleads-guilty-in-scheme-to-divert-ai-servers-with-nvidia-chips-to-china",
+    "date": "2026-10-09"
+   },
+   {
+    "title": "Fortune: Supermicro smuggling investigation",
+    "url": "https://fortune.com/2026/05/05/supermicro-nvidia-china-smuggling-investigation/",
+    "date": "2026-05-05"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": "supermicro-obon-siamai-alibaba",
+  "name": "Super Micro via OBON/SiamAI (Bangkok) to Alibaba",
+  "category": "datacenter-hardware",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Super Micro HQ, San Jose",
+   "country": "United States",
+   "lat": 37.34,
+   "lon": -121.89
+  },
+  "via": [
+   {
+    "site": "Taipei",
+    "country": "Taiwan",
+    "lat": 25.03,
+    "lon": 121.56
+   },
+   {
+    "site": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.76,
+    "lon": 100.5
+   }
+  ],
+  "to": {
+   "site": "Alibaba HQ, Hangzhou",
+   "country": "China",
+   "lat": 30.27,
+   "lon": 120.15
+  },
+  "what_it_is": "Media reports say the unnamed 'Company-1' in the Super Micro indictment is Bangkok's OBON Corp, and that some servers ended up with Alibaba.",
+  "used_for": "AI cloud and model training",
+  "status": "leaking",
+  "status_detail": "ALLEGED BY MEDIA ONLY. Bloomberg (via Taiwan Plus, The Star) reported in May 2026 that Company-1 is OBON, the firm behind Thailand's SiamAI, and that Alibaba was among end customers. The indictment names neither. SiamAI says it has not exported AI servers to China; Alibaba says it has no involvement. No charges against OBON, SiamAI or Alibaba.",
+  "evidence": "Indictment alleges 500M+ dollars of servers shipped April to mid-May 2025 alone; the Alibaba link is unconfirmed.",
+  "proof": "alleged",
+  "contested": true,
+  "contested_note": "SiamAI and Alibaba both deny the claims; no authority has publicly confirmed them.",
+  "sources": [
+   {
+    "title": "Taiwan Plus: Thai firm under investigation in Nvidia chip smuggling case",
+    "url": "https://www.taiwanplus.com/news/taiwan-news/technology-and-science/260510003/thai-firm-under-investigation-in-nvidia-chip-smuggling-case",
+    "date": "2026-05-10"
+   },
+   {
+    "title": "The Star: US learnt to suspect Nvidia chips were smuggled to Alibaba via Thailand",
+    "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/05/10/us-learnt-to-suspect-nvidia-chips-were-smuggled-to-alibaba-via-thailand",
+    "date": "2026-05-10"
+   },
+   {
+    "title": "The Standard HK: SiamAI denies exporting US AI servers to China",
+    "url": "https://www.thestandard.com.hk/china/article/331578/Thailands-SiamAI-denies-exporting-US-AI-servers-to-China",
+    "date": "2026-05-12"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": "singapore-dell-supermicro-fraud",
+  "name": "Singapore server fraud case (Dell/Super Micro)",
+  "category": "datacenter-hardware",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Dell HQ, Round Rock",
+   "country": "United States",
+   "lat": 30.51,
+   "lon": -97.68
+  },
+  "via": [
+   {
+    "site": "Singapore",
+    "country": "Singapore",
+    "lat": 1.35,
+    "lon": 103.82
+   },
+   {
+    "site": "Johor Bahru",
+    "country": "Malaysia",
+    "lat": 1.49,
+    "lon": 103.74
+   }
+  ],
+  "to": {
+   "site": "Shenzhen",
+   "country": "China",
+   "lat": 22.54,
+   "lon": 114.06
+  },
+  "what_it_is": "Singapore firms allegedly lied to Dell and Super Micro about where servers were going, and the servers were sent on to Malaysia.",
+  "used_for": "AI servers; early speculation linked them to DeepSeek",
+  "status": "leaking",
+  "status_detail": "CHARGED, NOT PROVEN. Singapore charged Aaron Woon, Alan Wei and Li Ming with fraud in Feb-Mar 2025 over about US$390M of transactions. Singapore said the servers 'may' contain Nvidia chips and that Malaysia as final destination is unconfirmed. Wei reportedly pleaded not guilty in July 2026 (single source). The China and DeepSeek links are unproven; the destination pin is a placeholder.",
+  "evidence": "About US$390M of server transactions, 2023-2024, per Singapore prosecutors.",
+  "proof": "charged",
+  "contested": true,
+  "contested_note": "Singapore says it has not shown the chips were export-controlled or that China was the end destination.",
+  "sources": [
+   {
+    "title": "CNBC: Servers used in Singapore fraud case may contain Nvidia chips",
+    "url": "https://www.cnbc.com/2025/03/03/servers-used-in-singapore-fraud-case-may-contain-nvidia-chips-minister-says.html",
+    "date": "2025-03-03"
+   },
+   {
+    "title": "TechCrunch: Singapore grants bail in alleged $390M fraud",
+    "url": "https://techcrunch.com/2025/03/13/singapore-grants-bail-for-nvidia-chip-smugglers-in-alleged-390m-fraud",
+    "date": "2025-03-13"
+   },
+   {
+    "title": "Model Diplomat: Singapore's $390M Nvidia chip case explained",
+    "url": "https://modeldiplomat.com/story/singapores-390m-nvidia-chip-case-explained",
+    "date": "2026-07-06"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "earthmade-lui-malaysia-singapore",
+  "name": "Earthmade Computer (Greg Lui): $300M servers",
+  "category": "datacenter-hardware",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Earthmade Computer, City of Industry CA",
+   "country": "United States",
+   "lat": 34.02,
+   "lon": -117.96
+  },
+  "via": [
+   {
+    "site": "Kuala Lumpur",
+    "country": "Malaysia",
+    "lat": 3.14,
+    "lon": 101.69
+   },
+   {
+    "site": "Singapore",
+    "country": "Singapore",
+    "lat": 1.35,
+    "lon": 103.82
+   }
+  ],
+  "to": {
+   "site": "Shenzhen",
+   "country": "China",
+   "lat": 22.54,
+   "lon": 114.06
+  },
+  "what_it_is": "A California computer dealer allegedly sold Nvidia servers to buyers in Malaysia and Singapore who sent them on to China.",
+  "used_for": "AI training servers",
+  "status": "leaking",
+  "status_detail": "CHARGED, NOT PROVEN. Greg Lui was indicted by a grand jury Sept 29, 2026 and arrested Oct 1 (C.D. Cal., 2:26-cr-00618): export-control conspiracy, smuggling, money-laundering conspiracy. Prosecutors say the named buyers were false.",
+  "evidence": "More than $176M paid to Earthmade by two Malaysian freight forwarders in 2024; total alleged about $300M.",
+  "proof": "charged",
+  "contested": false,
+  "sources": [
+   {
+    "title": "The Register: US charges Greg Lui",
+    "url": "https://www.theregister.com/a/5300856",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "Quartz: California tech executive arrested",
+    "url": "https://qz.com/greg-lui-earthmade-nvidia-ai-chips-smuggling-china-100226",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "Khaleej Times: US arrests man over alleged smuggling of $300 million of servers",
+    "url": "https://www.khaleejtimes.com/world/americas/us-arrests-man-over-alleged-smuggling-of-300-million-worth-of-computer-servers-to-china-2",
+    "date": "2026-10-02"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": "operation-gatekeeper-hsu",
+  "name": "Operation Gatekeeper: Hao Global H100/H200",
+  "category": "ai-chips",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Hao Global, Missouri City TX",
+   "country": "United States",
+   "lat": 29.62,
+   "lon": -95.54
+  },
+  "via": [
+   {
+    "site": "Hong Kong",
+    "country": "China (Hong Kong)",
+    "lat": 22.32,
+    "lon": 114.17
+   }
+  ],
+  "to": {
+   "site": "Shenzhen",
+   "country": "China",
+   "lat": 22.54,
+   "lon": 114.06
+  },
+  "what_it_is": "A Texas exporter shipped Nvidia H100 and H200 chips with false paperwork hiding that they were going to China and Hong Kong.",
+  "used_for": "Frontier AI training",
+  "status": "leaking",
+  "status_detail": "CONVICTED (guilty pleas). Alan Hao Hsu and Hao Global LLC pleaded guilty to smuggling and unlawful export on Oct 10, 2025; DOJ announced Operation Gatekeeper Dec 9, 2025. Sentencing was set for Feb 18, 2026; I could not confirm the sentence.",
+  "evidence": "At least $160M of H100/H200 GPUs, Oct 2024 to May 2025; over $50M wired in from the PRC.",
+  "proof": "convicted",
+  "contested": false,
+  "sources": [
+   {
+    "title": "DOJ: US authorities shut down major China-linked AI tech smuggling network",
+    "url": "https://www.justice.gov/opa/pr/us-authorities-shut-down-major-china-linked-ai-tech-smuggling-network",
+    "date": "2025-12-09"
+   },
+   {
+    "title": "CNBC: Plots to send GPUs to China expose $160 million export-evasion web",
+    "url": "https://www.cnbc.com/2025/12/09/us-attorneys-office-southern-district-of-texas-prosecutors-nvidia-chips-h200-h100-smuggle-china.html",
+    "date": "2025-12-09"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": "hong-kong-relabel-ring",
+  "name": "Hong Kong logistics ring: relabelled H100/H200",
+  "category": "ai-chips",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "US warehouses (Houston area)",
+   "country": "United States",
+   "lat": 29.76,
+   "lon": -95.37
+  },
+  "via": [
+   {
+    "site": "Hong Kong",
+    "country": "China (Hong Kong)",
+    "lat": 22.32,
+    "lon": 114.17
+   }
+  ],
+  "to": {
+   "site": "Shenzhen",
+   "country": "China",
+   "lat": 22.54,
+   "lon": 114.06
+  },
+  "what_it_is": "Two Chinese men allegedly worked with a Hong Kong logistics firm and a China-based AI company, peeling Nvidia labels off chips and applying a fake brand before shipping.",
+  "used_for": "AI training",
+  "status": "leaking",
+  "status_detail": "CHARGED, NOT PROVEN (Dec 2025, S.D. Tex.). Hong Kong serves as the hand-off point to the mainland. No conviction found.",
+  "evidence": "Prosecutors say the scheme ran since at least November 2023.",
+  "proof": "charged",
+  "contested": false,
+  "sources": [
+   {
+    "title": "Tom's Hardware: Two more perps apprehended over $160M Nvidia smuggling",
+    "url": "https://www.tomshardware.com/tech-industry/semiconductors/two-more-perps-apprehended-over-smuggling-of-usd160-million-of-nvidia-chips-to-china-doj-says-h100-and-h200-shipments-were-relabelled-with-a-fictional-brand-to-dodge-export-controls",
+    "date": "2025-12-10"
+   },
+   {
+    "title": "CNBC: Plots to send GPUs to China expose $160 million export-evasion web",
+    "url": "https://www.cnbc.com/2025/12/09/us-attorneys-office-southern-district-of-texas-prosecutors-nvidia-chips-h200-h100-smuggle-china.html",
+    "date": "2025-12-09"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "tampa-janford-a100",
+  "name": "Janford Realtor front company: A100 GPUs",
+  "category": "ai-chips",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Tampa, Florida",
+   "country": "United States",
+   "lat": 27.95,
+   "lon": -82.46
+  },
+  "via": [
+   {
+    "site": "Kuala Lumpur",
+    "country": "Malaysia",
+    "lat": 3.14,
+    "lon": 101.69
+   },
+   {
+    "site": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.76,
+    "lon": 100.5
+   }
+  ],
+  "to": {
+   "site": "Hong Kong",
+   "country": "China (Hong Kong)",
+   "lat": 22.32,
+   "lon": 114.17
+  },
+  "what_it_is": "A fake Florida 'realty' company allegedly bought Nvidia A100 GPUs and shipped them to China and Hong Kong via Malaysia and Thailand.",
+  "used_for": "AI training",
+  "status": "leaking",
+  "status_detail": "CHARGED, NOT PROVEN. Four people (Hon Ning Ho, Brian Raymond, Cham Li, Jing Chen) indicted in M.D. Fla., case 25-cr-00530, unsealed Nov 2025: export-control conspiracy and money laundering. No plea or trial result found.",
+  "evidence": "400 A100 GPUs shipped in two exports, Oct 2024 to Jan 2025; conspiracy alleged Sept 2023 to Nov 2025.",
+  "proof": "charged",
+  "contested": false,
+  "sources": [
+   {
+    "title": "DOJ: US citizens and Chinese nationals arrested for exporting AI technology to China",
+    "url": "https://www.justice.gov/opa/pr/us-citizens-and-chinese-nationals-arrested-exporting-artificial-intelligence-technology",
+    "date": "2025-11-20"
+   },
+   {
+    "title": "CNBC: Plot to send GPUs to China leads to indictment",
+    "url": "https://www.cnbc.com/2025/11/20/nvidia-ai-chips-china-gpu.html",
+    "date": "2025-11-20"
+   }
+  ],
+  "confidence": "high"
+ },
+ {
+  "id": "taiwan-b300-japan-hk",
+  "name": "Taiwan case: 130 B300 servers via Japan/Hong Kong",
+  "category": "datacenter-hardware",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Super Micro HQ, San Jose",
+   "country": "United States",
+   "lat": 37.34,
+   "lon": -121.89
+  },
+  "via": [
+   {
+    "site": "Taipei",
+    "country": "Taiwan",
+    "lat": 25.03,
+    "lon": 121.56
+   },
+   {
+    "site": "Tokyo",
+    "country": "Japan",
+    "lat": 35.68,
+    "lon": 139.69
+   },
+   {
+    "site": "Hong Kong",
+    "country": "China (Hong Kong)",
+    "lat": 22.32,
+    "lon": 114.17
+   }
+  ],
+  "to": {
+   "site": "Shenzhen",
+   "country": "China",
+   "lat": 22.54,
+   "lon": 114.06
+  },
+  "what_it_is": "Nine people in Taiwan, including an Nvidia partner manager, allegedly forged papers saying B300 servers would stay in Taiwan, then shipped them to China.",
+  "used_for": "Latest-generation Blackwell AI training",
+  "status": "leaking",
+  "status_detail": "CHARGED, NOT PROVEN (Taiwan, Aug 24, 2026): breach of trust and forgery charges. Prosecutors say 74 of 130 servers reached China, via Indonesia, directly, or Japan then Hong Kong; 56 were stopped in Taiwan.",
+  "evidence": "74 servers delivered; prosecutors seek 18 months to 5 years.",
+  "proof": "charged",
+  "contested": false,
+  "sources": [
+   {
+    "title": "ABC News/AP: Taiwan charges 9 over AI server exports to China",
+    "url": "https://abcnews.com/International/wireStory/taiwan-charges-9-illegal-ai-server-exports-china-135914730",
+    "date": "2026-08-24"
+   },
+   {
+    "title": "The Next Web: Nine charged in Taiwan over 130 Nvidia B300 servers",
+    "url": "https://thenextweb.com/news/taiwan-indicts-nine-ai-server-smuggling",
+    "date": "2026-08-24"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "taiwan-supermicro-hk-detained",
+  "name": "Taiwan: Super Micro servers to Hong Kong (May 2026)",
+  "category": "datacenter-hardware",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Super Micro HQ, San Jose",
+   "country": "United States",
+   "lat": 37.34,
+   "lon": -121.89
+  },
+  "via": [
+   {
+    "site": "Taipei",
+    "country": "Taiwan",
+    "lat": 25.03,
+    "lon": 121.56
+   }
+  ],
+  "to": {
+   "site": "Hong Kong",
+   "country": "China (Hong Kong)",
+   "lat": 22.32,
+   "lon": 114.17
+  },
+  "what_it_is": "Three men were detained in Taiwan for falsifying export papers on Super Micro AI servers sent to Hong Kong.",
+  "used_for": "AI servers",
+  "status": "leaking",
+  "status_detail": "ALLEGED (detentions). More than 10 servers went to Hong Kong via a third location; investigators were still checking whether they moved on to the mainland.",
+  "evidence": "Three detained, May 2026.",
+  "proof": "alleged",
+  "contested": false,
+  "sources": [
+   {
+    "title": "Focus Taiwan: Three detained over alleged smuggling of Nvidia chips to Hong Kong",
+    "url": "https://focustaiwan.tw/society/202605220006",
+    "date": "2026-05-22"
+   },
+   {
+    "title": "Asia Times: China's H200 hunger drives smugglers to Japan route",
+    "url": "https://asiatimes.com/2026/05/chinas-h200-hunger-drives-nvidia-chip-smugglers-to-japan-route/",
+    "date": "2026-05"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "tsmc-sophgo-huawei-910b",
+  "name": "TSMC dies in Huawei Ascend 910B via Sophgo",
+  "category": "fabrication",
+  "leverage": "ally",
+  "line_style": "dotted",
+  "from": {
+   "site": "TSMC, Hsinchu",
+   "country": "Taiwan",
+   "lat": 24.8,
+   "lon": 120.97
+  },
+  "via": [],
+  "to": {
+   "site": "Shanghai",
+   "country": "China",
+   "lat": 31.23,
+   "lon": 121.47
+  },
+  "what_it_is": "A chip TSMC made for Sophgo turned up inside Huawei's Ascend 910B AI processor, which TSMC could not legally supply to Huawei.",
+  "used_for": "Huawei AI accelerators",
+  "status": "leaking",
+  "status_detail": "REPORTED. TechInsights found the die in late 2024; TSMC halted Sophgo shipments and the US ordered a halt to advanced AI chip shipments to China. Reuters reported in April 2025 that TSMC could face a $1B+ penalty; I found no confirmed fine or settlement. TSMC says it is cooperating. Sophgo was later added to the Entity List.",
+  "evidence": "Potential penalty over $1B (up to 2x transaction value); precedent: Seagate paid $300M in 2023.",
+  "proof": "reported",
+  "contested": false,
+  "sources": [
+   {
+    "title": "TechSpot: TSMC could face over $1 billion fine",
+    "url": "https://www.techspot.com/news/107475-tsmc-faces-1-billion-us-fine-over-chip.html",
+    "date": "2025-04-09"
+   },
+   {
+    "title": "Taipei Times: TSMC facing US$1bn fine",
+    "url": "https://www.taipeitimes.com/News/taiwan/archives/2025/04/09/2003834894",
+    "date": "2025-04-09"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "cloud-remote-access-loophole",
+  "name": "Cloud loophole: renting Nvidia GPUs abroad",
+  "category": "compute-access",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Nvidia HQ, Santa Clara",
+   "country": "United States",
+   "lat": 37.37,
+   "lon": -121.96
+  },
+  "via": [
+   {
+    "site": "Data centers, Thailand/Singapore",
+    "country": "Thailand",
+    "lat": 13.76,
+    "lon": 100.5
+   },
+   {
+    "site": "Jakarta",
+    "country": "Indonesia",
+    "lat": -6.21,
+    "lon": 106.85
+   }
+  ],
+  "to": {
+   "site": "Shanghai",
+   "country": "China",
+   "lat": 31.23,
+   "lon": 121.47
+  },
+  "what_it_is": "Chinese AI firms rent time on banned Nvidia chips in foreign data centers, so the chips never enter China.",
+  "used_for": "Training frontier models without owning restricted hardware",
+  "status": "leaking",
+  "status_detail": "ALLEGED / GAP IN RULES. Current rules control hardware, not remote access. The House passed the Remote Access Security Act 369-22 on Jan 12, 2026; the Senate has not. Commerce is reportedly drafting a rule on rentals in Thailand and Singapore. Reported cases (INF Tech in Indonesia, 2,300 GPUs; a White House claim about Moonshot and GB300s in Thailand) are not independently verified.",
+  "evidence": "INF Tech reportedly reached about 2,300 banned GPUs in Indonesia.",
+  "proof": "reported",
+  "contested": true,
+  "contested_note": "Some experts say BIS lacks legal authority over remote access until Congress acts.",
+  "sources": [
+   {
+    "title": "CNBC: China AI firms tap Nvidia power overseas as US weighs crackdown",
+    "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html",
+    "date": "2026-08-19"
+   },
+   {
+    "title": "Introl: Remote Access Security Act",
+    "url": "https://introl.com/blog/remote-access-security-act-cloud-loophole-export-controls-2026",
+    "date": "2026"
+   },
+   {
+    "title": "Tech Times: Commerce drafts AI chip rule for loophole",
+    "url": "https://www.techtimes.com/articles/325957/20260829/commerce-drafts-ai-chip-rule-loophole-it-created-rescinding-biden-know-your-customer.htm",
+    "date": "2026-08-29"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "megaspeed-singapore-malaysia",
+  "name": "Megaspeed (Singapore): ~$2B Nvidia chips",
+  "category": "compute-access",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Nvidia HQ, Santa Clara",
+   "country": "United States",
+   "lat": 37.37,
+   "lon": -121.96
+  },
+  "via": [
+   {
+    "site": "Singapore",
+    "country": "Singapore",
+    "lat": 1.35,
+    "lon": 103.82
+   },
+   {
+    "site": "Kuala Lumpur",
+    "country": "Malaysia",
+    "lat": 3.14,
+    "lon": 101.69
+   },
+   {
+    "site": "Jakarta",
+    "country": "Indonesia",
+    "lat": -6.21,
+    "lon": 106.85
+   }
+  ],
+  "to": {
+   "site": "Beijing",
+   "country": "China",
+   "lat": 39.9,
+   "lon": 116.4
+  },
+  "what_it_is": "A Singapore cloud firm with Chinese ties bought about $2 billion of Nvidia chips for data centers in Malaysia and Indonesia that allegedly serve Chinese customers.",
+  "used_for": "Remote AI compute for Chinese clients",
+  "status": "leaking",
+  "status_detail": "ALLEGED, NO CHARGES FOUND. NYT reporting (Oct 2025) led to a Commerce probe and Singapore police investigation; Sen. Cotton asked for action. Nvidia says it found no reason to believe diversion occurred.",
+  "evidence": "Malaysian subsidiary reportedly bought nearly $2B of top Nvidia products.",
+  "proof": "alleged",
+  "contested": true,
+  "contested_note": "Nvidia and Megaspeed deny wrongdoing.",
+  "sources": [
+   {
+    "title": "StreetInsider/Reuters: US senator seeks investigation into Megaspeed",
+    "url": "https://www.streetinsider.com/Reuters/US+senator+seeks+Commerce+Department+investigation+into+Singapore-based+Megaspeed/25449176.html",
+    "date": "2025-12"
+   },
+   {
+    "title": "Tom's Hardware: Nvidia's biggest SEA customer exposes limits of export controls",
+    "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-biggest-sea-customer-exposes-the-limits-of-us-ai-export-controls",
+    "date": "2025-10"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": "aivres-inspur-rename",
+  "name": "Inspur's renamed US arm (Aivres) still buys Nvidia",
+  "category": "datacenter-hardware",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Nvidia HQ, Santa Clara",
+   "country": "United States",
+   "lat": 37.37,
+   "lon": -121.96
+  },
+  "via": [
+   {
+    "site": "Aivres, Fremont CA",
+    "country": "United States",
+    "lat": 37.55,
+    "lon": -121.99
+   }
+  ],
+  "to": {
+   "site": "Inspur, Jinan",
+   "country": "China",
+   "lat": 36.65,
+   "lon": 117.0
+  },
+  "what_it_is": "After parent Inspur was blacklisted, its US arm renamed itself Aivres, was never listed itself, and kept buying Nvidia's newest chips.",
+  "used_for": "AI servers for resale",
+  "status": "leaking",
+  "status_detail": "REPORTED (WSJ via secondary summary). Entity List gap: the listing covers Inspur Group but Aivres was not listed. The 50% affiliates rule would close such gaps but is suspended until Nov 9, 2026; the truce extension to Jan 10, 2027 is said by a US official to cover it, but BIS had not published a notice as of mid-Oct.",
+  "evidence": "Inspur Group added to Entity List 2023; Aivres is a rename of Inspur Systems.",
+  "proof": "reported",
+  "contested": false,
+  "sources": [
+   {
+    "title": "Startup Fortune: A blacklisted Chinese server giant renamed itself",
+    "url": "https://startupfortune.com/a-blacklisted-chinese-server-giant-renamed-itself-and-still-buys-nvidia-chips/",
+    "date": "2026"
+   },
+   {
+    "title": "Export Compliance Daily: Truce incl. affiliates rule extended 2 months",
+    "url": "https://exportcompliancedaily.com/article/2026/09/25/uschina-trade-truce-including-bis-affiliates-rule-extended-2-months-us-says-2609240049",
+    "date": "2026-09-25"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": "entity-list-affiliates-rule-gap",
+  "name": "Entity List gap: 50% affiliates rule suspended",
+  "category": "ai-chips",
+  "leverage": "us",
+  "line_style": "dotted",
+  "from": {
+   "site": "Nvidia HQ, Santa Clara",
+   "country": "United States",
+   "lat": 37.37,
+   "lon": -121.96
+  },
+  "via": [],
+  "to": {
+   "site": "Shenzhen",
+   "country": "China",
+   "lat": 22.54,
+   "lon": 114.06
+  },
+  "what_it_is": "Companies owned 50% or more by blacklisted firms were meant to be covered automatically; that rule is on hold, so subsidiaries can keep buying.",
+  "used_for": "Chinese-owned subsidiaries buying advanced chips",
+  "status": "leaking",
+  "status_detail": "RULE GAP, NOT A CASE. BIS Affiliates Rule was suspended for one year from Nov 10, 2025 under the US-China trade deal. Federal Register text reinstates it Nov 10, 2026; a Sept 2026 truce extension to Jan 10, 2027 reportedly extends the suspension, but I found no BIS notice confirming it.",
+  "evidence": "Suspension scheduled to end Nov 9, 2026 unless BIS extends it.",
+  "proof": "reported",
+  "contested": true,
+  "contested_note": "Washington traded the suspension for China pausing its rare-earth licensing regime.",
+  "sources": [
+   {
+    "title": "Sayari: BIS 50% rule suspension",
+    "url": "https://sayari.com/resources/blog/bis-50-rule-suspension/",
+    "date": "2025-11"
+   },
+   {
+    "title": "Export Compliance Daily: Truce extended 2 months",
+    "url": "https://exportcompliancedaily.com/article/2026/09/25/uschina-trade-truce-including-bis-affiliates-rule-extended-2-months-us-says-2609240049",
+    "date": "2026-09-25"
+   },
+   {
+    "title": "Congress on China: Affiliates Rule",
+    "url": "https://congressonchina.com/restrictions/affiliates-rule/",
+    "date": "2026"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "china-hbm-stockpiling",
+  "name": "Stockpiling Samsung HBM before Dec 2024 rules",
+  "category": "memory",
+  "leverage": "ally",
+  "line_style": "dotted",
+  "from": {
+   "site": "Samsung, Hwaseong",
+   "country": "South Korea",
+   "lat": 37.2,
+   "lon": 127.03
+  },
+  "via": [],
+  "to": {
+   "site": "Shenzhen",
+   "country": "China",
+   "lat": 22.54,
+   "lon": 114.06
+  },
+  "what_it_is": "Chinese firms bought up high-bandwidth memory ahead of the US ban to build AI chips.",
+  "used_for": "Huawei and other Chinese AI accelerators",
+  "status": "leaking",
+  "status_detail": "REPORTED. Reuters said Huawei, Baidu and others stockpiled Samsung HBM in 2024. A later estimate put purchases at about 7M chips (over $1B) in the month before the Dec 2024 restrictions. This was legal at the time.",
+  "evidence": "China was about 30% of Samsung's HBM revenue in H1 2024.",
+  "proof": "reported",
+  "contested": false,
+  "sources": [
+   {
+    "title": "Taipei Times: Chinese firms stockpiling high-end Samsung chips",
+    "url": "https://www.taipeitimes.com/News/biz/archives/2024/08/07/2003821867",
+    "date": "2024-08-07"
+   },
+   {
+    "title": "AI Frontiers: HBM, critical gaps in US export controls",
+    "url": "https://ai-frontiers.org/articles/high-bandwidth-memory-critical-gaps-us-export-controls",
+    "date": "2025"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "china-chipmaking-tool-stockpiling",
+  "name": "Stockpiling chipmaking tools before Dutch/Japan curbs",
+  "category": "chipmaking-tools",
+  "leverage": "ally",
+  "line_style": "dotted",
+  "from": {
+   "site": "ASML HQ, Veldhoven",
+   "country": "Netherlands",
+   "lat": 51.41,
+   "lon": 5.45
+  },
+  "via": [],
+  "to": {
+   "site": "Shanghai",
+   "country": "China",
+   "lat": 31.23,
+   "lon": 121.47
+  },
+  "what_it_is": "China rushed to import chipmaking machines before new Dutch, Japanese and US limits took effect.",
+  "used_for": "Building chip fabs",
+  "status": "leaking",
+  "status_detail": "REPORTED. Imports were nearly $5B in June-July 2023 (up 70%) and $25.9B in the first seven months of 2024 (up 44%). Legal at the time; it blunts the controls' later impact.",
+  "evidence": "Chinese tool imports up 44% to $25.9B in Jan-Jul 2024.",
+  "proof": "reported",
+  "contested": false,
+  "sources": [
+   {
+    "title": "Mobile World Live: China chipmaking equipment imports soar",
+    "url": "https://www.mobileworldlive.com/greater-china/china-chipmaking-equipment-imports-soar/",
+    "date": "2024-08"
+   },
+   {
+    "title": "Tom's Hardware: China's chip imports boom as it stockpiles",
+    "url": "https://www.tomshardware.com/tech-industry/chinas-chip-imports-boom-as-the-country-stockpiles-before-anticipated-new-sanctions-struggles-to-become-self-sufficient",
+    "date": "2024"
+   }
+  ],
+  "confidence": "medium"
+ }
+]

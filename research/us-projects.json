@@ -1,0 +1,177 @@
+[
+  {
+    "id": "tsmc-arizona",
+    "name": "TSMC Arizona fabs",
+    "company": "TSMC",
+    "site": "Phoenix, Arizona",
+    "lat": 33.67,
+    "lon": -112.1,
+    "what": "Makes the most advanced logic chips, including AI accelerators, in the US.",
+    "closes_gap": "Advanced logic chips made only in Taiwan.",
+    "status": "operating",
+    "status_detail": "Fab 1 (4nm) has been in high-volume production since late 2024; Fab 2 construction is finished and tool installation starts in Q3 2026 for 3nm output around 2027 (per Nikkei via a secondary source). Dates and investment totals differ across sources.",
+    "sources": [
+      { "title": "North Phoenix scores big as TSMC's second chip plant hits finish line", "url": "https://hoodline.com/2026/04/north-phoenix-scores-big-as-tsmc-s-second-chip-plant-hits-finish-line/", "date": "2026-04-01" },
+      { "title": "TSMC Arizona (Wikipedia)", "url": "https://en.wikipedia.org/wiki/TSMC_Arizona", "date": "2026-03-01" }
+    ]
+
+  },
+  {
+    "id": "intel-ohio-new-albany",
+    "name": "Intel Ohio fab",
+    "company": "Intel",
+    "site": "New Albany, Ohio",
+    "lat": 40.08,
+    "lon": -82.81,
+    "what": "Planned leading-edge chip factory to make Intel's own processors and contract chips.",
+    "closes_gap": "Advanced logic chip capacity outside Taiwan and Asia.",
+    "status": "delayed",
+    "status_detail": "Intel's February 2025 memo, reported March 3, 2025, moved Fab 1 production to 2030 (from late 2026) and Fab 2 to 2031; construction continues at a slower pace. Hoodline's 2026 coverage repeats the 2030 date but cites the 2025 memo, so no newer date is confirmed.",
+    "sources": [
+      { "title": "Intel delays new Albany, Ohio chip manufacturing project again to 2030-2031", "url": "https://www.manufacturingdive.com/news/intel-delays-new-albany-ohio-chip-manufacturing-project-again-2030-2031/741321/", "date": "2025-03-03" },
+      { "title": "Intel's new Albany chip factory delayed to 2030 in slow burn buildout", "url": "https://hoodline.com/2026/03/intel-s-new-albany-chip-factory-delayed-to-2030-in-slow-burn-buildout/", "date": "2026-03-02" }
+    ]
+  },
+  {
+    "id": "samsung-taylor",
+    "name": "Samsung Taylor fab",
+    "company": "Samsung Electronics",
+    "site": "Taylor, Texas",
+    "lat": 30.57,
+    "lon": -97.41,
+    "what": "Advanced chip factory that will make chips for AI and other customers.",
+    "closes_gap": "Advanced logic chips made only in Taiwan and South Korea.",
+    "status": "under construction",
+    "status_detail": "Samsung said on its Q2 2026 call (July 2026) that Fab 1 is on track to begin operations in 2026 or early 2027; Fab 2 construction starts by end of 2026 with mass production targeted around 2030.",
+    "sources": [
+      { "title": "Samsung to begin construction of 2nd chip fab in Texas at end of 2026", "url": "https://koreatimes.co.kr/business/companies/20260730/samsung-to-begin-construction-of-2nd-chip-fab-in-texas-at-end-of-2026", "date": "2026-07-30" },
+      { "title": "Samsung targets late 2026 launch for advanced Texas chip fab following delays: report", "url": "https://www.iclarified.com/97073/samsung-targets-late-2026-launch-for-advanced-texas-chip-fab-following-delays-report", "date": "2026-05-20" }
+    ]
+  },
+  {
+    "id": "micron-boise-idaho",
+    "name": "Micron Boise memory fab",
+    "company": "Micron",
+    "site": "Boise, Idaho",
+    "lat": 43.62,
+    "lon": -116.2,
+    "what": "Memory chip factory making DRAM, the fast memory used alongside AI chips.",
+    "closes_gap": "Advanced memory (DRAM/HBM) made mostly in Asia.",
+    "status": "under construction",
+    "status_detail": "Micron's FY2026 10-K puts first DRAM wafer output at mid-2027 for Idaho fab 1 and late 2028 for fab 2. Equipment move-in begins later in 2026.",
+    "sources": [
+      { "title": "Micron Technology Form 10-K, FY2026", "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm", "date": "2026-09-03" },
+      { "title": "Micron posts record year as Boise fab nears production", "url": "https://idahonews.com/news/local/micron-posts-record-year-as-boise-fab-nears-production", "date": "2026-09-03" }
+    ]
+  },
+  {
+    "id": "micron-clay-new-york",
+    "name": "Micron New York megafab",
+    "company": "Micron",
+    "site": "Clay, New York",
+    "lat": 43.2,
+    "lon": -76.18,
+    "what": "Planned large memory chip complex making DRAM for the US market.",
+    "closes_gap": "Advanced memory (DRAM) made mostly in Asia.",
+    "status": "under construction",
+    "status_detail": "Groundbreaking was set for January 16, 2026, for a complex of up to four fab modules (about $100 billion total); the first phase (about $20 billion) was targeted for completion around 2030.",
+    "sources": [
+      { "title": "Micron groundbreaking date announcement", "url": "https://spectrumlocalnews.com/central-ny/business/2026/01/07/micron-groundbreaking-date-announcement", "date": "2026-01-07" }    ]
+  },
+  {
+    "id": "sk-hynix-indiana-packaging",
+    "name": "SK hynix HBM packaging plant",
+    "company": "SK hynix",
+    "site": "West Lafayette, Indiana",
+    "lat": 40.43,
+    "lon": -86.92,
+    "what": "Plant that stacks memory chips into HBM modules used in AI accelerators.",
+    "closes_gap": "Advanced packaging of AI memory, done almost entirely in Asia.",
+    "status": "under construction",
+    "status_detail": "Groundbreaking held August 27, 2026, at Purdue Research Park; cleanroom targeted for October 2028 and mass production in 2028 or 2029 (sources conflict).",
+    "sources": [
+      { "title": "SK hynix partners with Purdue University, ceremonially breaks ground on $4B memory chip facility", "url": "https://www.wlfi.com/2026/08/27/sk-hynix-partners-with-purdue-university-ceremonially-breaks-ground-4b-memory-chip-facility/", "date": "2026-08-27" },
+      { "title": "SK Hynix breaks ground on $4 billion packaging facility in Indiana", "url": "https://evertiq.com/news/2026-08-28-sk-hynix-breaks-ground-on-4-billion-packaging-facility-in-indiana", "date": "2026-08-28" }
+    ]
+  },
+  {
+    "id": "amkor-peoria-arizona",
+    "name": "Amkor advanced packaging campus",
+    "company": "Amkor Technology",
+    "site": "Peoria, Arizona",
+    "lat": 33.58,
+    "lon": -112.24,
+    "what": "Packaging campus that connects and protects finished chips, including ones for TSMC Arizona.",
+    "closes_gap": "Advanced chip packaging, which is done mostly in Asia.",
+    "status": "under construction",
+    "status_detail": "Amkor added 67 acres in May 2026 and announced a phase 2 with about $12 billion in investment in September 2026. One trade report gives phase 1 completion in mid-2027 and production in early 2028; treat dates as unconfirmed.",
+    "sources": [
+      { "title": "Amkor acquires additional land in Arizona to expand advanced packaging campus", "url": "https://evertiq.com/design/2026-05-28-amkor-acquires-additional-land-in-arizona-to-expand-advanced-packaging-campus", "date": "2026-05-28" },
+      { "title": "Amkor Technology expands U.S. advanced packaging footprint with additional land in Arizona", "url": "https://amkortech.gcs-web.com/node/24366", "date": "2026-05-28" }
+    ]
+  },
+  {
+    "id": "mp-materials-mountain-pass",
+    "name": "MP Materials Mountain Pass",
+    "company": "MP Materials",
+    "site": "Mountain Pass, California",
+    "lat": 35.48,
+    "lon": -115.53,
+    "what": "The main US rare earth mine and processing site, producing neodymium-praseodymium oxide for magnets.",
+    "closes_gap": "Rare earth separation and magnet materials that China dominates.",
+    "status": "operating",
+    "status_detail": "On July 10, 2025, the Pentagon bought $400 million of convertible preferred stock (about 15% stake), agreed a 10-year price floor of $110/kg for NdPr, and provided a $150 million loan for heavy rare earth separation at Mountain Pass.",
+    "sources": [
+      { "title": "MP Materials lands $400M Pentagon deal", "url": "https://www.northernminer.com/news/mp-materials-lands-400m-pentagon-deal/1003880329", "date": "2025-07-10" },
+      { "title": "MP Materials lands multibillion-dollar Pentagon deal to bolster US rare earth magnet supply", "url": "https://www.engineeringnews.co.za/article/mp-materials-lands-multibillion-dollar-pentagon-deal-to-bolster-us-rare-earth-magnet-supply-2025-07-10", "date": "2025-07-10" }
+    ]
+  },
+  {
+    "id": "mp-materials-fort-worth-magnets",
+    "name": "MP Materials Fort Worth magnet plant",
+    "company": "MP Materials",
+    "site": "Fort Worth, Texas",
+    "lat": 32.75,
+    "lon": -97.33,
+    "what": "Plant that turns rare earth metal into permanent magnets, with Apple as a customer.",
+    "closes_gap": "Rare earth magnets, which China makes most of.",
+    "status": "operating",
+    "status_detail": "Independence facility has begun producing NdPr metal and magnets are made there, with ramp-up through 2026; Apple committed $500 million in November 2025, with recycled-magnet deliveries slated for 2027. Current output figures were not confirmed.",
+    "sources": [
+      { "title": "Apple, MP Materials announce $500 million deal to expand US rare-earth supply chain", "url": "https://www.businesswire.com/news/home/20251118096805/en", "date": "2025-11-18" },
+      { "title": "MP Materials hits new high as it receives $150M Pentagon loan", "url": "https://www.mining.com/mp-materials-hits-new-high-as-it-receives-150m-pentagon-loan/", "date": "2025-07-10" }
+    ]
+  },
+  {
+    "id": "atalco-gramercy-gallium",
+    "name": "Atalco Gramercy gallium circuit",
+    "company": "Atalco (Atlantic Alumina)",
+    "site": "Gramercy, Louisiana",
+    "lat": 30.06,
+    "lon": -90.7,
+    "what": "Alumina refinery adding a gallium extraction circuit, the first large-scale US primary gallium plan.",
+    "closes_gap": "Gallium, where China supplies roughly 98 to 99% of low-purity gallium.",
+    "status": "announced",
+    "status_detail": "January 2026 partnership with the US government and private investors; about $450 million total, with roughly $150 million from the Pentagon, targeting up to 50 tonnes per year. No completion date confirmed.",
+    "sources": [
+      { "title": "Washington commits $450M to revive Atalco, build gallium capacity", "url": "https://newsletter.en.creamermedia.com/article/washington-commits-450m-to-revive-atalco-build-gallium-capacity-2026-01-13", "date": "2026-01-13" },
+      { "title": "Atlantic Alumina secures $800 million with U.S. government and Pinnacle as gallium production targets 50 metric tons annually", "url": "https://pulse2.com/atlantic-alumina-secures-800-million-with-u-s-government-and-pinnacle-as-gallium-production-targets-50-metric-tons-annually/", "date": "2026-01-13" }
+    ]
+  },
+  {
+    "id": "novonix-chattanooga-graphite",
+    "name": "Novonix Riverside graphite plant",
+    "company": "Novonix",
+    "site": "Chattanooga, Tennessee",
+    "lat": 35.05,
+    "lon": -85.31,
+    "what": "Plant making synthetic graphite anode material for lithium-ion batteries.",
+    "closes_gap": "Battery anode graphite, where China dominates processing.",
+    "status": "under construction",
+    "status_detail": "Mass production for Panasonic is still expected in 2H 2027, but full capacity at Riverside was pushed to September 2031 and the second-site land purchase was dropped. A $103 million Section 48C tax credit was certified in April 2026.",
+    "sources": [
+      { "title": "NOVONIX backs off land purchase next to Chattanooga plant, slows production ramp-up", "url": "https://newschannel9.com/news/local/novonix-backs-off-land-purchase-next-to-chattanooga-plant-slows-production-ramp-up-riverside-synthetic-graphite-panasonic-battery-materials-175-acres", "date": "2026-04-01" },
+      { "title": "Trump Administration certifies Novonix $103M tax credit for Chattanooga plant", "url": "https://ground.news/article/novonix-us103-million-48c-tax-credits-certified-for-synthetic-graphite-facility", "date": "2026-04-01" }
+    ]
+  }
+]

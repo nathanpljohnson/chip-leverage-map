@@ -1,0 +1,12 @@
+{
+  "USA": { "group": "us", "reason": "Origin of US export controls on advanced chips and chipmaking tools", "source": "https://www.malaymail.com/news/singapore/2025/03/13/singapore-prosecutors-say-us-servers-fraud-case-involves-us390m-of-transactions/169451" },
+  "NLD": { "group": "ally", "reason": "ASML makes all EUV lithography machines; Dutch export licenses since 2023 and expanded to DUV immersion systems in Sept 2024", "source": "https://www.trendforce.com/news/2024/09/09/news-netherlands-expands-export-control-over-asmls-two-duv-machines-effective-on-september-7th/" },
+  "JPN": { "group": "ally", "reason": "Makes chipmaking tools (Tokyo Electron, Nikon, Kokusai); licensing on 23 advanced equipment types since July 2023", "source": "https://technode.com/2023/05/24/japans-chip-export-restrictions-to-take-effect-in-july/" },
+  "TWN": { "group": "ally", "reason": "TSMC makes most advanced AI chips; Taiwan began prosecuting chip-server smuggling to China in 2026", "source": "https://www.fdd.org/analysis/2026/08/27/taiwans-chip-smuggling-case-shows-promise-for-allied-export-control-enforcement/" },
+  "DEU": { "group": "ally", "reason": "Zeiss is the sole optics supplier for ASML's EUV machines", "source": "https://view.asiae.co.kr/en/article/2026090314274339540" },
+  "CHN": { "group": "china", "reason": "Target of US and allied chip controls; supplies about 98-99% of low-purity gallium" },
+  "SGP": { "group": "transit", "reason": "Singapore prosecutors charged men in a US$390 million server fraud case over possible Nvidia chips bound for Malaysia and China", "source": "https://www.malaymail.com/news/singapore/2025/03/13/singapore-prosecutors-say-us-servers-fraud-case-involves-us390m-of-transactions/169451" },
+  "MYS": { "group": "transit", "reason": "US-origin AI chips needed a Malaysian trade permit from July 14, 2025 after reports of China-bound transshipment", "source": "https://www.taipeitimes.com/News/biz/archives/2025/07/15/2003840290" },
+  "THA": { "group": "transit", "reason": "US prosecutors say about 400 Nvidia A100 GPUs were transshipped to China via Malaysia and Thailand (Nov 2025 case)", "source": "https://www.arabnews.pk/node/2623387/world" },
+  "HKG": { "group": "transit", "reason": "Reported reexport hub for AI chips bound for mainland China; Taiwan cases in 2026 routed servers via Hong Kong and Macau", "source": "https://www.fdd.org/analysis/2026/08/27/taiwans-chip-smuggling-case-shows-promise-for-allied-export-control-enforcement/" }
+}

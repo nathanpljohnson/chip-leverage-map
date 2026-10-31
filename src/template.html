@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chip Leverage Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: full-bleed night map (Shipmap structure, Flight Patterns light); header and item list left, legend bottom-right, detail card right. Single dark theme by design. */
+:root {
+  color-scheme: dark;
+  --night: #040912;
+  --land: #0f1b2d;
+  --land-edge: #22344f;
+  --ink: #dde7f3;
+  --muted: #8796ac;
+  --faint: #4b5b72;
+  --panel: rgba(7, 13, 24, 0.93);
+  --panel-edge: #1d2c43;
+  --blue: #2d7dff;
+  --blue-core: #eaf4ff;
+  --ally-core: #9ec7ff;
+  --red: #ff2b2b;
+  --red-core: #ffe3df;
+  --leak-core: #d6ebff;
+  --transit: #9aa6b6;
+  --amber: #f2b45a;
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--night);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.45;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+#map { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; z-index: 0; }
+#map:active { cursor: grabbing; }
+.vignette { position: fixed; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(ellipse 75% 70% at 55% 52%, transparent 55%, rgba(0, 0, 0, 0.6) 100%); }
+
+.sphere { fill: var(--night); }
+.graticule { fill: none; stroke: #0d1828; stroke-width: 0.5; }
+.country { fill: var(--land); stroke: var(--land-edge); stroke-width: 0.45; }
+.country.g-us { fill: rgba(45, 125, 255, 0.36); stroke: rgba(140, 190, 255, 0.75); filter: drop-shadow(0 0 10px rgba(45, 125, 255, 0.35)); }
+.country.g-ally { fill: rgba(45, 125, 255, 0.15); stroke: rgba(140, 190, 255, 0.4); }
+.country.g-china { fill: rgba(255, 43, 43, 0.27); stroke: rgba(255, 140, 130, 0.7); filter: drop-shadow(0 0 10px rgba(255, 43, 43, 0.3)); }
+.country.g-partner { fill: rgba(255, 43, 43, 0.11); stroke: rgba(255, 140, 130, 0.32); }
+.country.g-transit { fill: url(#hatch); stroke: rgba(154, 166, 182, 0.55); }
+.country.clickable { cursor: pointer; }
+.country.clickable:hover { stroke: var(--ink); stroke-width: 0.9; }
+
+.label { font-family: var(--font-display); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; fill: var(--muted); pointer-events: none; }
+
+.halo, .glow, .cores, .arrows, .lights, .pulse { mix-blend-mode: screen; pointer-events: none; }
+.halo path, .glow path, .cores path { fill: none; stroke-linecap: round; }
+.halo .t-us, .halo .t-cn { stroke-width: 9; opacity: 0.16; }
+.halo .t-ally { stroke-width: 7; opacity: 0.06; }
+.halo .t-us, .halo .t-ally, .glow .t-us, .glow .t-ally { stroke: var(--blue); }
+.halo .t-cn, .glow .t-cn { stroke: var(--red); }
+.glow .t-us, .glow .t-cn { stroke-width: 3.2; opacity: 0.6; }
+.glow .t-ally { stroke-width: 2.6; opacity: 0.26; }
+.cores .t-us { stroke: var(--blue-core); stroke-width: 1.25; opacity: 0.95; }
+.cores .t-ally { stroke: var(--ally-core); stroke-width: 0.9; opacity: 0.65; }
+.cores .t-cn { stroke: var(--red-core); stroke-width: 1.2; opacity: 0.95; }
+.cores .k-leak { stroke: var(--leak-core); stroke-width: 2; stroke-dasharray: 0.01 4.5; }
+.glow .k-leak, .halo .k-leak { stroke-dasharray: 0.01 4.5; }
+.halo .k-leak { stroke-width: 8; }
+.arrows { mix-blend-mode: normal; }
+.arrows path { stroke: var(--night); stroke-width: 1.2px; stroke-linejoin: round; paint-order: stroke; }
+.arrows .t-us, .arrows .k-leak { fill: var(--blue-core); filter: drop-shadow(0 0 3px rgba(45, 125, 255, 0.95)); }
+.arrows .t-ally { fill: var(--ally-core); filter: drop-shadow(0 0 3px rgba(45, 125, 255, 0.7)); }
+.arrows .t-cn { fill: var(--red-core); filter: drop-shadow(0 0 3px rgba(255, 43, 43, 0.95)); }
+.lights circle.halo-dot { opacity: 0.9; }
+.lights circle.dot { fill: #f4f8ff; }
+.via { fill: var(--transit); pointer-events: none; }
+.pulse circle { display: none; }
+.pulse.on circle { display: block; }
+.hits path { fill: none; stroke: transparent; stroke-width: 14; pointer-events: stroke; cursor: pointer; }
+.hits path:focus-visible { outline: none; stroke: rgba(221, 231, 243, 0.18); }
+.project { fill: rgba(4, 9, 18, 0.6); stroke: var(--blue-core); stroke-width: 1.5; cursor: pointer; filter: drop-shadow(0 0 4px rgba(45, 125, 255, 0.8)); }
+.project:hover, .project:focus-visible { stroke: #fff; stroke-width: 2.2; outline: none; }
+.project.st-delayed, .project.st-announced { stroke-dasharray: 2 2; }
+
+#map.has-focus .halo path:not(.focus), #map.has-focus .glow path:not(.focus), #map.has-focus .cores path:not(.focus), #map.has-focus .arrows path:not(.focus), #map.has-focus .icons g:not(.focus) { opacity: 0.1; }
+#map.has-focus .line-labels text:not(.focus) { opacity: 0.18; }
+#map.has-focus .cores path.focus { stroke-width: 1.7; }
+#map.has-focus .glow path.focus { opacity: 0.8; }
+#map.has-active .halo path:not(.on), #map.has-active .glow path:not(.on), #map.has-active .cores path:not(.on), #map.has-active .arrows path:not(.on) { opacity: 0.04; }
+#map.has-active .halo path.on { opacity: 0.35; }
+#map.has-active .glow path.on { opacity: 0.85; }
+#map.has-active .cores path.on { opacity: 1; stroke-width: 1.9; }
+#map.has-active .cores .k-leak.on { stroke-width: 2.8; }
+#map.has-active .lights { opacity: 0.35; }
+#map.hide-projects .project, #map.hide-projects .proj-label { display: none; }
+#map.has-active .icons g:not(.on), #map.has-active .line-labels text:not(.on) { opacity: 0.15; }
+.icons circle { fill: var(--night); stroke-width: 1; }
+.icons path { fill: none; stroke-width: 1.1; stroke-linecap: round; stroke-linejoin: round; }
+.icons .k-blue circle, .icons .k-leak circle { stroke: rgba(140, 190, 255, 0.8); }
+.icons .k-blue path, .icons .k-leak path { stroke: var(--blue-core); }
+.icons .k-red circle { stroke: rgba(255, 140, 130, 0.8); }
+.icons .k-red path { stroke: var(--red-core); }
+.icons g { pointer-events: none; }
+.line-labels text { font: 500 11px var(--font-body); paint-order: stroke; stroke: var(--night); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
+.line-labels .k-blue, .line-labels .k-leak, .line-labels .proj-label { fill: #cfe4ff; }
+.line-labels .k-red { fill: #ffd2cc; }
+.line-labels .grp { font-weight: 600; letter-spacing: 0.01em; }
+#map.step-projects .project { r: 7.5; }
+#map:not(.zoomed-in) .label.zoom-only { display: none; }
+#map.moving .halo, #map.moving .glow, #map.moving .line-labels, #map.moving .pulse, #map.moving .lights .halo-dot { display: none; }
+#map.moving .country, #map.moving .arrows path, #map.moving .project { filter: none; }
+#map.moving .halo, #map.moving .glow, #map.moving .cores, #map.moving .lights { mix-blend-mode: normal; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .draw { stroke-dasharray: 1 1; animation: draw 1.5s cubic-bezier(0.3, 0.6, 0.2, 1) both; animation-delay: var(--d, 0s); }
+  .fadein { animation: fade 0.9s ease both; animation-delay: var(--d, 0s); }
+  .halo path, .glow path, .cores path { transition: opacity 0.2s ease; }
+}
+@keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes fade { from { opacity: 0; } }
+#map.settled .draw { stroke-dasharray: none; animation: fade 0.35s ease both; }
+#map.settled .fadein { animation: fade 0.35s ease both; }
+#map.settled .k-leak.fadein { animation: fade 0.35s ease both; }
+
+/* overlays */
+.overlay { position: fixed; z-index: 2; }
+.head {
+  top: max(18px, env(safe-area-inset-top, 0px));
+  left: max(20px, env(safe-area-inset-left, 0px));
+  max-width: 600px;
+  pointer-events: none;
+}
+.eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: 36px; line-height: 1; letter-spacing: 0.01em; margin: 0 0 10px; text-wrap: balance; text-shadow: 0 0 24px rgba(45, 125, 255, 0.25); }
+.summary { margin: 0 0 6px; color: #bccadb; max-width: 62ch; text-wrap: pretty; }
+.hint { margin: 0; font-size: 12px; color: var(--muted); }
+
+.controls { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; pointer-events: auto; }
+.toggle, .select {
+  display: inline-flex; align-items: center; gap: 7px;
+  font: 500 12px var(--font-body); color: var(--ink);
+  background: rgba(9, 17, 30, 0.88); border: 1px solid var(--panel-edge); border-radius: 3px;
+  padding: 5px 9px; cursor: pointer;
+}
+.select { padding-right: 6px; }
+.select select { font: inherit; color: var(--ink); background: transparent; border: 0; cursor: pointer; }
+.select select option { background: #0a1322; }
+.toggle[aria-pressed="false"] { color: var(--faint); }
+.toggle[aria-pressed="false"] .sw { opacity: 0.25; }
+.toggle.list[aria-expanded="true"] { border-color: rgba(140, 190, 255, 0.6); }
+.toggle:focus-visible, .select:focus-within, .zoom button:focus-visible, .close:focus-visible, .rowbtn:focus-visible { outline: 1px solid var(--blue-core); outline-offset: 2px; }
+.toggle .n { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+
+.sw { display: inline-block; width: 22px; height: 0; border-top: 2px solid; flex: none; }
+.sw.us { border-color: var(--blue-core); box-shadow: 0 0 6px var(--blue); }
+.sw.ally { border-color: var(--ally-core); opacity: 0.6; border-top-width: 1px; }
+.sw.cn { border-color: var(--red-core); box-shadow: 0 0 6px var(--red); }
+.sw.leak { border-top: 3px dotted var(--leak-core); }
+.sw.proj { width: 11px; height: 11px; border: 1.5px solid var(--blue-core); border-radius: 50%; }
+.sw.menu { width: 12px; border-top: 0; height: 9px; background: linear-gradient(var(--ink) 0 1.5px, transparent 1.5px 3.75px, var(--ink) 3.75px 5.25px, transparent 5.25px 7.5px, var(--ink) 7.5px 9px); }
+.fill { display: inline-block; width: 14px; height: 10px; border: 1px solid; flex: none; }
+.fill.us { background: rgba(45, 125, 255, 0.36); border-color: rgba(140, 190, 255, 0.75); }
+.fill.ally { background: rgba(45, 125, 255, 0.15); border-color: rgba(140, 190, 255, 0.4); }
+.fill.china { background: rgba(255, 43, 43, 0.27); border-color: rgba(255, 140, 130, 0.7); }
+.fill.partner { background: rgba(255, 43, 43, 0.11); border-color: rgba(255, 140, 130, 0.32); }
+.fill.transit { background: repeating-linear-gradient(45deg, rgba(154,166,182,.5) 0 1px, transparent 1px 4px), var(--land); border-color: rgba(154, 166, 182, 0.55); }
+
+.tour { pointer-events: auto; margin-top: 2px; max-width: 560px; }
+.tour-meta { display: flex; align-items: center; gap: 10px; font: 500 11px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.dots { display: flex; gap: 4px; }
+.dot-btn { width: 20px; height: 14px; border: 0; padding: 0; background: linear-gradient(#2a3b55, #2a3b55) center / 100% 3px no-repeat; cursor: pointer; }
+.dot-btn[aria-current="step"] { background-image: linear-gradient(var(--blue-core), var(--blue-core)); filter: drop-shadow(0 0 4px var(--blue)); }
+.dot-btn:focus-visible { outline: 1px solid var(--blue-core); outline-offset: 2px; }
+.tour h2 { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 1.1; margin: 6px 0 4px; }
+.tour p { margin: 0; color: #bccadb; min-height: 5.8em; text-wrap: pretty; }
+.tour-nav { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.btn { font: 500 12px var(--font-body); color: var(--ink); background: rgba(9, 17, 30, 0.88); border: 1px solid var(--panel-edge); border-radius: 3px; padding: 6px 11px; cursor: pointer; }
+.btn.primary { background: rgba(45, 125, 255, 0.2); border-color: rgba(140, 190, 255, 0.6); }
+.btn[disabled] { opacity: 0.35; cursor: default; }
+.btn[hidden] { display: none; }
+.btn:focus-visible { outline: 1px solid var(--blue-core); outline-offset: 2px; }
+.panel .btn { margin-top: 14px; }
+
+.legend {
+  right: max(20px, env(safe-area-inset-right, 0px));
+  bottom: max(18px, env(safe-area-inset-bottom, 0px));
+  background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 4px;
+  padding: 12px 14px; max-width: 300px; font-size: 12px;
+}
+.legend h2, .index h2 { font: 600 11px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0; }
+.legend ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.legend li { display: flex; align-items: center; gap: 9px; }
+.ltoggle { width: 100%; display: flex; align-items: center; gap: 9px; text-align: left; background: none; border: 0; border-radius: 3px; padding: 3px 4px; margin: 0 -4px; color: var(--ink); font: 12px var(--font-body); cursor: pointer; }
+.ltoggle:hover { background: rgba(140, 190, 255, 0.07); }
+.ltoggle:focus-visible { outline: 1px solid var(--blue-core); outline-offset: 1px; }
+.ltoggle[aria-pressed="false"] { color: var(--faint); }
+.ltoggle[aria-pressed="false"] .sws { opacity: 0.25; }
+.ltoggle .sws { display: grid; gap: 3px; width: 22px; flex: none; justify-items: start; }
+.ltoggle .n { margin-left: auto; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+.legend .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 12px; }
+.legend .note { color: var(--muted); font-size: 11px; margin: 0; }
+.legend summary { cursor: pointer; font: 600 11px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); list-style-position: inside; }
+.legend details[open] summary { margin-bottom: 8px; }
+.legend details:not([open]) .legend-body { display: none; }
+.legend:has(details:not([open])) { padding: 8px 12px; }
+.legend-body { display: grid; gap: 10px; }
+
+.zoom { top: max(18px, env(safe-area-inset-top, 0px)); right: max(20px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 4px; }
+.zoom button { width: 32px; height: 32px; font: 500 16px var(--font-mono); color: var(--ink); background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 3px; cursor: pointer; }
+.zoom button.reset { font-size: 11px; }
+
+#tip {
+  position: fixed; z-index: 4; pointer-events: none; display: none; max-width: 300px;
+  background: rgba(4, 9, 17, 0.95); border: 1px solid var(--panel-edge); border-radius: 3px;
+  padding: 6px 9px; font-size: 12px; max-width: 280px;
+}
+#tip b { display: block; font-weight: 600; }
+#tip span { color: var(--muted); font-size: 11px; }
+#tip p { margin: 3px 0 4px; color: #c9d5e3; line-height: 1.35; }
+.icons .star { fill: var(--amber); stroke: var(--night); stroke-width: 0.8; filter: drop-shadow(0 0 3px rgba(242, 180, 90, 0.8)); }
+.icons .choke circle { stroke: rgba(242, 180, 90, 0.85); }
+.star-txt { color: var(--amber); font-size: 11px; }
+.chip.choke { color: var(--amber); border-color: rgba(242, 180, 90, 0.55); }
+.legend .static { display: flex; align-items: center; gap: 9px; padding: 3px 0; }
+.key-dot { width: 22px; height: 12px; flex: none; background: radial-gradient(circle, #f4f8ff 0 1.5px, rgba(127, 179, 255, 0.7) 2px, transparent 6px); }
+.key-via { width: 22px; height: 8px; flex: none; background: radial-gradient(circle, var(--transit) 0 1.6px, transparent 2px); }
+.legend .static .star-txt { width: 22px; text-align: center; font-size: 13px; }
+
+.drawer {
+  background: var(--panel); border: 1px solid var(--panel-edge); border-radius: 4px;
+  overflow-y: auto; display: none; backdrop-filter: blur(6px);
+}
+.drawer.open { display: block; }
+.panel {
+  top: max(18px, env(safe-area-inset-top, 0px));
+  right: max(20px, env(safe-area-inset-right, 0px));
+  bottom: max(18px, env(safe-area-inset-bottom, 0px));
+  width: 380px; z-index: 3; padding: 18px 20px 22px;
+}
+.index {
+  left: max(20px, env(safe-area-inset-left, 0px));
+  bottom: max(18px, env(safe-area-inset-bottom, 0px));
+  width: 330px; padding: 14px 10px 14px 14px;
+}
+.index-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; padding-right: 2px; }
+.index .close { position: static; }
+.index h3 { font: 600 10.5px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 14px 0 4px; display: flex; align-items: center; gap: 8px; }
+.index .empty { color: var(--muted); font-size: 12px; margin: 12px 0 0; }
+.close { position: absolute; top: 10px; right: 10px; width: 28px; height: 28px; background: none; border: 1px solid var(--panel-edge); border-radius: 3px; color: var(--muted); font-size: 16px; cursor: pointer; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 34px 10px 0; }
+.chip { font: 500 10.5px var(--font-mono); letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; border: 1px solid var(--panel-edge); color: var(--muted); }
+.chip.us, .chip.ally, .chip.leak { color: var(--blue-core); border-color: rgba(45, 125, 255, 0.55); }
+.chip.cn { color: var(--red-core); border-color: rgba(255, 43, 43, 0.55); }
+.chip.warn { color: var(--amber); border-color: rgba(242, 180, 90, 0.5); }
+.panel h2 { font-family: var(--font-display); font-weight: 600; font-size: 26px; line-height: 1.05; margin: 0 0 6px; text-wrap: balance; }
+.route { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); margin: 0 0 14px; }
+.panel dl { margin: 0; display: grid; gap: 12px; }
+.panel dt { font: 600 10.5px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.panel dd { margin: 0; color: #cfdae7; }
+.panel ol { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.panel a { color: #bcdcff; text-decoration-color: rgba(188, 220, 255, 0.35); text-underline-offset: 2px; }
+.panel .date { font-family: var(--font-mono); font-size: 11px; color: var(--muted); white-space: nowrap; }
+.panel h3 { font: 600 11px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 18px 0 6px; }
+.rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+.rowbtn { width: 100%; display: flex; align-items: center; gap: 9px; text-align: left; background: none; border: 0; border-radius: 3px; color: var(--ink); font: 13px var(--font-body); padding: 5px 6px; cursor: pointer; }
+.rowbtn:hover, .rowbtn.on { background: rgba(140, 190, 255, 0.08); }
+.rowbtn .nm { flex: 1; min-width: 0; }
+.rowbtn .st { font-family: var(--font-mono); font-size: 10.5px; color: var(--muted); text-transform: uppercase; flex: none; }
+
+@media (max-width: 760px) {
+  h1 { font-size: 28px; }
+  .head { right: max(16px, env(safe-area-inset-right, 0px)); left: max(16px, env(safe-area-inset-left, 0px)); max-width: none; }
+  .tour p { font-size: 13px; min-height: 0; }
+  .tour h2 { font-size: 19px; }
+  .legend { left: max(16px, env(safe-area-inset-left, 0px)); right: auto; max-width: calc(100% - 32px); padding: 8px 10px; }
+  .legend summary { display: block; cursor: pointer; font: 600 11px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .legend details:not([open]) .legend-body { display: none; }
+  .legend-body { margin-top: 8px; }
+  .panel, .index { left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); width: auto; top: auto !important; bottom: max(16px, env(safe-area-inset-bottom, 0px)); max-height: 62%; }
+  .zoom { top: auto; bottom: max(16px, env(safe-area-inset-bottom, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); }
+}
+</style>
+</head>
+<body>
+<svg id="map" role="img" aria-label="World map of AI chip supply chain flows between the US, its allies and China">
+  <defs>
+    <path id="measure"></path>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"></feGaussianBlur></filter>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"></feGaussianBlur></filter>
+    <filter id="spark" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3"></feGaussianBlur></filter>
+    <radialGradient id="light-blue"><stop offset="0" stop-color="#7fb3ff" stop-opacity="0.9"></stop><stop offset="0.35" stop-color="#2d7dff" stop-opacity="0.35"></stop><stop offset="1" stop-color="#2d7dff" stop-opacity="0"></stop></radialGradient>
+    <radialGradient id="light-red"><stop offset="0" stop-color="#ff9a90" stop-opacity="0.9"></stop><stop offset="0.35" stop-color="#ff2b2b" stop-opacity="0.35"></stop><stop offset="1" stop-color="#ff2b2b" stop-opacity="0"></stop></radialGradient>
+    <radialGradient id="light-mix"><stop offset="0" stop-color="#ffffff" stop-opacity="0.85"></stop><stop offset="0.35" stop-color="#c49bff" stop-opacity="0.3"></stop><stop offset="1" stop-color="#8a6bff" stop-opacity="0"></stop></radialGradient>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+      <rect width="4" height="4" fill="#0f1b2d"></rect>
+      <line x1="0" y1="0" x2="0" y2="4" stroke="rgba(154,166,182,0.55)" stroke-width="1.2"></line>
+    </pattern>
+  </defs>
+  <g class="viewport">
+  <path class="sphere"></path>
+  <path class="graticule"></path>
+  <g class="countries"></g>
+  <g class="labels"></g>
+  <g class="halo" filter="url(#soft)"></g>
+  <g class="glow" filter="url(#blur)"></g>
+  <g class="cores"></g>
+  <g class="arrows"></g>
+  <g class="lights"></g>
+  <g class="vias"></g>
+  <g class="pulse"><circle class="spark-glow" r="6" filter="url(#spark)"></circle><circle class="spark" r="2.2" fill="#ffffff"></circle></g>
+  <g class="icons"></g>
+  <g class="projects"></g>
+  <g class="line-labels"></g>
+  <g class="hits"></g>
+  </g>
+</svg>
+<div class="vignette"></div>
+
+<header class="overlay head">
+  <p class="eyebrow">AI chip supply chain · data as of Oct 28, 2026</p>
+  <h1>Who holds the leverage in AI chips</h1>
+  <section class="tour" aria-label="Guided tour">
+    <div class="tour-meta"><span id="step-meta">Overview</span><div class="dots" id="dots"></div></div>
+    <h2 id="step-title"></h2>
+    <p id="step-text"></p>
+    <div class="tour-nav">
+      <button class="btn" id="prev">Back</button>
+      <button class="btn primary" id="next">Start the tour</button>
+      <button class="btn" id="expand-all" aria-pressed="false">Show every line</button>
+    </div>
+  </section>
+  <div class="controls" role="group" aria-label="Map controls">
+    <button class="toggle list" id="t-index" aria-expanded="false" aria-controls="index"><span class="sw menu"></span>List all items <span class="n"></span></button>
+    <label class="select" for="cat">Type
+      <select id="cat">
+        <option value="all">All</option>
+        <option value="chips">Chips &amp; data center gear</option>
+        <option value="making">Chipmaking &amp; tools</option>
+        <option value="memory">Memory</option>
+        <option value="minerals">Minerals</option>
+        <option value="software">Software &amp; cloud</option>
+      </select>
+    </label>
+  </div>
+</header>
+
+<aside class="overlay drawer index" id="index" aria-label="All items">
+  <div class="index-head"><h2>All items</h2><button class="close" id="index-close" aria-label="Close list">×</button></div>
+  <div id="index-list"></div>
+</aside>
+
+<aside class="overlay legend" aria-label="Legend">
+  <details open id="legend-details">
+    <summary>Legend</summary>
+    <div class="legend-body">
+      <h2>Lines · click to show or hide</h2>
+      <ul>
+        <li><button class="ltoggle" data-f="blue" aria-pressed="true"><span class="sws"><span class="sw us"></span><span class="sw ally"></span></span><span>To China from the US (bright) and allies (faint)</span><span class="n"></span></button></li>
+        <li><button class="ltoggle" data-f="red" aria-pressed="true"><span class="sws"><span class="sw cn"></span></span><span>From China</span><span class="n"></span></button></li>
+        <li><button class="ltoggle" data-f="leak" aria-pressed="true"><span class="sws"><span class="sw leak"></span></span><span>Got around export controls</span><span class="n"></span></button></li>
+        <li><button class="ltoggle" data-f="projects" aria-pressed="true"><span class="sws"><span class="sw proj"></span></span><span>New US plant or mine</span><span class="n"></span></button></li>
+        <li class="static"><span class="star-txt">★</span><span>Chokepoint: one country or company makes most of it</span></li>
+        <li class="static"><span class="key-dot"></span><span>Glowing dot: where a line starts or ends</span></li>
+        <li class="static"><span class="key-via"></span><span>Small gray dot: a stop on a smuggling route</span></li>
+      </ul>
+      <h2>Countries</h2>
+      <div class="cols">
+        <span class="legend-item"><span class="fill us"></span> United States</span>
+        <span class="legend-item"><span class="fill ally"></span> US allies</span>
+        <span class="legend-item"><span class="fill china"></span> China</span>
+        <span class="legend-item"><span class="fill partner"></span> China's partners</span>
+        <span class="legend-item"><span class="fill transit"></span> Transit hubs</span>
+      </div>
+      <p class="note">One line per item. Every card lists its sources. Smuggling cases are marked convicted, charged, alleged or reported.</p>
+    </div>
+  </details>
+</aside>
+
+<div class="overlay zoom" role="group" aria-label="Zoom">
+  <button id="zin" aria-label="Zoom in">+</button>
+  <button id="zout" aria-label="Zoom out">−</button>
+  <button id="zreset" class="reset" aria-label="Reset view">⟲</button>
+</div>
+
+<aside class="overlay drawer panel" id="panel" aria-live="polite">
+  <button class="close" id="close" aria-label="Close details">×</button>
+  <div id="panel-body"></div>
+</aside>
+<div id="tip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+const WORLD = /*__WORLD__*/null;
+</script>
+<script>
+/*__APP__*/
+</script>
+</body>
+</html>

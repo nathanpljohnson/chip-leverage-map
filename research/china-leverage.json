@@ -1,0 +1,482 @@
+[
+ {
+  "id": "gallium",
+  "name": "Gallium",
+  "category": "minerals",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Gallium refining, Zhengzhou, Henan",
+   "country": "China",
+   "lat": 34.75,
+   "lon": 113.62
+  },
+  "to": {
+   "site": "US defense and chip electronics hub, Northern Virginia",
+   "country": "United States",
+   "lat": 38.88,
+   "lon": -77.1
+  },
+  "what_it_is": "A soft metal used to make fast chips and radar parts.",
+  "used_for": "Radar, 5G and power chips, LEDs, compound semiconductors.",
+  "status": "restricted",
+  "status_detail": "China banned gallium/germanium/antimony exports to the US in Dec 2024; the ban on US-bound shipments is suspended until 2026-11-27 after the Oct 2025 Trump-Xi meeting, but the metals stay on the licence list and military end users remain barred. Not confirmed whether it will be extended past Nov 27 2026.",
+  "evidence": "USGS profile puts China at about 99% of primary gallium output in 2024.",
+  "contested": false,
+  "sources": [
+   {
+    "title": "USGS National Minerals Information Center: China",
+    "url": "https://www.usgs.gov/centers/national-minerals-information-center/china",
+    "date": "2026-01-01"
+   },
+   {
+    "title": "China halts ban on gallium, germanium, antimony exports to US but controls remain",
+    "url": "https://www.miningweekly.com/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10",
+    "date": "2025-11-10"
+   },
+   {
+    "title": "Japan sounds alarm over China's gallium dominance",
+    "url": "https://www.xatakaon.com/materials/japan-sounds-alarm-bells-over-chinas-dominance-in-global-chip-and-battery-production-thanks-to-its-powerful-gallium-market",
+    "date": "2025-01-01"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "germanium",
+  "name": "Germanium",
+  "category": "minerals",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Germanium refining, Yunnan",
+   "country": "China",
+   "lat": 25.49,
+   "lon": 103.8
+  },
+  "to": {
+   "site": "US optics and chip makers, Dallas",
+   "country": "United States",
+   "lat": 32.78,
+   "lon": -96.8
+  },
+  "what_it_is": "A metal used in infrared optics and fibre and in some chips.",
+  "used_for": "Night vision, fibre optics, solar cells for satellites, chip parts.",
+  "status": "restricted",
+  "status_detail": "China banned gallium/germanium/antimony exports to the US in Dec 2024; the ban on US-bound shipments is suspended until 2026-11-27 after the Oct 2025 Trump-Xi meeting, but the metals stay on the licence list and military end users remain barred. Not confirmed whether it will be extended past Nov 27 2026.",
+  "evidence": "Estimates of China's share range from about 59% to 70% depending on source; USGS profile did not list it above 50%.",
+  "contested": true,
+  "contested_note": "Share figures differ by source and definition.",
+  "sources": [
+   {
+    "title": "China halts ban on gallium, germanium, antimony exports to US but controls remain",
+    "url": "https://www.miningweekly.com/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10",
+    "date": "2025-11-10"
+   },
+   {
+    "title": "China suspends export prohibition on gallium, germanium, antimony, superhard materials to US",
+    "url": "https://fastmarkets.com/insights/china-suspends-export-prohibition-on-superhard-materials-us",
+    "date": "2025-11-09"
+   },
+   {
+    "title": "USGS National Minerals Information Center: China",
+    "url": "https://www.usgs.gov/centers/national-minerals-information-center/china",
+    "date": "2026-01-01"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": "antimony",
+  "name": "Antimony",
+  "category": "minerals",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Xikuangshan antimony mine area, Lengshuijiang, Hunan",
+   "country": "China",
+   "lat": 27.69,
+   "lon": 111.43
+  },
+  "to": {
+   "site": "US munitions and electronics, Pennsylvania",
+   "country": "United States",
+   "lat": 40.27,
+   "lon": -76.88
+  },
+  "what_it_is": "A metal used in flame retardants, batteries and ammunition.",
+  "used_for": "Defense, flame-retardant electronics, some chip processing.",
+  "status": "restricted",
+  "status_detail": "China banned gallium/germanium/antimony exports to the US in Dec 2024; the ban on US-bound shipments is suspended until 2026-11-27 after the Oct 2025 Trump-Xi meeting, but the metals stay on the licence list and military end users remain barred. Not confirmed whether it will be extended past Nov 27 2026.",
+  "evidence": "China produces roughly half of world antimony by secondary estimates.",
+  "contested": true,
+  "contested_note": "Estimates of China's share vary (about 48% to 50%+).",
+  "sources": [
+   {
+    "title": "China suspends export prohibition on gallium, germanium, antimony, superhard materials to US",
+    "url": "https://fastmarkets.com/insights/china-suspends-export-prohibition-on-superhard-materials-us",
+    "date": "2025-11-09"
+   },
+   {
+    "title": "China halts ban on gallium, germanium, antimony exports to US but controls remain",
+    "url": "https://www.miningweekly.com/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10",
+    "date": "2025-11-10"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": "rare-earths-heavy",
+  "name": "Heavy rare earths (dysprosium, terbium)",
+  "category": "minerals",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Rare earth processing, Ganzhou, Jiangxi",
+   "country": "China",
+   "lat": 25.83,
+   "lon": 114.93
+  },
+  "to": {
+   "site": "Northern Virginia data center cluster, Ashburn",
+   "country": "United States",
+   "lat": 39.04,
+   "lon": -77.49
+  },
+  "what_it_is": "Special metals that make magnets keep working at high heat.",
+  "used_for": "Magnets for cooling fans, hard drives, motors, defense systems.",
+  "status": "restricted",
+  "status_detail": "April 2025 licence rules on seven heavy rare earths remain in force. The broader Oct 2025 expansion (MOFCOM Announcement 70) is suspended to 2026-11-10; reports say the truce is extended to 2027-01-10 but no new MOFCOM notice was found as of mid-Oct 2026.",
+  "evidence": "IEA: China has over 90% of rare earth refining.",
+  "contested": false,
+  "sources": [
+   {
+    "title": "IEA warns rare earth supply diversification lags rising demand (Anadolu)",
+    "url": "https://aa.com.tr/en/economy/international-energy-agency-warns-rare-earth-supply-diversification-lags-rising-global-demand/3898514",
+    "date": "2026-01-01"
+   },
+   {
+    "title": "China's Rare-Earth Export Pause: What Ends on 10 November",
+    "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/",
+    "date": "2026-10-19"
+   },
+   {
+    "title": "Chinese rare earth exports: Trump-Xi truce extended to Jan 2027",
+    "url": "https://www.rinnovabili.net/policy-and-affairs/environmental-policies/chinese-rare-earth-exports-trump-xi-truce/",
+    "date": "2026-10-01"
+   },
+   {
+    "title": "China Hits Pause on Rare-Earth Export Controls (Clark Hill)",
+    "url": "https://clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains",
+    "date": "2025-11-01"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "rare-earth-magnets",
+  "name": "Rare earth permanent magnets",
+  "category": "datacenter-hardware",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Magnet manufacturing, Baotou, Inner Mongolia",
+   "country": "China",
+   "lat": 40.66,
+   "lon": 109.84
+  },
+  "to": {
+   "site": "US auto and defense electronics hub, Detroit",
+   "country": "United States",
+   "lat": 42.33,
+   "lon": -83.05
+  },
+  "what_it_is": "Very strong small magnets used in motors and drives.",
+  "used_for": "Server fans, hard drive motors, EVs, missiles, robotics.",
+  "status": "restricted",
+  "status_detail": "Licences needed for magnets containing dysprosium or terbium since April 2025; that part was never suspended. Oct 2025 rules are paused until at least 2026-11-10 (maybe 2027-01-10).",
+  "evidence": "IEA: nearly 95% of permanent magnet production is in China.",
+  "contested": false,
+  "sources": [
+   {
+    "title": "IEA warns rare earth supply diversification lags rising demand (Anadolu)",
+    "url": "https://aa.com.tr/en/economy/international-energy-agency-warns-rare-earth-supply-diversification-lags-rising-global-demand/3898514",
+    "date": "2026-01-01"
+   },
+   {
+    "title": "Rare Earth Magnets: China's November 10 Deadline and US Gap Money Can't Close",
+    "url": "https://www.techtimes.com/articles/328392/20261002/rare-earth-magnets-chinas-november-10-deadline-us-gap-money-cant-close.htm",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "China's Rare-Earth Export Pause: What Ends on 10 November",
+    "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/",
+    "date": "2026-10-19"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "graphite",
+  "name": "Battery-grade graphite",
+  "category": "minerals",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Graphite anode plants, Jixi, Heilongjiang",
+   "country": "China",
+   "lat": 45.3,
+   "lon": 130.97
+  },
+  "to": {
+   "site": "US battery and data center backup supply chain, Ohio",
+   "country": "United States",
+   "lat": 39.96,
+   "lon": -82.99
+  },
+  "what_it_is": "The carbon material that forms the negative side of lithium-ion batteries.",
+  "used_for": "Batteries for data center backup power and EVs.",
+  "status": "restricted",
+  "status_detail": "Dec 2023 licence rules apply. Tighter end-use checks on US-bound graphite were suspended until 2026-11-27 and not confirmed extended.",
+  "evidence": "IEA: over 90% of processed graphite comes from China.",
+  "contested": false,
+  "sources": [
+   {
+    "title": "IEA outlook (Syrah Resources summary)",
+    "url": "https://www.syrahresources.com.au/news/iea-outlook-reinforces-syrahs-first-mover-advantage-in-us-anode-markets",
+    "date": "2025-05-21"
+   },
+   {
+    "title": "China suspends export prohibition on gallium, germanium, antimony, superhard materials to US",
+    "url": "https://fastmarkets.com/insights/china-suspends-export-prohibition-on-superhard-materials-us",
+    "date": "2025-11-09"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "li-ion-cells",
+  "name": "Lithium-ion battery cells and cathode tech",
+  "category": "datacenter-hardware",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "CATL HQ and cell plants, Ningde, Fujian",
+   "country": "China",
+   "lat": 26.66,
+   "lon": 119.55
+  },
+  "to": {
+   "site": "Northern Virginia data center cluster, Ashburn",
+   "country": "United States",
+   "lat": 39.04,
+   "lon": -77.49
+  },
+  "what_it_is": "The rechargeable battery cells that hold power for emergency backup.",
+  "used_for": "Data center UPS and energy storage.",
+  "status": "dependency",
+  "status_detail": "Not under an export ban we could confirm. Oct 2025 lithium-battery and graphite-anode controls were part of the suspended package (to 2026-11-10). China's cell share not confirmed by our searches.",
+  "evidence": "Share of cell production not verified.",
+  "contested": false,
+  "sources": [
+   {
+    "title": "China Hits Pause on Rare-Earth Export Controls (Clark Hill)",
+    "url": "https://clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains",
+    "date": "2025-11-01"
+   },
+   {
+    "title": "China's Rare-Earth Export Pause: What Ends on 10 November",
+    "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/",
+    "date": "2026-10-19"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": "mature-chips",
+  "name": "Mature-node (older) chips",
+  "category": "fabrication",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "SMIC, Shanghai",
+   "country": "China",
+   "lat": 31.2,
+   "lon": 121.6
+  },
+  "to": {
+   "site": "US auto and industrial electronics hub, Detroit",
+   "country": "United States",
+   "lat": 42.33,
+   "lon": -83.05
+  },
+  "what_it_is": "Older, cheaper chips (28nm and larger) used in power supplies, cars and servers.",
+  "used_for": "Power management, microcontrollers, auto, defense electronics.",
+  "status": "dependency",
+  "status_detail": "China is adding mature-node capacity fast. The 2025 Nexperia split showed Western users could be cut off from Chinese-packaged chips.",
+  "evidence": "TrendForce (2024): Chinese makers to hold about 25% of mature-node capacity of top 10 foundries.",
+  "contested": false,
+  "sources": [
+   {
+    "title": "China's Strides in Weaponising the Legacy Chips Supply Chain (SOAS)",
+    "url": "https://blogs.soas.ac.uk/china-institute/2025/12/15/china-legacy-chips-supply-chain/",
+    "date": "2025-12-15"
+   },
+   {
+    "title": "Nexperia China begins making own chips after split (TechSpot)",
+    "url": "https://www.techspot.com/news/111638-nexperia-china-begins-making-own-chips-after-split.html",
+    "date": "2025-12-01"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "nexperia-china",
+  "name": "Nexperia China discrete chips and packaging",
+  "category": "fabrication",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Nexperia plant, Dongguan",
+   "country": "China",
+   "lat": 23.02,
+   "lon": 113.75
+  },
+  "to": {
+   "site": "European and US carmakers, Stuttgart",
+   "country": "Germany",
+   "lat": 48.78,
+   "lon": 9.18
+  },
+  "what_it_is": "Basic chips (diodes, transistors) finished in China for a Dutch-owned firm.",
+  "used_for": "Cars and electronics.",
+  "status": "dependency",
+  "status_detail": "After the Dutch government seized control of Nexperia in Oct 2025 China restricted its chip exports, then the China unit moved to local wafer supply. Present status not verified.",
+  "evidence": "Nexperia China is a split-off unit sourcing wafers from Chinese suppliers (secondary report).",
+  "contested": false,
+  "sources": [
+   {
+    "title": "Nexperia China begins making own chips after split (TechSpot)",
+    "url": "https://www.techspot.com/news/111638-nexperia-china-begins-making-own-chips-after-split.html",
+    "date": "2025-12-01"
+   },
+   {
+    "title": "China's Strides in Weaponising the Legacy Chips Supply Chain (SOAS)",
+    "url": "https://blogs.soas.ac.uk/china-institute/2025/12/15/china-legacy-chips-supply-chain/",
+    "date": "2025-12-15"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": "tungsten",
+  "name": "Tungsten",
+  "category": "minerals",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Tungsten processing, Zhuzhou, Hunan",
+   "country": "China",
+   "lat": 27.83,
+   "lon": 113.15
+  },
+  "to": {
+   "site": "US chip fab, Phoenix",
+   "country": "United States",
+   "lat": 33.45,
+   "lon": -112.07
+  },
+  "what_it_is": "A very hard metal; a tungsten gas is used to make chip wiring contacts.",
+  "used_for": "Chipmaking, cutting tools, defense.",
+  "status": "restricted",
+  "status_detail": "Tungsten was added to Chinese export licensing in Feb 2025; current status not verified in this research.",
+  "evidence": "Not verified.",
+  "contested": false,
+  "sources": [
+   {
+    "title": "China Hits Pause on Rare-Earth Export Controls (Clark Hill)",
+    "url": "https://clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains",
+    "date": "2025-11-01"
+   }
+  ],
+  "confidence": "low"
+ },
+ {
+  "id": "myanmar-rare-earths",
+  "name": "Myanmar heavy rare earth ore",
+  "category": "minerals",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Pangwa, Kachin State",
+   "country": "Myanmar",
+   "lat": 25.68,
+   "lon": 98.1
+  },
+  "to": {
+   "site": "Rare earth processing, Ganzhou, Jiangxi",
+   "country": "China",
+   "lat": 25.83,
+   "lon": 114.93
+  },
+  "what_it_is": "Ore from Myanmar rebel-held mines that Chinese plants turn into magnet metals.",
+  "used_for": "Feedstock for heavy rare earths in magnets.",
+  "status": "dependency",
+  "status_detail": "Flows are disrupted by fighting in Kachin. Reuters reports China threatened to halt purchases from KIA areas.",
+  "evidence": "About 12,944 t of rare earth oxides and metals went from Myanmar to China in Jan-May 2025.",
+  "contested": false,
+  "partner_flow": true,
+  "sources": [
+   {
+    "title": "Reuters via Republic of Mining: Myanmar rebels disrupt China rare earth trade",
+    "url": "https://republicofmining.com/2025/03/28/insight-myanmar-rebels-disrupt-china-rare-earth-trade-sparking-regional-scramble-by-devjyot-ghoshal-poppy-mcpherson-amy-lv-and-neha-arora-reuters-march-27-2025",
+    "date": "2025-03-27"
+   },
+   {
+    "title": "ISP-Myanmar: Conflict Economy of Myanmar Rare Earth",
+    "url": "https://ispmyanmar.com/wp-content/uploads/2025/04/Conflict_Economy_Myanmar_Rare_Earth_ENG.pdf",
+    "date": "2025-04-01"
+   }
+  ],
+  "confidence": "medium"
+ },
+ {
+  "id": "drc-cobalt",
+  "name": "DRC cobalt and copper (Chinese-owned)",
+  "category": "minerals",
+  "leverage": "china",
+  "line_style": "solid",
+  "from": {
+   "site": "Tenke Fungurume mine (CMOC), Lualaba",
+   "country": "DR Congo",
+   "lat": -10.57,
+   "lon": 26.2
+  },
+  "to": {
+   "site": "Cobalt refining, Ganzhou, Jiangxi",
+   "country": "China",
+   "lat": 25.83,
+   "lon": 114.93
+  },
+  "what_it_is": "Congo mines owned by Chinese firms, with ore refined in China.",
+  "used_for": "Cobalt and copper for batteries and data center power cabling.",
+  "status": "dependency",
+  "status_detail": "CMOC owns 80% of Tenke Fungurume and 71.25% of Kisanfu. China's refining share not verified.",
+  "evidence": "DRC is about 60% of world cobalt (IMF, via press); Chinese firms reportedly control over 70% of DRC copper output.",
+  "contested": false,
+  "partner_flow": true,
+  "sources": [
+   {
+    "title": "China's CMOC eyes further growth in Congo after taking cobalt crown",
+    "url": "https://www.mining.com/web/chinas-cmoc-eyes-further-growth-in-congo-and-beyond-after-taking-cobalt-crown/",
+    "date": "2024-02-07"
+   },
+   {
+    "title": "Caixin: China Digs In to Boost Mining in DRC",
+    "url": "https://www.caixinglobal.com/2024-11-18/cover-story-china-digs-in-to-boost-mining-in-democratic-republic-of-congo-102258572.html",
+    "date": "2024-11-18"
+   }
+  ],
+  "confidence": "medium"
+ }
+]

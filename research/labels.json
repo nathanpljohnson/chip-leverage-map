@@ -1,0 +1,182 @@
+{
+ "nvidia-blackwell-flagship": {
+  "short": "Nvidia Blackwell chips",
+  "tip": "Nvidia's newest, fastest AI chips cannot be sold to China, and a cut-down version was reportedly refused."
+ },
+ "nvidia-h200-china": {
+  "short": "Nvidia H200",
+  "tip": "Powerful older Nvidia AI chips the US licenses to China, though Beijing has allowed only small batches."
+ },
+ "nvidia-h20-china": {
+  "short": "Nvidia H20",
+  "tip": "A deliberately slowed Nvidia chip made for China, now largely replaced by the H200."
+ },
+ "amd-mi308-china": {
+  "short": "AMD MI308",
+  "tip": "AMD's cut-down AI chip for China needs a US license, and AMD pays a 15% fee on shipments."
+ },
+ "eda-software": {
+  "short": "Chip design software",
+  "tip": "Software used to design every advanced chip; US limits on China were imposed in May 2025, then lifted."
+ },
+ "us-etch-deposition-tools": {
+  "short": "US chip-etching tools",
+  "tip": "US machines that build chips are largely cut off for Chinese advanced fabs; older-node sales continue."
+ },
+ "us-inspection-tools": {
+  "short": "Chip inspection tools",
+  "tip": "KLA machines find wafer defects; Entity List firms are cut off from advanced tools under US licensing."
+ },
+ "tool-servicing-parts": {
+  "short": "Fab servicing and parts",
+  "tip": "Engineers, parts and updates that keep US machines running in Chinese fabs need a US license."
+ },
+ "micron-hbm": {
+  "short": "Micron HBM",
+  "tip": "Fast stacked memory that AI chips need; US rules limit sales to China and Micron says it sold none."
+ },
+ "asml-euv": {
+  "short": "EUV lithography",
+  "tip": "Only ASML makes these machines; none has shipped to China, which is reportedly about a decade away."
+ },
+ "asml-duv": {
+  "short": "ASML DUV lithography",
+  "tip": "Older ASML printing machines can still make fairly advanced chips; the most advanced need Dutch licenses."
+ },
+ "tokyo-electron-tools": {
+  "short": "Tokyo Electron tools",
+  "tip": "Japan controls 23 categories of chipmaking tools, but most sales to other Chinese customers still flow."
+ },
+ "japan-photoresist": {
+  "short": "Photoresist chemicals",
+  "tip": "Japanese firms dominate these chip-printing coatings; a reported shipment halt is rumor, not confirmed."
+ },
+ "tsmc-foundry": {
+  "short": "TSMC chip manufacturing",
+  "tip": "The world's best contract chip maker stopped shipping advanced AI chips to many Chinese designers."
+ },
+ "sk-hynix-samsung-hbm": {
+  "short": "Korean HBM memory",
+  "tip": "Korean firms make most AI memory; US rules limit sales to China, which stockpiled Samsung memory first."
+ },
+ "korean-fabs-in-china-veu": {
+  "short": "Korean fabs in China",
+  "tip": "Samsung and SK Hynix plants in China lost their US waiver but reportedly got 2026 licenses to keep running."
+ },
+ "tsmc-cowos-packaging": {
+  "short": "TSMC CoWoS packaging",
+  "tip": "TSMC's chip-stacking method is the AI standard; China is blocked in practice and Huawei uses a copy."
+ },
+ "supermicro-liaw-indictment": {
+  "short": "Super Micro $2.5B case",
+  "tip": "Charged, not proven: a Super Micro co-founder is accused of routing $2.5B of Nvidia servers to China."
+ },
+ "supermicro-obon-siamai-alibaba": {
+  "short": "Bangkok OBON allegation",
+  "tip": "Alleged by media only: a Bangkok firm was reportedly the go-between in the Super Micro case; denied."
+ },
+ "singapore-dell-supermicro-fraud": {
+  "short": "Singapore server fraud",
+  "tip": "Charged, not proven: Singapore fraud case over about $390M of Dell and Super Micro servers."
+ },
+ "earthmade-lui-malaysia-singapore": {
+  "short": "Earthmade server case",
+  "tip": "Charged, not proven: a California dealer is accused of selling about $300M of Nvidia servers bound for China."
+ },
+ "operation-gatekeeper-hsu": {
+  "short": "Operation Gatekeeper",
+  "tip": "Convicted by guilty plea: a Texas exporter shipped at least $160M of Nvidia H100 and H200 chips to China."
+ },
+ "hong-kong-relabel-ring": {
+  "short": "Hong Kong relabel ring",
+  "tip": "Charged, not proven: two men are accused of relabeling Nvidia chips as another brand before shipping."
+ },
+ "tampa-janford-a100": {
+  "short": "Janford A100 case",
+  "tip": "Charged, not proven: a fake Florida realty firm allegedly shipped 400 Nvidia A100 chips toward China."
+ },
+ "taiwan-b300-japan-hk": {
+  "short": "Taiwan B300 case",
+  "tip": "Charged, not proven: nine people in Taiwan allegedly forged papers and sent B300 servers to China."
+ },
+ "taiwan-supermicro-hk-detained": {
+  "short": "Taiwan Super Micro case",
+  "tip": "Alleged: three men detained for falsifying papers on servers sent to Hong Kong; mainland link still checked."
+ },
+ "tsmc-sophgo-huawei-910b": {
+  "short": "Sophgo Huawei chip leak",
+  "tip": "Reported: a TSMC-made chip turned up in Huawei's Ascend 910B AI processor; no penalty is confirmed."
+ },
+ "cloud-remote-access-loophole": {
+  "short": "Cloud GPU rentals",
+  "tip": "Alleged gap: rules cover chip hardware, not renting banned Nvidia chips abroad, which firms reportedly do."
+ },
+ "megaspeed-singapore-malaysia": {
+  "short": "Megaspeed Singapore",
+  "tip": "Alleged, no charges: a Singapore cloud firm bought ~$2B of Nvidia chips for sites serving Chinese clients."
+ },
+ "aivres-inspur-rename": {
+  "short": "Inspur's Aivres loophole",
+  "tip": "Reported: Inspur's US arm Aivres was never blacklisted and kept buying Nvidia's newest chips."
+ },
+ "entity-list-affiliates-rule-gap": {
+  "short": "Affiliates rule gap",
+  "tip": "A rule covering firms 50% owned by blacklisted companies is suspended, so subsidiaries can keep buying."
+ },
+ "china-hbm-stockpiling": {
+  "short": "Samsung HBM stockpiling",
+  "tip": "Reported: Chinese firms bought up Samsung memory before the December 2024 ban, which was legal then."
+ },
+ "china-chipmaking-tool-stockpiling": {
+  "short": "Tool stockpiling",
+  "tip": "Reported: China rushed to import chipmaking machines before new limits, which blunts the controls."
+ },
+ "gallium": {
+  "short": "Gallium",
+  "tip": "China banned gallium exports to the US in Dec 2024; the ban is suspended until Nov 27, 2026."
+ },
+ "germanium": {
+  "short": "Germanium",
+  "tip": "China banned germanium exports to the US in Dec 2024; the ban is suspended until Nov 27, 2026."
+ },
+ "antimony": {
+  "short": "Antimony",
+  "tip": "China banned antimony exports to the US in Dec 2024; the ban is suspended until Nov 27, 2026."
+ },
+ "rare-earths-heavy": {
+  "short": "Heavy rare earths",
+  "tip": "Metals that keep magnets working at high heat; China's April 2025 license rules remain in force."
+ },
+ "rare-earth-magnets": {
+  "short": "Rare earth magnets",
+  "tip": "Strong small magnets used in motors and server fans; licenses are needed for heavy rare earth ones."
+ },
+ "graphite": {
+  "short": "Battery graphite",
+  "tip": "The carbon in battery anodes; over 90% of processed graphite comes from China, under license rules."
+ },
+ "li-ion-cells": {
+  "short": "Lithium-ion cells",
+  "tip": "Backup battery cells for data centers; no confirmed export ban, but related controls were suspended."
+ },
+ "mature-chips": {
+  "short": "Older-node chips",
+  "tip": "Cheap older chips in power supplies and servers; China is adding capacity fast, raising cutoff risk."
+ },
+ "nexperia-china": {
+  "short": "Nexperia China",
+  "tip": "Basic chips finished in China for a Dutch firm; the 2025 split showed Western buyers could be cut off."
+ },
+ "tungsten": {
+  "short": "Tungsten",
+  "tip": "A very hard metal, and a tungsten gas is used for chip wiring; China added it to export licensing in Feb 2025."
+ },
+ "myanmar-rare-earths": {
+  "short": "Myanmar rare earth ore",
+  "tip": "Ore from rebel-held Myanmar mines feeds Chinese magnet metals, and fighting disrupts the flow."
+ },
+ "drc-cobalt": {
+  "short": "Congo cobalt and copper",
+  "tip": "Chinese firms own big Congo mines, with the ore refined in China for batteries and power cabling."
+ }
+}

@@ -1,0 +1,2454 @@
+{
+ "as_of": "2026-10-28",
+ "items": [
+  {
+   "id": "nvidia-blackwell-flagship",
+   "name": "Nvidia Blackwell-class AI GPUs",
+   "category": "ai-chips",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "Nvidia HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.37,
+    "lon": -121.96
+   },
+   "to": {
+    "site": "ByteDance, Beijing",
+    "country": "China",
+    "lat": 39.98,
+    "lon": 116.31
+   },
+   "what_it_is": "Nvidia's newest and fastest AI training chips, the industry standard for building frontier AI models.",
+   "used_for": "Training and running the largest AI models.",
+   "status": "blocked",
+   "status_detail": "Top-end Blackwell chips cannot be sold to China. Reports say the White House refused a cut-down Blackwell variant (B30A) for China; the date of that report is unconfirmed, so treat as likely but not certain.",
+   "evidence": "Reported B30A would run at roughly half the speed of Nvidia's B300; talks with the administration were public in Aug 2025.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Nvidia is in talks with Trump administration about new chip for China (PBS)",
+     "url": "https://www.pbs.org/newshour/economy/nvidia-is-in-talks-with-trump-administration-about-new-chip-for-china-companys-ceo-says",
+     "date": "2025-08-22"
+    },
+    {
+     "title": "Nvidia Develops B30A GPU for China Amid US Export Limits",
+     "url": "https://mexicobusiness.news/cloudanddata/news/nvidia-develops-b30a-gpu-china-amid-us-export-limits",
+     "date": "2025-08-25"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "Nvidia earns an estimated 80–90% of AI accelerator revenue (analyst estimate).",
+   "chokepoint_source": {
+    "title": "Silicon Analysts: Nvidia AI accelerator market share 2024–2026",
+    "url": "https://siliconanalysts.com/analysis/nvidia-ai-accelerator-market-share-2024-2026",
+    "date": "2025"
+   },
+   "short_label": "Nvidia Blackwell chips",
+   "tip": "Nvidia's newest, fastest AI chips cannot be sold to China, and a cut-down version was reportedly refused."
+  },
+  {
+   "id": "nvidia-h200-china",
+   "name": "Nvidia H200 (licensed sales)",
+   "category": "ai-chips",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "Nvidia HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.37,
+    "lon": -121.96
+   },
+   "to": {
+    "site": "Tencent, Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 113.93
+   },
+   "what_it_is": "The previous-generation Nvidia Hopper AI chip, still far more powerful than the downgraded chips China was allowed before.",
+   "used_for": "Training large AI models.",
+   "status": "restricted",
+   "status_detail": "US approved case-by-case licenses in Dec 2025/Jan 2026 (25% of revenue to the US government; China volume capped relative to US sales; independent testing). Beijing first blocked imports at customs, then by Aug 2026 reportedly allowed small batches (about 10,000 each to ByteDance and Tencent), with NDRC approval needed and use steered to training. No Sept-Oct 2026 update found.",
+   "evidence": "US clearance allows up to 100,000 H200s per Chinese buyer; Nvidia reportedly holds about 500,000 H200s in inventory.",
+   "contested": true,
+   "contested_note": "Supporters say selling older chips keeps China hooked on US tech and funds the US government; critics say it hands China frontier-class training compute and Beijing is using it selectively to build domestic chips.",
+   "sources": [
+    {
+     "title": "China allows limited Nvidia H200 shipments (Business Standard)",
+     "url": "https://www.business-standard.com/world-news/china-allows-limited-nvidia-h200-shipments-why-is-beijing-easing-curbs-126081900438_1.html",
+     "date": "2026-08-19"
+    },
+    {
+     "title": "China reportedly to allow H200 imports, approvals may fall below 200K (TrendForce)",
+     "url": "https://www.trendforce.com/news/2026/07/09/news-china-reportedly-to-allow-nvidia-h200-imports-but-approvals-may-be-capped-below-200k-chips-less-than-half-requested/",
+     "date": "2026-07-09"
+    },
+    {
+     "title": "Trump approves Nvidia H200 exports to China with 25% fee",
+     "url": "https://aphnetworks.com/news/31117-trump-approves-nvidia-h200-exports-china-25-fee-attached",
+     "date": "2025-12-09"
+    },
+    {
+     "title": "BIS Export Policy Shift (Introl)",
+     "url": "https://introl.com/blog/bis-export-policy-h200-mi325x-china-case-by-case-2026",
+     "date": "2026-01-15"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Nvidia H200",
+   "tip": "Powerful older Nvidia AI chips the US licenses to China, though Beijing has allowed only small batches."
+  },
+  {
+   "id": "nvidia-h20-china",
+   "name": "Nvidia H20 (China-specific chip)",
+   "category": "ai-chips",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "Nvidia HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.37,
+    "lon": -121.96
+   },
+   "to": {
+    "site": "Alibaba, Hangzhou",
+    "country": "China",
+    "lat": 30.28,
+    "lon": 120.02
+   },
+   "what_it_is": "A deliberately slowed-down Nvidia AI chip designed to meet US export limits for China.",
+   "used_for": "Running (inference) and smaller-scale training of AI models.",
+   "status": "restricted",
+   "status_detail": "Banned in April 2025, then licensed again in Aug 2025 with a 15% revenue share to the US. Nvidia reportedly wound down H20 production and inventory is limited; H200 has largely superseded it. Current 2026 volumes not confirmed.",
+   "evidence": "Nvidia agreed to give the US government 15% of H20 China revenue.",
+   "contested": true,
+   "contested_note": "Critics argue the 15% revenue-share deal turns export controls into a fee and may be unconstitutional as an export tax; supporters call it a pragmatic compromise.",
+   "sources": [
+    {
+     "title": "Nvidia is in talks with Trump administration about new chip for China (PBS)",
+     "url": "https://www.pbs.org/newshour/economy/nvidia-is-in-talks-with-trump-administration-about-new-chip-for-china-companys-ceo-says",
+     "date": "2025-08-22"
+    },
+    {
+     "title": "AMD ready to ship licensed AI chips to China and pay 15% fee",
+     "url": "https://investinglive.com/stock-market-update/amd-ready-to-ship-licensed-ai-chips-to-china-and-pay-15-trump-fee-20251204/",
+     "date": "2025-12-04"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Nvidia H20",
+   "tip": "A deliberately slowed Nvidia chip made for China, now largely replaced by the H200."
+  },
+  {
+   "id": "amd-mi308-china",
+   "name": "AMD MI308 AI GPUs",
+   "category": "ai-chips",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "AMD HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.38,
+    "lon": -121.98
+   },
+   "to": {
+    "site": "Alibaba, Hangzhou",
+    "country": "China",
+    "lat": 30.28,
+    "lon": 120.02
+   },
+   "what_it_is": "AMD's cut-down version of its MI300 AI chip made for the China market.",
+   "used_for": "AI model training and inference in data centers.",
+   "status": "restricted",
+   "status_detail": "Needed a license from April 2025 (AMD took an $800M charge); license applications proceeded from July 2025 and AMD said in Dec 2025 it was authorized to ship certain MI308 chips, paying a 15% fee. A more powerful China chip, MI309, reportedly failed the license test. No 2026 shipment data found.",
+   "evidence": "AMD booked about $800 million in charges when the license requirement hit in April 2025.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "AMD takes $800M charge on US license requirement (TechCrunch)",
+     "url": "https://techcrunch.com/2025/04/16/amd-takes-800m-charge-on-us-license-requirement-for-ai-chips",
+     "date": "2025-04-16"
+    },
+    {
+     "title": "AMD ready to ship licensed AI chips to China and pay 15% fee",
+     "url": "https://investinglive.com/stock-market-update/amd-ready-to-ship-licensed-ai-chips-to-china-and-pay-15-trump-fee-20251204/",
+     "date": "2025-12-04"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "AMD MI308",
+   "tip": "AMD's cut-down AI chip for China needs a US license, and AMD pays a 15% fee on shipments."
+  },
+  {
+   "id": "eda-software",
+   "name": "Chip design software (EDA)",
+   "category": "software",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "Synopsys HQ, Sunnyvale",
+    "country": "United States",
+    "lat": 37.39,
+    "lon": -122.03
+   },
+   "to": {
+    "site": "Huawei HiSilicon, Shenzhen",
+    "country": "China",
+    "lat": 22.65,
+    "lon": 114.06
+   },
+   "what_it_is": "The specialized software engineers use to design and test computer chips; three firms (Synopsys, Cadence, Siemens EDA) dominate it.",
+   "used_for": "Designing every advanced chip, including Chinese AI chips.",
+   "status": "allowed",
+   "status_detail": "The US imposed license requirements on EDA sales to China in May 2025, then rescinded them in July 2025 as part of a deal tied to China's rare earth export concessions. No evidence found of reimposition, but the 2026 situation was not directly confirmed.",
+   "evidence": "Synopsys said the May 29, 2025 restriction letter was rescinded effective immediately.",
+   "contested": true,
+   "contested_note": "Critics say lifting EDA curbs traded away a key chokepoint for rare earths; the administration framed it as a reciprocal deal.",
+   "sources": [
+    {
+     "title": "White House lifts chip design export ban on China in exchange for rare earth compromise (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/white-house-lifts-chip-design-export-ban-on-china-in-exchange-for-rare-earth-materials-compromise-export-licences-for-eda-software-sales-no-longer-required",
+     "date": "2025-07-03"
+    },
+    {
+     "title": "US escalates tech war with China: new export curbs hit Cadence, Synopsys (Benzinga)",
+     "url": "https://www.benzinga.com/markets/equities/25/05/45663228/us-escalates-tech-war-with-china-new-export-curbs-hit-cadence-synopsys-as-eda-software-chemicals",
+     "date": "2025-05-28"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "Synopsys, Cadence and Siemens together hold an estimated 70–85% of chip design software, depending on how the market is counted.",
+   "chokepoint_source": {
+    "title": "SemiAnalysis: EDA market primer",
+    "url": "https://newsletter.semianalysis.com/p/eda-market-primer",
+    "date": "2025"
+   },
+   "short_label": "Chip design software",
+   "tip": "Software used to design every advanced chip; US limits on China were imposed in May 2025, then lifted."
+  },
+  {
+   "id": "us-etch-deposition-tools",
+   "name": "Etch and deposition tools (Applied Materials, Lam)",
+   "category": "chipmaking-tools",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "Applied Materials HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.38,
+    "lon": -121.98
+   },
+   "to": {
+    "site": "SMIC, Shanghai",
+    "country": "China",
+    "lat": 31.2,
+    "lon": 121.6
+   },
+   "what_it_is": "Machines that lay down and carve away ultra-thin layers on silicon wafers to build chips.",
+   "used_for": "Manufacturing advanced logic and memory chips, including Huawei's AI chips.",
+   "status": "restricted",
+   "status_detail": "Advanced-node tools need licenses and Entity List firms (SMIC, Huawei fabs) are largely cut off, while mature-node sales continue. The Sept 2025 Affiliates Rule extended limits to 50%-owned subsidiaries; reportedly suspended until Nov 9, 2026 unless extended. Applied paid a record $252M BIS settlement in Feb 2026 over ion implanters shipped to SMIC via South Korea. Lam (Fremont) is the other major supplier; China is a large share of both firms' revenue.",
+   "evidence": "Applied expected the Affiliates Rule to cut about $600M from fiscal 2026 sales.",
+   "contested": true,
+   "contested_note": "Industry argues restrictions hand share to Japanese and Chinese toolmakers; hawks say gaps still let China build advanced chips.",
+   "sources": [
+    {
+     "title": "BIS 2026 enforcement agenda takes shape (Mondaq)",
+     "url": "https://www.mondaq.com/unitedstates/export-controls-trade-investment-sanctions/1772088/biss-2026-enforcement-agenda-takes-shape",
+     "date": "2026-03-01"
+    },
+    {
+     "title": "Applied Materials fined $252M for ignoring export curbs (Bits&Chips)",
+     "url": "https://bits-chips.com/article/applied-materials-fined-252m-for-ignoring-export-curbs/",
+     "date": "2026-02-01"
+    },
+    {
+     "title": "US Chip Export Controls Timeline (Referently)",
+     "url": "https://referently.com/us-chip-export-controls-timeline-every-major-bis-rule-on-china-since-2022/",
+     "date": "2026-01-01"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "US chip-etching tools",
+   "tip": "US machines that build chips are largely cut off for Chinese advanced fabs; older-node sales continue."
+  },
+  {
+   "id": "us-inspection-tools",
+   "name": "Inspection and metrology tools (KLA)",
+   "category": "chipmaking-tools",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "KLA HQ, Milpitas",
+    "country": "United States",
+    "lat": 37.43,
+    "lon": -121.9
+   },
+   "to": {
+    "site": "YMTC, Wuhan",
+    "country": "China",
+    "lat": 30.46,
+    "lon": 114.43
+   },
+   "what_it_is": "Machines that scan wafers for microscopic defects so fabs can fix problems and raise yield.",
+   "used_for": "Making advanced chips at usable yields; KLA has near-monopoly share in many inspection steps.",
+   "status": "restricted",
+   "status_detail": "Same licensing regime as other US tools; YMTC and other Entity List firms cut off from advanced tools since Dec 2022. One unverified report claims new BIS tool rules in April 2026 hit KLA shares; not confirmed from a primary source.",
+   "evidence": "KLA shares reportedly fell 4.2% on April 16, 2026 after export-control news (unverified promotional source).",
+   "contested": false,
+   "sources": [
+    {
+     "title": "US Chip Export Controls Timeline (Referently)",
+     "url": "https://referently.com/us-chip-export-controls-timeline-every-major-bis-rule-on-china-since-2022/",
+     "date": "2026-01-01"
+    },
+    {
+     "title": "BIS 2026 enforcement agenda (Mondaq)",
+     "url": "https://www.mondaq.com/unitedstates/export-controls-trade-investment-sanctions/1772088/biss-2026-enforcement-agenda-takes-shape",
+     "date": "2026-03-01"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Chip inspection tools",
+   "tip": "KLA machines find wafer defects; Entity List firms are cut off from advanced tools under US licensing."
+  },
+  {
+   "id": "tool-servicing-parts",
+   "name": "Servicing, spare parts and software updates for fab tools",
+   "category": "chipmaking-tools",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "Lam Research HQ, Fremont",
+    "country": "United States",
+    "lat": 37.52,
+    "lon": -121.97
+   },
+   "to": {
+    "site": "SMIC Beijing fab",
+    "country": "China",
+    "lat": 39.79,
+    "lon": 116.52
+   },
+   "what_it_is": "The engineers, replacement parts and software patches that keep already-installed US machines running in Chinese fabs.",
+   "used_for": "Keeping existing Chinese chip production lines running.",
+   "status": "restricted",
+   "status_detail": "US-person support for advanced fabs requires a license since Oct 2022. BIS removed Samsung and SK hynix China fabs from the VEU program effective Dec 31, 2025, with annual licenses reportedly granted for 2026 (not confirmed from a primary source). BIS also penalizes in-China transfers to SMIC (e.g. Exyte, Jan 2026).",
+   "evidence": "Applied Materials and others saw China service revenue pressured; Exyte paid $1.5M for in-China transfer to SMIC Beijing.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "BIS Export Policy Shift (Introl)",
+     "url": "https://introl.com/blog/bis-export-policy-h200-mi325x-china-case-by-case-2026",
+     "date": "2026-01-15"
+    },
+    {
+     "title": "BIS 2026 enforcement agenda (Mondaq)",
+     "url": "https://www.mondaq.com/unitedstates/export-controls-trade-investment-sanctions/1772088/biss-2026-enforcement-agenda-takes-shape",
+     "date": "2026-03-01"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Fab servicing and parts",
+   "tip": "Engineers, parts and updates that keep US machines running in Chinese fabs need a US license."
+  },
+  {
+   "id": "micron-hbm",
+   "name": "High-bandwidth memory (HBM)",
+   "category": "memory",
+   "leverage": "us",
+   "line_style": "solid",
+   "from": {
+    "site": "Micron HQ, Boise",
+    "country": "United States",
+    "lat": 43.52,
+    "lon": -116.17
+   },
+   "to": {
+    "site": "Huawei, Shenzhen",
+    "country": "China",
+    "lat": 22.65,
+    "lon": 114.06
+   },
+   "what_it_is": "Very fast stacked memory placed next to AI chips; AI accelerators need it to perform.",
+   "used_for": "Pairing with AI GPUs for training and inference.",
+   "status": "blocked",
+   "status_detail": "Dec 2024 BIS rule restricts HBM exports to China; Micron says it has not sold HBM there. China's CXMT is reportedly aiming for HBM3 production by late 2026, so this leverage is eroding. Samsung (Korea) is the main supplier Chinese firms stocked up on before the ban.",
+   "evidence": "Micron reportedly has sold no HBM to China since the Dec 2024 rule.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "US ratchets up sanctions: no more HBM memory for China (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/u-s-ratchets-up-sanctions-to-curtail-chinas-ai-and-military-tech-no-more-hbm-memory-for-china",
+     "date": "2024-12-02"
+    },
+    {
+     "title": "Mapping China's HBM Advances (ChinaTalk)",
+     "url": "https://www.chinatalk.media/p/mapping-chinas-hbm-advancement",
+     "date": "2025-06-01"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "Only three companies make HBM: SK Hynix (~62%), Micron (~21%) and Samsung (~17%) by Q2 2025 shipments.",
+   "chokepoint_source": {
+    "title": "Mark LaPedus: SK Hynix, Micron gain share in HBM (Counterpoint data)",
+    "url": "https://marklapedus.substack.com/p/sk-hynix-micron-gain-share-in-hbm",
+    "date": "2025-09"
+   },
+   "short_label": "Micron HBM",
+   "tip": "Fast stacked memory that AI chips need; US rules limit sales to China and Micron says it sold none."
+  },
+  {
+   "id": "asml-euv",
+   "name": "EUV lithography machines",
+   "category": "chipmaking-tools",
+   "leverage": "ally",
+   "line_style": "solid",
+   "from": {
+    "site": "ASML HQ, Veldhoven",
+    "country": "Netherlands",
+    "lat": 51.41,
+    "lon": 5.45
+   },
+   "to": {
+    "site": "SMIC, Shanghai",
+    "country": "China",
+    "lat": 31.2,
+    "lon": 121.6
+   },
+   "what_it_is": "The only machines in the world that print the finest circuit patterns on chips, made solely by ASML.",
+   "used_for": "Making the most advanced AI chips (below roughly 5nm) at scale.",
+   "status": "blocked",
+   "status_detail": "No EUV machine has been shipped to China; Dutch and US controls bar it. Press coverage describes China as roughly a decade or more away from its own EUV tool.",
+   "evidence": "ASML is the world's only EUV maker; UBS analysts put China's gap at at least a decade (as reported by Asiae/Bloomberg-derived coverage).",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Zeiss/ASML EUV coverage (Asiae, Zeiss semiconductor CEO)",
+     "url": "https://view.asiae.co.kr/en/article/2026090314274339540",
+     "date": "2026-09-03"
+    },
+    {
+     "title": "ASML caught between US and China over MATCH Act (IO+)",
+     "url": "https://ioplus.nl/en/posts/asml-caught-between-us-and-china-over-match-act",
+     "date": "2026-04-20"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "ASML is the only company in the world that makes EUV machines.",
+   "short_label": "EUV lithography",
+   "tip": "Only ASML makes these machines; none has shipped to China, which is reportedly about a decade away."
+  },
+  {
+   "id": "asml-duv",
+   "name": "ASML DUV immersion lithography and servicing",
+   "category": "chipmaking-tools",
+   "leverage": "ally",
+   "line_style": "solid",
+   "from": {
+    "site": "ASML HQ, Veldhoven",
+    "country": "Netherlands",
+    "lat": 51.41,
+    "lon": 5.45
+   },
+   "to": {
+    "site": "SMIC, Shanghai",
+    "country": "China",
+    "lat": 31.2,
+    "lon": 121.6
+   },
+   "what_it_is": "Older-generation chip printing machines that, used repeatedly, can still make fairly advanced chips.",
+   "used_for": "Making 7nm-class chips for Huawei AI processors and most mature-node chips in China.",
+   "status": "restricted",
+   "status_detail": "The most advanced DUV immersion tools need Dutch licenses; older DUV tools still sell. The pending US MATCH Act (introduced April 2026, not passed as of Oct 2026) would extend controls to DUV and possibly servicing; the Dutch government opposes it.",
+   "evidence": "China was 36% of ASML sales in 2024 and 33% in 2025 (its largest market); ASML guides to about 20% in 2026.",
+   "contested": true,
+   "contested_note": "ASML and the Dutch government argue broader curbs speed Chinese self-reliance and hurt allied firms; US hawks say they are needed to stop 7nm/5nm expansion.",
+   "sources": [
+    {
+     "title": "ASML expects China revenue drop (Caixin)",
+     "url": "https://www.caixinglobal.com/2026-01-29/asml-expects-china-revenue-drop-following-backlog-fueled-surge-102409285.html",
+     "date": "2026-01-29"
+    },
+    {
+     "title": "ASML caught between US and China over MATCH Act (IO+)",
+     "url": "https://ioplus.nl/en/posts/asml-caught-between-us-and-china-over-match-act",
+     "date": "2026-04-20"
+    },
+    {
+     "title": "MATCH Act explained (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/congress-moves-to-strip-commerce-of-chip-export-discretion-with-the-match-act",
+     "date": "2026-04-03"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "ASML DUV lithography",
+   "tip": "Older ASML printing machines can still make fairly advanced chips; the most advanced need Dutch licenses."
+  },
+  {
+   "id": "tokyo-electron-tools",
+   "name": "Etch, deposition and coating tools",
+   "category": "chipmaking-tools",
+   "leverage": "ally",
+   "line_style": "solid",
+   "from": {
+    "site": "Tokyo Electron HQ, Akasaka, Tokyo",
+    "country": "Japan",
+    "lat": 35.67,
+    "lon": 139.74
+   },
+   "to": {
+    "site": "SMIC, Shanghai",
+    "country": "China",
+    "lat": 31.2,
+    "lon": 121.6
+   },
+   "what_it_is": "Machines that carve and coat silicon wafers; Tokyo Electron is a world leader.",
+   "used_for": "Fabricating logic and memory chips, including chips for AI hardware.",
+   "status": "restricted",
+   "status_detail": "Japan has controlled 23 categories of advanced chipmaking equipment since July 2023, with more items added in 2025. Most tool sales to non-listed Chinese customers still flow legally. The US MATCH Act proposal would pressure Japan to go further and may cover servicing.",
+   "evidence": "China was 34.1% of Tokyo Electron revenue in the fiscal year ended March 2026, falling to 26.8% in the final quarter.",
+   "contested": true,
+   "contested_note": "Japanese firms say further curbs cost them sales without stopping Chinese progress.",
+   "sources": [
+    {
+     "title": "Tokyo Electron China sales share (earnings call coverage)",
+     "url": "https://financialfilings.com/filings/tokyo-electron-limited/call-transcript/2026/48489164/",
+     "date": "2026-05-01"
+    },
+    {
+     "title": "Semiconductor export regulation 2026 (Timewell)",
+     "url": "https://timewell.jp/en/columns/semiconductor-export-regulation-2026"
+    },
+    {
+     "title": "Japan chip equipment makers China sales drop (Crypto Briefing)",
+     "url": "https://cryptobriefing.com/japan-chip-equipment-china-sales-drop/"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Tokyo Electron tools",
+   "tip": "Japan controls 23 categories of chipmaking tools, but most sales to other Chinese customers still flow."
+  },
+  {
+   "id": "japan-photoresist",
+   "name": "Photoresist and high-purity chemicals",
+   "category": "materials",
+   "leverage": "ally",
+   "line_style": "solid",
+   "from": {
+    "site": "Shin-Etsu Chemical HQ, Tokyo",
+    "country": "Japan",
+    "lat": 35.68,
+    "lon": 139.77
+   },
+   "to": {
+    "site": "SMIC, Shanghai",
+    "country": "China",
+    "lat": 31.2,
+    "lon": 121.6
+   },
+   "what_it_is": "Light-sensitive coatings and ultra-pure chemicals used to print patterns on wafers; Japanese firms dominate.",
+   "used_for": "Every step of chip lithography, including advanced nodes.",
+   "status": "allowed",
+   "status_detail": "No formal Japanese ban confirmed. In Nov 2025 social media rumors said Japan had halted photoresist shipments to China amid the Takaichi dispute; no government or company confirmed it. Current 2026 status unverified.",
+   "evidence": "Four Japanese firms held 72.5% of global photoresist in 2021; Chinese domestic substitution estimated below 5% (TrendForce). Shin-Etsu halted deliveries to China briefly in 2021.",
+   "contested": true,
+   "contested_note": "China says it can find domestic and foreign alternatives; Japanese firms deny a halt.",
+   "sources": [
+    {
+     "title": "Japan rumored to curb photoresist exports (TrendForce)",
+     "url": "https://www.trendforce.com/news/2025/12/03/news-japan-rumored-to-curb-photoresist-exports-as-china-targets-40-self-sufficiency-by-2026/",
+     "date": "2025-12-03"
+    },
+    {
+     "title": "Rumored Japan photoresist ban (Asia Times)",
+     "url": "https://asiatimes.com/2025/11/rumored-japan-photoresist-ban-sparks-chinas-worst-fears/",
+     "date": "2025-11-24"
+    }
+   ],
+   "confidence": "low",
+   "chokepoint": true,
+   "chokepoint_note": "Four Japanese firms held 72.5% of the global photoresist market; China makes under 5% of its own.",
+   "short_label": "Photoresist chemicals",
+   "tip": "Japanese firms dominate these chip-printing coatings; a reported shipment halt is rumor, not confirmed."
+  },
+  {
+   "id": "tsmc-foundry",
+   "name": "TSMC leading-edge chip manufacturing",
+   "category": "fabrication",
+   "leverage": "ally",
+   "line_style": "solid",
+   "from": {
+    "site": "TSMC HQ, Hsinchu Science Park",
+    "country": "Taiwan",
+    "lat": 24.78,
+    "lon": 121.01
+   },
+   "to": {
+    "site": "Huawei, Shenzhen",
+    "country": "China",
+    "lat": 22.65,
+    "lon": 114.06
+   },
+   "what_it_is": "The world's best contract chip factory; Chinese AI chip designers cannot match its quality.",
+   "used_for": "Fabricating advanced AI accelerators.",
+   "status": "restricted",
+   "status_detail": "US foundry due-diligence rule (Jan 2025) requires fabs to vet customers for 16/14nm and below; TSMC stopped shipping 7nm-and-below AI chips to many Chinese designers. Taiwan also put Huawei and SMIC on its export blacklist. Current enforcement status not re-verified for late 2026.",
+   "evidence": "TSMC made about $500 million of wafers for Sophgo that ended up in Huawei's Ascend 910B; a $1B+ US fine was reportedly considered.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Foundry Due Diligence Rule compliance (CSIS)",
+     "url": "https://www.csis.org/analysis/ai-diffusion-framework-and-foundry-due-diligence-rule-compliance-perspective"
+    },
+    {
+     "title": "TSMC halts shipments to more Chinese design firms (TechNode)",
+     "url": "https://technode.com/2025/02/08/new-us-sanctions-halt-tsmc-shipments-to-more-mainland-china-chip-design-firms/",
+     "date": "2025-02-08"
+    },
+    {
+     "title": "Taiwan bans chip exports to Huawei, SMIC (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/taiwan-bans-chip-exports-to-huawei-smic-ban-comes-after-huawei-tricked-tsmc-into-making-one-million-ai-processors-despite-us-restrictions"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "TSMC held about 72% of the global contract chipmaking market in Q3 2025.",
+   "chokepoint_source": {
+    "title": "Dataconomy: TSMC dominates foundry market with 72% share in Q3 2025 (Counterpoint)",
+    "url": "https://dataconomy.com/2025/12/23/tsmc-dominates-foundry-market-with-72-share-in-q3-2025/",
+    "date": "2025-12-23"
+   },
+   "short_label": "TSMC chip manufacturing",
+   "tip": "The world's best contract chip maker stopped shipping advanced AI chips to many Chinese designers."
+  },
+  {
+   "id": "sk-hynix-samsung-hbm",
+   "name": "High-bandwidth memory (HBM)",
+   "category": "memory",
+   "leverage": "ally",
+   "line_style": "solid",
+   "from": {
+    "site": "SK Hynix, Icheon",
+    "country": "South Korea",
+    "lat": 37.28,
+    "lon": 127.44
+   },
+   "to": {
+    "site": "Huawei, Shenzhen",
+    "country": "China",
+    "lat": 22.65,
+    "lon": 114.06
+   },
+   "what_it_is": "Stacked memory chips placed next to an AI processor to feed it data fast; only SK Hynix, Samsung and Micron make it at scale.",
+   "used_for": "Training and running frontier AI models.",
+   "status": "blocked",
+   "status_detail": "US rules from 2 Dec 2024 restrict HBM sales to China. Chinese firms stockpiled Samsung HBM2E before the rule. China's CXMT is reported to be working toward its own HBM3 (2026-27). Current license practice not fully verified.",
+   "evidence": "China was about 30% of Samsung HBM revenue in the first half of 2024, before the curbs (Reuters, as relayed).",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Chinese firms stock Samsung chips amid pending US curbs",
+     "url": "https://qatar-tribune.com/article/134915/business/chinese-firms-stock-high-end-samsung-chips-amid-pending-us-curbs"
+    },
+    {
+     "title": "Mapping China's HBM advances (ChinaTalk)",
+     "url": "https://www.chinatalk.media/p/mapping-chinas-hbm-advancement"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "Only three companies make HBM: SK Hynix (~62%), Micron (~21%) and Samsung (~17%) by Q2 2025 shipments.",
+   "chokepoint_source": {
+    "title": "Mark LaPedus: SK Hynix, Micron gain share in HBM (Counterpoint data)",
+    "url": "https://marklapedus.substack.com/p/sk-hynix-micron-gain-share-in-hbm",
+    "date": "2025-09"
+   },
+   "short_label": "Korean HBM memory",
+   "tip": "Korean firms make most AI memory; US rules limit sales to China, which stockpiled Samsung memory first."
+  },
+  {
+   "id": "korean-fabs-in-china-veu",
+   "name": "Korean memory fabs inside China (VEU ended)",
+   "category": "fabrication",
+   "leverage": "ally",
+   "line_style": "solid",
+   "from": {
+    "site": "Samsung Pyeongtaek Campus",
+    "country": "South Korea",
+    "lat": 36.99,
+    "lon": 127.0
+   },
+   "to": {
+    "site": "Samsung NAND fab, Xi'an",
+    "country": "China",
+    "lat": 34.34,
+    "lon": 108.94
+   },
+   "what_it_is": "Samsung and SK Hynix run big memory factories in China (Xi'an, Wuxi, Dalian) that depend on imported US-origin tools.",
+   "used_for": "A large share of world DRAM and NAND memory; China-based output is a source of Chinese supply.",
+   "status": "restricted",
+   "status_detail": "US revoked the validated end-user waivers for these fabs (announced Aug 29, 2025; effective end of 2025). In late Dec 2025 the US reportedly granted annual licenses for 2026 covering Xi'an, Wuxi and Dalian, limited to keeping existing operations running, no expansion or upgrades. 2027 license outcome not confirmed.",
+   "evidence": "BIS estimated the change would generate over 1,000 additional license applications per year.",
+   "contested": true,
+   "contested_note": "Korean industry warns it forfeits market space to Chinese rivals; US officials want to freeze Chinese-site capability.",
+   "sources": [
+    {
+     "title": "US cuts off Samsung and SK Chinese plants (Korea JoongAng Daily)",
+     "url": "https://www.koreajoongangdaily.com/business/us-cuts-off-samsung-and-sks-chinese-plants-from-importing-chipmaking-tools-it-risks-opening-market-space/11988777",
+     "date": "2025-08-31"
+    },
+    {
+     "title": "US grants Samsung and SK Hynix 2026 licenses (Tom's Hardware)",
+     "url": "https://www.tomshardware.com/tech-industry/us-grants-samsung-and-sk-hynix-2026-licenses-for-chipmaking-tool-shipments-to-china",
+     "date": "2025-12-30"
+    },
+    {
+     "title": "US Grants Annual Licences (Business Today Malaysia)",
+     "url": "https://www.businesstoday.com.my/2025/12/30/us-grants-samsung-sk-hynix-annual-licences-for-china-chip-gear/",
+     "date": "2025-12-30"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Korean fabs in China",
+   "tip": "Samsung and SK Hynix plants in China lost their US waiver but reportedly got 2026 licenses to keep running."
+  },
+  {
+   "id": "tsmc-cowos-packaging",
+   "name": "TSMC advanced packaging (CoWoS)",
+   "category": "fabrication",
+   "leverage": "ally",
+   "line_style": "solid",
+   "from": {
+    "site": "TSMC Advanced Packaging, Chiayi",
+    "country": "Taiwan",
+    "lat": 23.46,
+    "lon": 120.28
+   },
+   "to": {
+    "site": "Huawei, Shenzhen",
+    "country": "China",
+    "lat": 22.65,
+    "lon": 114.06
+   },
+   "what_it_is": "A way of stacking processor and memory chips together on one base; TSMC's version is the industry standard for AI chips.",
+   "used_for": "Assembling top AI accelerators.",
+   "status": "blocked",
+   "status_detail": "No CoWoS-specific rule confirmed; access is blocked in practice via the foundry rule and TSMC stopping advanced-node work for Chinese designers. Huawei reportedly uses a Chinese copy of CoWoS-S. Not verified for 2026.",
+   "evidence": "Analysts found Huawei's Ascend 910B packaging strongly based on TSMC's CoWoS-S.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Mystery surrounding TSMC chips in Huawei accelerators (heise)",
+     "url": "https://heise.de/-9996445"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "TSMC CoWoS packaging",
+   "tip": "TSMC's chip-stacking method is the AI standard; China is blocked in practice and Huawei uses a copy."
+  },
+  {
+   "id": "supermicro-liaw-indictment",
+   "name": "Super Micro servers: Liaw indictment ($2.5B)",
+   "category": "datacenter-hardware",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Super Micro HQ, San Jose",
+    "country": "United States",
+    "lat": 37.34,
+    "lon": -121.89
+   },
+   "via": [
+    {
+     "site": "Taipei",
+     "country": "Taiwan",
+     "lat": 25.03,
+     "lon": 121.56
+    },
+    {
+     "site": "Singapore",
+     "country": "Singapore",
+     "lat": 1.35,
+     "lon": 103.82
+    }
+   ],
+   "to": {
+    "site": "Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 114.06
+   },
+   "what_it_is": "Servers built in the US with Nvidia AI chips were allegedly sold to a Southeast Asian 'pass-through' company and then sent on to Chinese buyers.",
+   "used_for": "Training and running large AI models in China",
+   "status": "leaking",
+   "status_detail": "CHARGED, NOT PROVEN. Super Micro co-founder Wally Liaw and Steven Chang were indicted in SDNY in March 2026 (export-control conspiracy, smuggling, defrauding the US). Liaw pleaded not guilty. Contractor Ting-Wei Sun pleaded guilty on Oct 8, 2026 (sentencing set Sept 2027). Super Micro itself is not charged and says it is cooperating. The Taiwan and Singapore transit legs come from reporting and the route listed here is approximate.",
+   "evidence": "Prosecutors allege about $2.5B of servers (Nvidia B200, H100, H200) shipped since 2024; fake 'dummy' servers were allegedly staged to fool inspectors.",
+   "proof": "charged",
+   "contested": false,
+   "sources": [
+    {
+     "title": "CNBC: Super Micro co-founder indicted on Nvidia smuggling charges leaves board",
+     "url": "https://www.cnbc.com/2026/03/20/super-micro-co-founder-leaves-board.html",
+     "date": "2026-03-20"
+    },
+    {
+     "title": "Tom's Hardware: Liaw pleads not guilty",
+     "url": "https://www.tomshardware.com/tech-industry/super-micro-co-founder-wally-liaw-pleads-not-guilty-to-nvidia-smuggling-charges",
+     "date": "2026-03-24"
+    },
+    {
+     "title": "US News/Reuters: Super Micro contractor pleads guilty",
+     "url": "https://money.usnews.com/investing/news/articles/2026-10-09/super-micro-contractor-pleads-guilty-in-scheme-to-divert-ai-servers-with-nvidia-chips-to-china",
+     "date": "2026-10-09"
+    },
+    {
+     "title": "Fortune: Supermicro smuggling investigation",
+     "url": "https://fortune.com/2026/05/05/supermicro-nvidia-china-smuggling-investigation/",
+     "date": "2026-05-05"
+    }
+   ],
+   "confidence": "high",
+   "short_label": "Super Micro $2.5B case",
+   "tip": "Charged, not proven: a Super Micro co-founder is accused of routing $2.5B of Nvidia servers to China."
+  },
+  {
+   "id": "supermicro-obon-siamai-alibaba",
+   "name": "Super Micro via OBON/SiamAI (Bangkok) to Alibaba",
+   "category": "datacenter-hardware",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Super Micro HQ, San Jose",
+    "country": "United States",
+    "lat": 37.34,
+    "lon": -121.89
+   },
+   "via": [
+    {
+     "site": "Taipei",
+     "country": "Taiwan",
+     "lat": 25.03,
+     "lon": 121.56
+    },
+    {
+     "site": "Bangkok",
+     "country": "Thailand",
+     "lat": 13.76,
+     "lon": 100.5
+    }
+   ],
+   "to": {
+    "site": "Alibaba HQ, Hangzhou",
+    "country": "China",
+    "lat": 30.27,
+    "lon": 120.15
+   },
+   "what_it_is": "Media reports say the unnamed 'Company-1' in the Super Micro indictment is Bangkok's OBON Corp, and that some servers ended up with Alibaba.",
+   "used_for": "AI cloud and model training",
+   "status": "leaking",
+   "status_detail": "ALLEGED BY MEDIA ONLY. Bloomberg (via Taiwan Plus, The Star) reported in May 2026 that Company-1 is OBON, the firm behind Thailand's SiamAI, and that Alibaba was among end customers. The indictment names neither. SiamAI says it has not exported AI servers to China; Alibaba says it has no involvement. No charges against OBON, SiamAI or Alibaba.",
+   "evidence": "Indictment alleges 500M+ dollars of servers shipped April to mid-May 2025 alone; the Alibaba link is unconfirmed.",
+   "proof": "alleged",
+   "contested": true,
+   "contested_note": "SiamAI and Alibaba both deny the claims; no authority has publicly confirmed them.",
+   "sources": [
+    {
+     "title": "Taiwan Plus: Thai firm under investigation in Nvidia chip smuggling case",
+     "url": "https://www.taiwanplus.com/news/taiwan-news/technology-and-science/260510003/thai-firm-under-investigation-in-nvidia-chip-smuggling-case",
+     "date": "2026-05-10"
+    },
+    {
+     "title": "The Star: US learnt to suspect Nvidia chips were smuggled to Alibaba via Thailand",
+     "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/05/10/us-learnt-to-suspect-nvidia-chips-were-smuggled-to-alibaba-via-thailand",
+     "date": "2026-05-10"
+    },
+    {
+     "title": "The Standard HK: SiamAI denies exporting US AI servers to China",
+     "url": "https://www.thestandard.com.hk/china/article/331578/Thailands-SiamAI-denies-exporting-US-AI-servers-to-China",
+     "date": "2026-05-12"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Bangkok OBON allegation",
+   "tip": "Alleged by media only: a Bangkok firm was reportedly the go-between in the Super Micro case; denied."
+  },
+  {
+   "id": "singapore-dell-supermicro-fraud",
+   "name": "Singapore server fraud case (Dell/Super Micro)",
+   "category": "datacenter-hardware",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Dell HQ, Round Rock",
+    "country": "United States",
+    "lat": 30.51,
+    "lon": -97.68
+   },
+   "via": [
+    {
+     "site": "Singapore",
+     "country": "Singapore",
+     "lat": 1.35,
+     "lon": 103.82
+    },
+    {
+     "site": "Johor Bahru",
+     "country": "Malaysia",
+     "lat": 1.49,
+     "lon": 103.74
+    }
+   ],
+   "to": {
+    "site": "Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 114.06
+   },
+   "what_it_is": "Singapore firms allegedly lied to Dell and Super Micro about where servers were going, and the servers were sent on to Malaysia.",
+   "used_for": "AI servers; early speculation linked them to DeepSeek",
+   "status": "leaking",
+   "status_detail": "CHARGED, NOT PROVEN. Singapore charged Aaron Woon, Alan Wei and Li Ming with fraud in Feb-Mar 2025 over about US$390M of transactions. Singapore said the servers 'may' contain Nvidia chips and that Malaysia as final destination is unconfirmed. Wei reportedly pleaded not guilty in July 2026 (single source). The China and DeepSeek links are unproven; the destination pin is a placeholder.",
+   "evidence": "About US$390M of server transactions, 2023-2024, per Singapore prosecutors.",
+   "proof": "charged",
+   "contested": true,
+   "contested_note": "Singapore says it has not shown the chips were export-controlled or that China was the end destination.",
+   "sources": [
+    {
+     "title": "CNBC: Servers used in Singapore fraud case may contain Nvidia chips",
+     "url": "https://www.cnbc.com/2025/03/03/servers-used-in-singapore-fraud-case-may-contain-nvidia-chips-minister-says.html",
+     "date": "2025-03-03"
+    },
+    {
+     "title": "TechCrunch: Singapore grants bail in alleged $390M fraud",
+     "url": "https://techcrunch.com/2025/03/13/singapore-grants-bail-for-nvidia-chip-smugglers-in-alleged-390m-fraud",
+     "date": "2025-03-13"
+    },
+    {
+     "title": "Model Diplomat: Singapore's $390M Nvidia chip case explained",
+     "url": "https://modeldiplomat.com/story/singapores-390m-nvidia-chip-case-explained",
+     "date": "2026-07-06"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Singapore server fraud",
+   "tip": "Charged, not proven: Singapore fraud case over about $390M of Dell and Super Micro servers."
+  },
+  {
+   "id": "earthmade-lui-malaysia-singapore",
+   "name": "Earthmade Computer (Greg Lui): $300M servers",
+   "category": "datacenter-hardware",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Earthmade Computer, City of Industry CA",
+    "country": "United States",
+    "lat": 34.02,
+    "lon": -117.96
+   },
+   "via": [
+    {
+     "site": "Kuala Lumpur",
+     "country": "Malaysia",
+     "lat": 3.14,
+     "lon": 101.69
+    },
+    {
+     "site": "Singapore",
+     "country": "Singapore",
+     "lat": 1.35,
+     "lon": 103.82
+    }
+   ],
+   "to": {
+    "site": "Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 114.06
+   },
+   "what_it_is": "A California computer dealer allegedly sold Nvidia servers to buyers in Malaysia and Singapore who sent them on to China.",
+   "used_for": "AI training servers",
+   "status": "leaking",
+   "status_detail": "CHARGED, NOT PROVEN. Greg Lui was indicted by a grand jury Sept 29, 2026 and arrested Oct 1 (C.D. Cal., 2:26-cr-00618): export-control conspiracy, smuggling, money-laundering conspiracy. Prosecutors say the named buyers were false.",
+   "evidence": "More than $176M paid to Earthmade by two Malaysian freight forwarders in 2024; total alleged about $300M.",
+   "proof": "charged",
+   "contested": false,
+   "sources": [
+    {
+     "title": "The Register: US charges Greg Lui",
+     "url": "https://www.theregister.com/a/5300856",
+     "date": "2026-10-02"
+    },
+    {
+     "title": "Quartz: California tech executive arrested",
+     "url": "https://qz.com/greg-lui-earthmade-nvidia-ai-chips-smuggling-china-100226",
+     "date": "2026-10-02"
+    },
+    {
+     "title": "Khaleej Times: US arrests man over alleged smuggling of $300 million of servers",
+     "url": "https://www.khaleejtimes.com/world/americas/us-arrests-man-over-alleged-smuggling-of-300-million-worth-of-computer-servers-to-china-2",
+     "date": "2026-10-02"
+    }
+   ],
+   "confidence": "high",
+   "short_label": "Earthmade server case",
+   "tip": "Charged, not proven: a California dealer is accused of selling about $300M of Nvidia servers bound for China."
+  },
+  {
+   "id": "operation-gatekeeper-hsu",
+   "name": "Operation Gatekeeper: Hao Global H100/H200",
+   "category": "ai-chips",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Hao Global, Missouri City TX",
+    "country": "United States",
+    "lat": 29.62,
+    "lon": -95.54
+   },
+   "via": [
+    {
+     "site": "Hong Kong",
+     "country": "China (Hong Kong)",
+     "lat": 22.32,
+     "lon": 114.17
+    }
+   ],
+   "to": {
+    "site": "Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 114.06
+   },
+   "what_it_is": "A Texas exporter shipped Nvidia H100 and H200 chips with false paperwork hiding that they were going to China and Hong Kong.",
+   "used_for": "Frontier AI training",
+   "status": "leaking",
+   "status_detail": "CONVICTED (guilty pleas). Alan Hao Hsu and Hao Global LLC pleaded guilty to smuggling and unlawful export on Oct 10, 2025; DOJ announced Operation Gatekeeper Dec 9, 2025. Sentencing was set for Feb 18, 2026; I could not confirm the sentence.",
+   "evidence": "At least $160M of H100/H200 GPUs, Oct 2024 to May 2025; over $50M wired in from the PRC.",
+   "proof": "convicted",
+   "contested": false,
+   "sources": [
+    {
+     "title": "DOJ: US authorities shut down major China-linked AI tech smuggling network",
+     "url": "https://www.justice.gov/opa/pr/us-authorities-shut-down-major-china-linked-ai-tech-smuggling-network",
+     "date": "2025-12-09"
+    },
+    {
+     "title": "CNBC: Plots to send GPUs to China expose $160 million export-evasion web",
+     "url": "https://www.cnbc.com/2025/12/09/us-attorneys-office-southern-district-of-texas-prosecutors-nvidia-chips-h200-h100-smuggle-china.html",
+     "date": "2025-12-09"
+    }
+   ],
+   "confidence": "high",
+   "short_label": "Operation Gatekeeper",
+   "tip": "Convicted by guilty plea: a Texas exporter shipped at least $160M of Nvidia H100 and H200 chips to China."
+  },
+  {
+   "id": "hong-kong-relabel-ring",
+   "name": "Hong Kong logistics ring: relabelled H100/H200",
+   "category": "ai-chips",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "US warehouses (Houston area)",
+    "country": "United States",
+    "lat": 29.76,
+    "lon": -95.37
+   },
+   "via": [
+    {
+     "site": "Hong Kong",
+     "country": "China (Hong Kong)",
+     "lat": 22.32,
+     "lon": 114.17
+    }
+   ],
+   "to": {
+    "site": "Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 114.06
+   },
+   "what_it_is": "Two Chinese men allegedly worked with a Hong Kong logistics firm and a China-based AI company, peeling Nvidia labels off chips and applying a fake brand before shipping.",
+   "used_for": "AI training",
+   "status": "leaking",
+   "status_detail": "CHARGED, NOT PROVEN (Dec 2025, S.D. Tex.). Hong Kong serves as the hand-off point to the mainland. No conviction found.",
+   "evidence": "Prosecutors say the scheme ran since at least November 2023.",
+   "proof": "charged",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Tom's Hardware: Two more perps apprehended over $160M Nvidia smuggling",
+     "url": "https://www.tomshardware.com/tech-industry/semiconductors/two-more-perps-apprehended-over-smuggling-of-usd160-million-of-nvidia-chips-to-china-doj-says-h100-and-h200-shipments-were-relabelled-with-a-fictional-brand-to-dodge-export-controls",
+     "date": "2025-12-10"
+    },
+    {
+     "title": "CNBC: Plots to send GPUs to China expose $160 million export-evasion web",
+     "url": "https://www.cnbc.com/2025/12/09/us-attorneys-office-southern-district-of-texas-prosecutors-nvidia-chips-h200-h100-smuggle-china.html",
+     "date": "2025-12-09"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Hong Kong relabel ring",
+   "tip": "Charged, not proven: two men are accused of relabeling Nvidia chips as another brand before shipping."
+  },
+  {
+   "id": "tampa-janford-a100",
+   "name": "Janford Realtor front company: A100 GPUs",
+   "category": "ai-chips",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Tampa, Florida",
+    "country": "United States",
+    "lat": 27.95,
+    "lon": -82.46
+   },
+   "via": [
+    {
+     "site": "Kuala Lumpur",
+     "country": "Malaysia",
+     "lat": 3.14,
+     "lon": 101.69
+    },
+    {
+     "site": "Bangkok",
+     "country": "Thailand",
+     "lat": 13.76,
+     "lon": 100.5
+    }
+   ],
+   "to": {
+    "site": "Hong Kong",
+    "country": "China (Hong Kong)",
+    "lat": 22.32,
+    "lon": 114.17
+   },
+   "what_it_is": "A fake Florida 'realty' company allegedly bought Nvidia A100 GPUs and shipped them to China and Hong Kong via Malaysia and Thailand.",
+   "used_for": "AI training",
+   "status": "leaking",
+   "status_detail": "CHARGED, NOT PROVEN. Four people (Hon Ning Ho, Brian Raymond, Cham Li, Jing Chen) indicted in M.D. Fla., case 25-cr-00530, unsealed Nov 2025: export-control conspiracy and money laundering. No plea or trial result found.",
+   "evidence": "400 A100 GPUs shipped in two exports, Oct 2024 to Jan 2025; conspiracy alleged Sept 2023 to Nov 2025.",
+   "proof": "charged",
+   "contested": false,
+   "sources": [
+    {
+     "title": "DOJ: US citizens and Chinese nationals arrested for exporting AI technology to China",
+     "url": "https://www.justice.gov/opa/pr/us-citizens-and-chinese-nationals-arrested-exporting-artificial-intelligence-technology",
+     "date": "2025-11-20"
+    },
+    {
+     "title": "CNBC: Plot to send GPUs to China leads to indictment",
+     "url": "https://www.cnbc.com/2025/11/20/nvidia-ai-chips-china-gpu.html",
+     "date": "2025-11-20"
+    }
+   ],
+   "confidence": "high",
+   "short_label": "Janford A100 case",
+   "tip": "Charged, not proven: a fake Florida realty firm allegedly shipped 400 Nvidia A100 chips toward China."
+  },
+  {
+   "id": "taiwan-b300-japan-hk",
+   "name": "Taiwan case: B300 servers via Indonesia and Japan",
+   "category": "datacenter-hardware",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Super Micro HQ, San Jose",
+    "country": "United States",
+    "lat": 37.34,
+    "lon": -121.89
+   },
+   "via": [
+    {
+     "site": "Taipei",
+     "country": "Taiwan",
+     "lat": 25.03,
+     "lon": 121.56
+    },
+    {
+     "site": "Jakarta",
+     "country": "Indonesia",
+     "lat": -6.2,
+     "lon": 106.85
+    }
+   ],
+   "to": {
+    "site": "Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 114.06
+   },
+   "what_it_is": "Nine people in Taiwan, including an Nvidia partner manager, allegedly forged papers saying B300 servers would stay in Taiwan, then shipped them to China.",
+   "used_for": "Latest-generation Blackwell AI training",
+   "status": "leaking",
+   "status_detail": "CHARGED, NOT PROVEN (Taiwan, Aug 24, 2026): breach of trust and forgery charges. Prosecutors say 74 of 130 servers reached China, via Indonesia, directly, or Japan then Hong Kong; 56 were stopped in Taiwan. Most (50 of 74) went through Indonesia; 8 went via a front company in Japan, then Hong Kong.",
+   "evidence": "74 servers delivered; prosecutors seek 18 months to 5 years.",
+   "proof": "charged",
+   "contested": false,
+   "sources": [
+    {
+     "title": "PBS/AP: Taiwan charges 9 over illegal AI server exports to China",
+     "url": "https://www.pbs.org/newshour/economy/taiwan-charges-9-over-illegal-ai-server-exports-to-china-including-nvidia-and-super-micro-staffers",
+     "date": "2026-08-24"
+    },
+    {
+     "title": "The Next Web: Nine charged in Taiwan over 130 Nvidia B300 servers",
+     "url": "https://thenextweb.com/news/taiwan-indicts-nine-ai-server-smuggling",
+     "date": "2026-08-24"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Taiwan B300 case",
+   "tip": "Charged, not proven: nine people in Taiwan allegedly forged papers and sent B300 servers to China."
+  },
+  {
+   "id": "taiwan-supermicro-hk-detained",
+   "name": "Taiwan: Super Micro servers to Hong Kong (May 2026)",
+   "category": "datacenter-hardware",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Super Micro HQ, San Jose",
+    "country": "United States",
+    "lat": 37.34,
+    "lon": -121.89
+   },
+   "via": [
+    {
+     "site": "Taipei",
+     "country": "Taiwan",
+     "lat": 25.03,
+     "lon": 121.56
+    }
+   ],
+   "to": {
+    "site": "Hong Kong",
+    "country": "China (Hong Kong)",
+    "lat": 22.32,
+    "lon": 114.17
+   },
+   "what_it_is": "Three men were detained in Taiwan for falsifying export papers on Super Micro AI servers sent to Hong Kong.",
+   "used_for": "AI servers",
+   "status": "leaking",
+   "status_detail": "ALLEGED (detentions). More than 10 servers went to Hong Kong via a third location; investigators were still checking whether they moved on to the mainland.",
+   "evidence": "Three detained, May 2026.",
+   "proof": "alleged",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Focus Taiwan: Three detained over alleged smuggling of Nvidia chips to Hong Kong",
+     "url": "https://focustaiwan.tw/society/202605220006",
+     "date": "2026-05-22"
+    },
+    {
+     "title": "Asia Times: China's H200 hunger drives smugglers to Japan route",
+     "url": "https://asiatimes.com/2026/05/chinas-h200-hunger-drives-nvidia-chip-smugglers-to-japan-route/",
+     "date": "2026-05"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Taiwan Super Micro case",
+   "tip": "Alleged: three men detained for falsifying papers on servers sent to Hong Kong; mainland link still checked."
+  },
+  {
+   "id": "tsmc-sophgo-huawei-910b",
+   "name": "TSMC dies in Huawei Ascend 910B via Sophgo",
+   "category": "fabrication",
+   "leverage": "ally",
+   "line_style": "dotted",
+   "from": {
+    "site": "TSMC, Hsinchu",
+    "country": "Taiwan",
+    "lat": 24.8,
+    "lon": 120.97
+   },
+   "via": [],
+   "to": {
+    "site": "Shanghai",
+    "country": "China",
+    "lat": 31.23,
+    "lon": 121.47
+   },
+   "what_it_is": "A chip TSMC made for Sophgo turned up inside Huawei's Ascend 910B AI processor, which TSMC could not legally supply to Huawei.",
+   "used_for": "Huawei AI accelerators",
+   "status": "leaking",
+   "status_detail": "REPORTED. TechInsights found the die in late 2024; TSMC halted Sophgo shipments and the US ordered a halt to advanced AI chip shipments to China. Reuters reported in April 2025 that TSMC could face a $1B+ penalty; I found no confirmed fine or settlement. TSMC says it is cooperating. Sophgo was later added to the Entity List.",
+   "evidence": "Potential penalty over $1B (up to 2x transaction value); precedent: Seagate paid $300M in 2023.",
+   "proof": "reported",
+   "contested": false,
+   "sources": [
+    {
+     "title": "TechSpot: TSMC could face over $1 billion fine",
+     "url": "https://www.techspot.com/news/107475-tsmc-faces-1-billion-us-fine-over-chip.html",
+     "date": "2025-04-09"
+    },
+    {
+     "title": "Taipei Times: TSMC facing US$1bn fine",
+     "url": "https://www.taipeitimes.com/News/taiwan/archives/2025/04/09/2003834894",
+     "date": "2025-04-09"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Sophgo Huawei chip leak",
+   "tip": "Reported: a TSMC-made chip turned up in Huawei's Ascend 910B AI processor; no penalty is confirmed."
+  },
+  {
+   "id": "cloud-remote-access-loophole",
+   "name": "Cloud loophole: renting Nvidia GPUs abroad",
+   "category": "compute-access",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Nvidia HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.37,
+    "lon": -121.96
+   },
+   "via": [
+    {
+     "site": "Data centers, Thailand/Singapore",
+     "country": "Thailand",
+     "lat": 13.76,
+     "lon": 100.5
+    },
+    {
+     "site": "Jakarta",
+     "country": "Indonesia",
+     "lat": -6.21,
+     "lon": 106.85
+    }
+   ],
+   "to": {
+    "site": "Shanghai",
+    "country": "China",
+    "lat": 31.23,
+    "lon": 121.47
+   },
+   "what_it_is": "Chinese AI firms rent time on banned Nvidia chips in foreign data centers, so the chips never enter China.",
+   "used_for": "Training frontier models without owning restricted hardware",
+   "status": "leaking",
+   "status_detail": "ALLEGED / GAP IN RULES. Current rules control hardware, not remote access. The House passed the Remote Access Security Act 369-22 on Jan 12, 2026; the Senate has not. Commerce is reportedly drafting a rule on rentals in Thailand and Singapore. Reported cases (INF Tech in Indonesia, 2,300 GPUs; a White House claim about Moonshot and GB300s in Thailand) are not independently verified.",
+   "evidence": "INF Tech reportedly reached about 2,300 banned GPUs in Indonesia.",
+   "proof": "reported",
+   "contested": true,
+   "contested_note": "Some experts say BIS lacks legal authority over remote access until Congress acts.",
+   "sources": [
+    {
+     "title": "CNBC: China AI firms tap Nvidia power overseas as US weighs crackdown",
+     "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html",
+     "date": "2026-08-19"
+    },
+    {
+     "title": "Introl: Remote Access Security Act",
+     "url": "https://introl.com/blog/remote-access-security-act-cloud-loophole-export-controls-2026",
+     "date": "2026"
+    },
+    {
+     "title": "Tech Times: Commerce drafts AI chip rule for loophole",
+     "url": "https://www.techtimes.com/articles/325957/20260829/commerce-drafts-ai-chip-rule-loophole-it-created-rescinding-biden-know-your-customer.htm",
+     "date": "2026-08-29"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Cloud GPU rentals",
+   "tip": "A gap in the rules: they cover chip hardware, not renting banned Nvidia chips abroad, which firms reportedly do."
+  },
+  {
+   "id": "megaspeed-singapore-malaysia",
+   "name": "Megaspeed (Singapore): ~$2B Nvidia chips",
+   "category": "compute-access",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Nvidia HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.37,
+    "lon": -121.96
+   },
+   "via": [
+    {
+     "site": "Singapore",
+     "country": "Singapore",
+     "lat": 1.35,
+     "lon": 103.82
+    },
+    {
+     "site": "Kuala Lumpur",
+     "country": "Malaysia",
+     "lat": 3.14,
+     "lon": 101.69
+    },
+    {
+     "site": "Jakarta",
+     "country": "Indonesia",
+     "lat": -6.21,
+     "lon": 106.85
+    }
+   ],
+   "to": {
+    "site": "Beijing",
+    "country": "China",
+    "lat": 39.9,
+    "lon": 116.4
+   },
+   "what_it_is": "A Singapore cloud firm with Chinese ties bought about $2 billion of Nvidia chips for data centers in Malaysia and Indonesia that allegedly serve Chinese customers.",
+   "used_for": "Remote AI compute for Chinese clients",
+   "status": "leaking",
+   "status_detail": "ALLEGED, NO CHARGES FOUND. NYT reporting (Oct 2025) led to a Commerce probe and Singapore police investigation; Sen. Cotton asked for action. Nvidia says it found no reason to believe diversion occurred.",
+   "evidence": "Malaysian subsidiary reportedly bought nearly $2B of top Nvidia products.",
+   "proof": "alleged",
+   "contested": true,
+   "contested_note": "Nvidia and Megaspeed deny wrongdoing.",
+   "sources": [
+    {
+     "title": "StreetInsider/Reuters: US senator seeks investigation into Megaspeed",
+     "url": "https://www.streetinsider.com/Reuters/US+senator+seeks+Commerce+Department+investigation+into+Singapore-based+Megaspeed/25449176.html",
+     "date": "2025-12"
+    },
+    {
+     "title": "Tom's Hardware: Nvidia's biggest SEA customer exposes limits of export controls",
+     "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-biggest-sea-customer-exposes-the-limits-of-us-ai-export-controls",
+     "date": "2025-10"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Megaspeed Singapore",
+   "tip": "Alleged, no charges: a Singapore cloud firm bought ~$2B of Nvidia chips for sites serving Chinese clients."
+  },
+  {
+   "id": "aivres-inspur-rename",
+   "name": "Inspur's renamed US arm (Aivres) still buys Nvidia",
+   "category": "datacenter-hardware",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Nvidia HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.37,
+    "lon": -121.96
+   },
+   "via": [
+    {
+     "site": "Aivres, Fremont CA",
+     "country": "United States",
+     "lat": 37.55,
+     "lon": -121.99
+    }
+   ],
+   "to": {
+    "site": "Inspur, Jinan",
+    "country": "China",
+    "lat": 36.65,
+    "lon": 117.0
+   },
+   "what_it_is": "After parent Inspur was blacklisted, its US arm renamed itself Aivres, was never listed itself, and kept buying Nvidia's newest chips.",
+   "used_for": "AI servers for resale",
+   "status": "leaking",
+   "status_detail": "REPORTED (WSJ via secondary summary). Entity List gap: the listing covers Inspur Group but Aivres was not listed. The 50% affiliates rule would close such gaps but is suspended until Nov 9, 2026; the truce extension to Jan 10, 2027 is said by a US official to cover it, but BIS had not published a notice as of mid-Oct.",
+   "evidence": "Inspur Group added to Entity List 2023; Aivres is a rename of Inspur Systems.",
+   "proof": "reported",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Startup Fortune: A blacklisted Chinese server giant renamed itself",
+     "url": "https://startupfortune.com/a-blacklisted-chinese-server-giant-renamed-itself-and-still-buys-nvidia-chips/",
+     "date": "2026"
+    },
+    {
+     "title": "Export Compliance Daily: Truce incl. affiliates rule extended 2 months",
+     "url": "https://exportcompliancedaily.com/article/2026/09/25/uschina-trade-truce-including-bis-affiliates-rule-extended-2-months-us-says-2609240049",
+     "date": "2026-09-25"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Inspur's Aivres loophole",
+   "tip": "Reported: Inspur's US arm Aivres was never blacklisted and kept buying Nvidia's newest chips."
+  },
+  {
+   "id": "entity-list-affiliates-rule-gap",
+   "name": "Entity List gap: 50% affiliates rule suspended",
+   "category": "ai-chips",
+   "leverage": "us",
+   "line_style": "dotted",
+   "from": {
+    "site": "Nvidia HQ, Santa Clara",
+    "country": "United States",
+    "lat": 37.37,
+    "lon": -121.96
+   },
+   "via": [],
+   "to": {
+    "site": "Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 114.06
+   },
+   "what_it_is": "Companies owned 50% or more by blacklisted firms were meant to be covered automatically; that rule is on hold, so subsidiaries can keep buying.",
+   "used_for": "Chinese-owned subsidiaries buying advanced chips",
+   "status": "leaking",
+   "status_detail": "RULE GAP, NOT A CASE. BIS Affiliates Rule was suspended for one year from Nov 10, 2025 under the US-China trade deal. Federal Register text reinstates it Nov 10, 2026; a Sept 2026 truce extension to Jan 10, 2027 reportedly extends the suspension, but I found no BIS notice confirming it.",
+   "evidence": "Suspension scheduled to end Nov 9, 2026 unless BIS extends it.",
+   "proof": "reported",
+   "contested": true,
+   "contested_note": "Washington traded the suspension for China pausing its rare-earth licensing regime.",
+   "sources": [
+    {
+     "title": "Sayari: BIS 50% rule suspension",
+     "url": "https://sayari.com/resources/blog/bis-50-rule-suspension/",
+     "date": "2025-11"
+    },
+    {
+     "title": "Export Compliance Daily: Truce extended 2 months",
+     "url": "https://exportcompliancedaily.com/article/2026/09/25/uschina-trade-truce-including-bis-affiliates-rule-extended-2-months-us-says-2609240049",
+     "date": "2026-09-25"
+    },
+    {
+     "title": "Congress on China: Affiliates Rule",
+     "url": "https://congressonchina.com/restrictions/affiliates-rule/",
+     "date": "2026"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Affiliates rule gap",
+   "tip": "A rule covering firms 50% owned by blacklisted companies is suspended, so subsidiaries can keep buying."
+  },
+  {
+   "id": "china-hbm-stockpiling",
+   "name": "Stockpiling Samsung HBM before Dec 2024 rules",
+   "category": "memory",
+   "leverage": "ally",
+   "line_style": "dotted",
+   "from": {
+    "site": "Samsung, Hwaseong",
+    "country": "South Korea",
+    "lat": 37.2,
+    "lon": 127.03
+   },
+   "via": [],
+   "to": {
+    "site": "Shenzhen",
+    "country": "China",
+    "lat": 22.54,
+    "lon": 114.06
+   },
+   "what_it_is": "Chinese firms bought up high-bandwidth memory ahead of the US ban to build AI chips.",
+   "used_for": "Huawei and other Chinese AI accelerators",
+   "status": "leaking",
+   "status_detail": "REPORTED. Reuters said Huawei, Baidu and others stockpiled Samsung HBM in 2024. A later estimate put purchases at about 7M chips (over $1B) in the month before the Dec 2024 restrictions. This was legal at the time.",
+   "evidence": "China was about 30% of Samsung's HBM revenue in H1 2024.",
+   "proof": "reported",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Taipei Times: Chinese firms stockpiling high-end Samsung chips",
+     "url": "https://www.taipeitimes.com/News/biz/archives/2024/08/07/2003821867",
+     "date": "2024-08-07"
+    },
+    {
+     "title": "AI Frontiers: HBM, critical gaps in US export controls",
+     "url": "https://ai-frontiers.org/articles/high-bandwidth-memory-critical-gaps-us-export-controls",
+     "date": "2025"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Samsung HBM stockpiling",
+   "tip": "Reported: Chinese firms bought up Samsung memory before the December 2024 ban, which was legal then."
+  },
+  {
+   "id": "china-chipmaking-tool-stockpiling",
+   "name": "Stockpiling chipmaking tools before Dutch/Japan curbs",
+   "category": "chipmaking-tools",
+   "leverage": "ally",
+   "line_style": "dotted",
+   "from": {
+    "site": "ASML HQ, Veldhoven",
+    "country": "Netherlands",
+    "lat": 51.41,
+    "lon": 5.45
+   },
+   "via": [],
+   "to": {
+    "site": "Shanghai",
+    "country": "China",
+    "lat": 31.23,
+    "lon": 121.47
+   },
+   "what_it_is": "China rushed to import chipmaking machines before new Dutch, Japanese and US limits took effect.",
+   "used_for": "Building chip fabs",
+   "status": "leaking",
+   "status_detail": "REPORTED. Imports were nearly $5B in June-July 2023 (up 70%) and $25.9B in the first seven months of 2024 (up 44%). Legal at the time; it blunts the controls' later impact.",
+   "evidence": "Chinese tool imports up 44% to $25.9B in Jan-Jul 2024.",
+   "proof": "reported",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Mobile World Live: China chipmaking equipment imports soar",
+     "url": "https://www.mobileworldlive.com/greater-china/china-chipmaking-equipment-imports-soar/",
+     "date": "2024-08"
+    },
+    {
+     "title": "Tom's Hardware: China's chip imports boom as it stockpiles",
+     "url": "https://www.tomshardware.com/tech-industry/chinas-chip-imports-boom-as-the-country-stockpiles-before-anticipated-new-sanctions-struggles-to-become-self-sufficient",
+     "date": "2024"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Tool stockpiling",
+   "tip": "Reported: China rushed to import chipmaking machines before new limits, which blunts the controls."
+  },
+  {
+   "id": "gallium",
+   "name": "Gallium",
+   "category": "minerals",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Gallium refining, Zhengzhou, Henan",
+    "country": "China",
+    "lat": 34.75,
+    "lon": 113.62
+   },
+   "to": {
+    "site": "US defense and chip electronics hub, Northern Virginia",
+    "country": "United States",
+    "lat": 38.88,
+    "lon": -77.1
+   },
+   "what_it_is": "A soft metal used to make fast chips and radar parts.",
+   "used_for": "Radar, 5G and power chips, LEDs, compound semiconductors.",
+   "status": "restricted",
+   "status_detail": "China banned gallium/germanium/antimony exports to the US in Dec 2024; the ban on US-bound shipments is suspended until 2026-11-27 after the Oct 2025 Trump-Xi meeting, but the metals stay on the licence list and military end users remain barred. Not confirmed whether it will be extended past Nov 27 2026.",
+   "evidence": "USGS profile puts China at about 99% of primary gallium output in 2024.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "USGS National Minerals Information Center: China",
+     "url": "https://www.usgs.gov/centers/national-minerals-information-center/china",
+     "date": "2026-01-01"
+    },
+    {
+     "title": "China halts ban on gallium, germanium, antimony exports to US but controls remain",
+     "url": "https://www.miningweekly.com/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10",
+     "date": "2025-11-10"
+    },
+    {
+     "title": "Japan sounds alarm over China's gallium dominance",
+     "url": "https://www.xatakaon.com/materials/japan-sounds-alarm-bells-over-chinas-dominance-in-global-chip-and-battery-production-thanks-to-its-powerful-gallium-market",
+     "date": "2025-01-01"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "China makes about 99% of the world's primary gallium.",
+   "short_label": "Gallium",
+   "tip": "China banned gallium exports to the US in Dec 2024; the ban is reportedly suspended until Nov 27, 2026."
+  },
+  {
+   "id": "germanium",
+   "name": "Germanium",
+   "category": "minerals",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Germanium refining, Yunnan",
+    "country": "China",
+    "lat": 25.49,
+    "lon": 103.8
+   },
+   "to": {
+    "site": "US optics and chip makers, Dallas",
+    "country": "United States",
+    "lat": 32.78,
+    "lon": -96.8
+   },
+   "what_it_is": "A metal used in infrared optics and fibre and in some chips.",
+   "used_for": "Night vision, fibre optics, solar cells for satellites, chip parts.",
+   "status": "restricted",
+   "status_detail": "China banned gallium/germanium/antimony exports to the US in Dec 2024; the ban on US-bound shipments is suspended until 2026-11-27 after the Oct 2025 Trump-Xi meeting, but the metals stay on the licence list and military end users remain barred. Not confirmed whether it will be extended past Nov 27 2026.",
+   "evidence": "Estimates of China's share range from about 59% to 70% depending on source; USGS profile did not list it above 50%.",
+   "contested": true,
+   "contested_note": "Share figures differ by source and definition.",
+   "sources": [
+    {
+     "title": "China halts ban on gallium, germanium, antimony exports to US but controls remain",
+     "url": "https://www.miningweekly.com/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10",
+     "date": "2025-11-10"
+    },
+    {
+     "title": "China suspends export prohibition on gallium, germanium, antimony, superhard materials to US",
+     "url": "https://fastmarkets.com/insights/china-suspends-export-prohibition-on-superhard-materials-us",
+     "date": "2025-11-09"
+    },
+    {
+     "title": "USGS National Minerals Information Center: China",
+     "url": "https://www.usgs.gov/centers/national-minerals-information-center/china",
+     "date": "2026-01-01"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Germanium",
+   "tip": "China banned germanium exports to the US in Dec 2024; the ban is reportedly suspended until Nov 27, 2026."
+  },
+  {
+   "id": "antimony",
+   "name": "Antimony",
+   "category": "minerals",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Xikuangshan antimony mine area, Lengshuijiang, Hunan",
+    "country": "China",
+    "lat": 27.69,
+    "lon": 111.43
+   },
+   "to": {
+    "site": "US munitions and electronics, Pennsylvania",
+    "country": "United States",
+    "lat": 40.27,
+    "lon": -76.88
+   },
+   "what_it_is": "A metal used in flame retardants, batteries and ammunition.",
+   "used_for": "Defense, flame-retardant electronics, some chip processing.",
+   "status": "restricted",
+   "status_detail": "China banned gallium/germanium/antimony exports to the US in Dec 2024; the ban on US-bound shipments is suspended until 2026-11-27 after the Oct 2025 Trump-Xi meeting, but the metals stay on the licence list and military end users remain barred. Not confirmed whether it will be extended past Nov 27 2026.",
+   "evidence": "China produces roughly half of world antimony by secondary estimates.",
+   "contested": true,
+   "contested_note": "Estimates of China's share vary (about 48% to 50%+).",
+   "sources": [
+    {
+     "title": "China suspends export prohibition on gallium, germanium, antimony, superhard materials to US",
+     "url": "https://fastmarkets.com/insights/china-suspends-export-prohibition-on-superhard-materials-us",
+     "date": "2025-11-09"
+    },
+    {
+     "title": "China halts ban on gallium, germanium, antimony exports to US but controls remain",
+     "url": "https://www.miningweekly.com/article/china-halts-ban-on-gallium-germanium-antimony-exports-to-us-but-controls-remain-2025-11-10",
+     "date": "2025-11-10"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Antimony",
+   "tip": "China banned antimony exports to the US in Dec 2024; the ban is reportedly suspended until Nov 27, 2026."
+  },
+  {
+   "id": "rare-earths-heavy",
+   "name": "Heavy rare earths (dysprosium, terbium)",
+   "category": "minerals",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Rare earth processing, Ganzhou, Jiangxi",
+    "country": "China",
+    "lat": 25.83,
+    "lon": 114.93
+   },
+   "to": {
+    "site": "Northern Virginia data center cluster, Ashburn",
+    "country": "United States",
+    "lat": 39.04,
+    "lon": -77.49
+   },
+   "what_it_is": "Special metals that make magnets keep working at high heat.",
+   "used_for": "Magnets for cooling fans, hard drives, motors, defense systems.",
+   "status": "restricted",
+   "status_detail": "April 2025 licence rules on seven heavy rare earths remain in force. The broader Oct 2025 expansion (MOFCOM Announcement 70) is suspended to 2026-11-10; reports say the truce is extended to 2027-01-10 but no new MOFCOM notice was found as of mid-Oct 2026.",
+   "evidence": "IEA: China has over 90% of rare earth refining.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "IEA warns rare earth supply diversification lags rising demand (Anadolu)",
+     "url": "https://aa.com.tr/en/economy/international-energy-agency-warns-rare-earth-supply-diversification-lags-rising-global-demand/3898514",
+     "date": "2026-01-01"
+    },
+    {
+     "title": "China's Rare-Earth Export Pause: What Ends on 10 November",
+     "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/",
+     "date": "2026-10-19"
+    },
+    {
+     "title": "Chinese rare earth exports: Trump-Xi truce extended to Jan 2027",
+     "url": "https://www.rinnovabili.net/policy-and-affairs/environmental-policies/chinese-rare-earth-exports-trump-xi-truce/",
+     "date": "2026-10-01"
+    },
+    {
+     "title": "China Hits Pause on Rare-Earth Export Controls (Clark Hill)",
+     "url": "https://clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains",
+     "date": "2025-11-01"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "China does over 90% of rare earth refining.",
+   "short_label": "Heavy rare earths",
+   "tip": "Metals that keep magnets working at high heat; China's April 2025 license rules remain in force."
+  },
+  {
+   "id": "rare-earth-magnets",
+   "name": "Rare earth permanent magnets",
+   "category": "datacenter-hardware",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Magnet manufacturing, Baotou, Inner Mongolia",
+    "country": "China",
+    "lat": 40.66,
+    "lon": 109.84
+   },
+   "to": {
+    "site": "US auto and defense electronics hub, Detroit",
+    "country": "United States",
+    "lat": 42.33,
+    "lon": -83.05
+   },
+   "what_it_is": "Very strong small magnets used in motors and drives.",
+   "used_for": "Server fans, hard drive motors, EVs, missiles, robotics.",
+   "status": "restricted",
+   "status_detail": "Licences needed for magnets containing dysprosium or terbium since April 2025; that part was never suspended. Oct 2025 rules are paused until at least 2026-11-10 (maybe 2027-01-10).",
+   "evidence": "IEA: nearly 95% of permanent magnet production is in China.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "IEA warns rare earth supply diversification lags rising demand (Anadolu)",
+     "url": "https://aa.com.tr/en/economy/international-energy-agency-warns-rare-earth-supply-diversification-lags-rising-global-demand/3898514",
+     "date": "2026-01-01"
+    },
+    {
+     "title": "Rare Earth Magnets: China's November 10 Deadline and US Gap Money Can't Close",
+     "url": "https://www.techtimes.com/articles/328392/20261002/rare-earth-magnets-chinas-november-10-deadline-us-gap-money-cant-close.htm",
+     "date": "2026-10-02"
+    },
+    {
+     "title": "China's Rare-Earth Export Pause: What Ends on 10 November",
+     "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/",
+     "date": "2026-10-19"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "China makes nearly 95% of the world's permanent magnets.",
+   "short_label": "Rare earth magnets",
+   "tip": "Strong small magnets used in motors and server fans; licenses are needed for heavy rare earth ones."
+  },
+  {
+   "id": "graphite",
+   "name": "Battery-grade graphite",
+   "category": "minerals",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Graphite anode plants, Jixi, Heilongjiang",
+    "country": "China",
+    "lat": 45.3,
+    "lon": 130.97
+   },
+   "to": {
+    "site": "US battery and data center backup supply chain, Ohio",
+    "country": "United States",
+    "lat": 39.96,
+    "lon": -82.99
+   },
+   "what_it_is": "The carbon material that forms the negative side of lithium-ion batteries.",
+   "used_for": "Batteries for data center backup power and EVs.",
+   "status": "restricted",
+   "status_detail": "Dec 2023 licence rules apply. Tighter end-use checks on US-bound graphite were suspended until 2026-11-27 and not confirmed extended.",
+   "evidence": "IEA: over 90% of processed graphite comes from China.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "IEA outlook (Syrah Resources summary)",
+     "url": "https://www.syrahresources.com.au/news/iea-outlook-reinforces-syrahs-first-mover-advantage-in-us-anode-markets",
+     "date": "2025-05-21"
+    },
+    {
+     "title": "China suspends export prohibition on gallium, germanium, antimony, superhard materials to US",
+     "url": "https://fastmarkets.com/insights/china-suspends-export-prohibition-on-superhard-materials-us",
+     "date": "2025-11-09"
+    }
+   ],
+   "confidence": "medium",
+   "chokepoint": true,
+   "chokepoint_note": "Over 90% of processed graphite comes from China.",
+   "short_label": "Battery graphite",
+   "tip": "The carbon in battery anodes; over 90% of processed graphite comes from China, under license rules."
+  },
+  {
+   "id": "li-ion-cells",
+   "name": "Lithium-ion battery cells and cathode tech",
+   "category": "datacenter-hardware",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "CATL HQ and cell plants, Ningde, Fujian",
+    "country": "China",
+    "lat": 26.66,
+    "lon": 119.55
+   },
+   "to": {
+    "site": "Northern Virginia data center cluster, Ashburn",
+    "country": "United States",
+    "lat": 39.04,
+    "lon": -77.49
+   },
+   "what_it_is": "The rechargeable battery cells that hold power for emergency backup.",
+   "used_for": "Data center UPS and energy storage.",
+   "status": "dependency",
+   "status_detail": "Not under an export ban we could confirm. Oct 2025 lithium-battery and graphite-anode controls were part of the suspended package (to 2026-11-10). China's cell share not confirmed by our searches.",
+   "evidence": "Share of cell production not verified.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "China Hits Pause on Rare-Earth Export Controls (Clark Hill)",
+     "url": "https://clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains",
+     "date": "2025-11-01"
+    },
+    {
+     "title": "China's Rare-Earth Export Pause: What Ends on 10 November",
+     "url": "https://www.technology.org/2026/10/19/china-rare-earth-export-pause-november-10/",
+     "date": "2026-10-19"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Lithium-ion cells",
+   "tip": "Backup battery cells for data centers; no confirmed export ban, but related controls were suspended."
+  },
+  {
+   "id": "mature-chips",
+   "name": "Mature-node (older) chips",
+   "category": "fabrication",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "SMIC, Shanghai",
+    "country": "China",
+    "lat": 31.2,
+    "lon": 121.6
+   },
+   "to": {
+    "site": "US auto and industrial electronics hub, Detroit",
+    "country": "United States",
+    "lat": 42.33,
+    "lon": -83.05
+   },
+   "what_it_is": "Older, cheaper chips (28nm and larger) used in power supplies, cars and servers.",
+   "used_for": "Power management, microcontrollers, auto, defense electronics.",
+   "status": "dependency",
+   "status_detail": "China is adding mature-node capacity fast. The 2025 Nexperia split showed Western users could be cut off from Chinese-packaged chips.",
+   "evidence": "TrendForce (2024): Chinese makers to hold about 25% of mature-node capacity of top 10 foundries.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "China's Strides in Weaponising the Legacy Chips Supply Chain (SOAS)",
+     "url": "https://blogs.soas.ac.uk/china-institute/2025/12/15/china-legacy-chips-supply-chain/",
+     "date": "2025-12-15"
+    },
+    {
+     "title": "Nexperia China begins making own chips after split (TechSpot)",
+     "url": "https://www.techspot.com/news/111638-nexperia-china-begins-making-own-chips-after-split.html",
+     "date": "2025-12-01"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Older-node chips",
+   "tip": "Cheap older chips in power supplies and servers; China is adding capacity fast, raising cutoff risk."
+  },
+  {
+   "id": "nexperia-china",
+   "name": "Nexperia China discrete chips and packaging",
+   "category": "fabrication",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Nexperia plant, Dongguan",
+    "country": "China",
+    "lat": 23.02,
+    "lon": 113.75
+   },
+   "to": {
+    "site": "European and US carmakers, Stuttgart",
+    "country": "Germany",
+    "lat": 48.78,
+    "lon": 9.18
+   },
+   "what_it_is": "Basic chips (diodes, transistors) finished in China for a Dutch-owned firm.",
+   "used_for": "Cars and electronics.",
+   "status": "dependency",
+   "status_detail": "After the Dutch government seized control of Nexperia in Oct 2025 China restricted its chip exports, then the China unit moved to local wafer supply. Present status not verified.",
+   "evidence": "Nexperia China is a split-off unit sourcing wafers from Chinese suppliers (secondary report).",
+   "contested": false,
+   "sources": [
+    {
+     "title": "Nexperia China begins making own chips after split (TechSpot)",
+     "url": "https://www.techspot.com/news/111638-nexperia-china-begins-making-own-chips-after-split.html",
+     "date": "2025-12-01"
+    },
+    {
+     "title": "China's Strides in Weaponising the Legacy Chips Supply Chain (SOAS)",
+     "url": "https://blogs.soas.ac.uk/china-institute/2025/12/15/china-legacy-chips-supply-chain/",
+     "date": "2025-12-15"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Nexperia China",
+   "tip": "Basic chips finished in China for a Dutch firm; the 2025 split showed Western buyers could be cut off."
+  },
+  {
+   "id": "tungsten",
+   "name": "Tungsten",
+   "category": "minerals",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Tungsten processing, Zhuzhou, Hunan",
+    "country": "China",
+    "lat": 27.83,
+    "lon": 113.15
+   },
+   "to": {
+    "site": "US chip fab, Phoenix",
+    "country": "United States",
+    "lat": 33.45,
+    "lon": -112.07
+   },
+   "what_it_is": "A very hard metal; a tungsten gas is used to make chip wiring contacts.",
+   "used_for": "Chipmaking, cutting tools, defense.",
+   "status": "restricted",
+   "status_detail": "Tungsten was added to Chinese export licensing in Feb 2025; current status not verified in this research.",
+   "evidence": "Not verified.",
+   "contested": false,
+   "sources": [
+    {
+     "title": "China Hits Pause on Rare-Earth Export Controls (Clark Hill)",
+     "url": "https://clarkhill.com/news-events/news/china-hits-pause-on-rare-earth-export-controls-and-what-it-means-for-supply-chains",
+     "date": "2025-11-01"
+    }
+   ],
+   "confidence": "low",
+   "short_label": "Tungsten",
+   "tip": "A very hard metal, and a tungsten gas is used for chip wiring; China added it to export licensing in Feb 2025."
+  },
+  {
+   "id": "myanmar-rare-earths",
+   "name": "Myanmar heavy rare earth ore",
+   "category": "minerals",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Pangwa, Kachin State",
+    "country": "Myanmar",
+    "lat": 25.68,
+    "lon": 98.1
+   },
+   "to": {
+    "site": "Rare earth processing, Ganzhou, Jiangxi",
+    "country": "China",
+    "lat": 25.83,
+    "lon": 114.93
+   },
+   "what_it_is": "Ore from Myanmar rebel-held mines that Chinese plants turn into magnet metals.",
+   "used_for": "Feedstock for heavy rare earths in magnets.",
+   "status": "dependency",
+   "status_detail": "Flows are disrupted by fighting in Kachin. Reuters reports China threatened to halt purchases from KIA areas.",
+   "evidence": "About 12,944 t of rare earth oxides and metals went from Myanmar to China in Jan-May 2025.",
+   "contested": false,
+   "partner_flow": true,
+   "sources": [
+    {
+     "title": "Reuters via Republic of Mining: Myanmar rebels disrupt China rare earth trade",
+     "url": "https://republicofmining.com/2025/03/28/insight-myanmar-rebels-disrupt-china-rare-earth-trade-sparking-regional-scramble-by-devjyot-ghoshal-poppy-mcpherson-amy-lv-and-neha-arora-reuters-march-27-2025",
+     "date": "2025-03-27"
+    },
+    {
+     "title": "ISP-Myanmar: Conflict Economy of Myanmar Rare Earth",
+     "url": "https://ispmyanmar.com/wp-content/uploads/2025/04/Conflict_Economy_Myanmar_Rare_Earth_ENG.pdf",
+     "date": "2025-04-01"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Myanmar rare earth ore",
+   "tip": "Ore from rebel-held Myanmar mines feeds Chinese magnet metals, and fighting disrupts the flow."
+  },
+  {
+   "id": "drc-cobalt",
+   "name": "DRC cobalt and copper (Chinese-owned)",
+   "category": "minerals",
+   "leverage": "china",
+   "line_style": "solid",
+   "from": {
+    "site": "Tenke Fungurume mine (CMOC), Lualaba",
+    "country": "DR Congo",
+    "lat": -10.57,
+    "lon": 26.2
+   },
+   "to": {
+    "site": "Cobalt refining, Ganzhou, Jiangxi",
+    "country": "China",
+    "lat": 25.83,
+    "lon": 114.93
+   },
+   "what_it_is": "Congo mines owned by Chinese firms, with ore refined in China.",
+   "used_for": "Cobalt and copper for batteries and data center power cabling.",
+   "status": "dependency",
+   "status_detail": "CMOC owns 80% of Tenke Fungurume and 71.25% of Kisanfu. China's refining share not verified.",
+   "evidence": "DRC is about 60% of world cobalt (IMF, via press); Chinese firms reportedly control over 70% of DRC copper output.",
+   "contested": false,
+   "partner_flow": true,
+   "sources": [
+    {
+     "title": "China's CMOC eyes further growth in Congo after taking cobalt crown",
+     "url": "https://www.mining.com/web/chinas-cmoc-eyes-further-growth-in-congo-and-beyond-after-taking-cobalt-crown/",
+     "date": "2024-02-07"
+    },
+    {
+     "title": "Caixin: China Digs In to Boost Mining in DRC",
+     "url": "https://www.caixinglobal.com/2024-11-18/cover-story-china-digs-in-to-boost-mining-in-democratic-republic-of-congo-102258572.html",
+     "date": "2024-11-18"
+    }
+   ],
+   "confidence": "medium",
+   "short_label": "Congo cobalt and copper",
+   "tip": "Chinese firms own big Congo mines, with the ore refined in China for batteries and power cabling."
+  }
+ ],
+ "projects": [
+  {
+   "id": "tsmc-arizona",
+   "name": "TSMC Arizona fabs",
+   "company": "TSMC",
+   "site": "Phoenix, Arizona",
+   "lat": 33.67,
+   "lon": -112.1,
+   "what": "Makes the most advanced logic chips, including AI accelerators, in the US.",
+   "closes_gap": "Advanced logic chips made only in Taiwan.",
+   "status": "operating",
+   "status_detail": "Fab 1 (4nm) has been in high-volume production since late 2024; Fab 2 construction is finished and tool installation starts in Q3 2026 for 3nm output around 2027 (per Nikkei via a secondary source). Dates and investment totals differ across sources.",
+   "sources": [
+    {
+     "title": "North Phoenix scores big as TSMC's second chip plant hits finish line",
+     "url": "https://hoodline.com/2026/04/north-phoenix-scores-big-as-tsmc-s-second-chip-plant-hits-finish-line/",
+     "date": "2026-04-01"
+    },
+    {
+     "title": "TSMC Arizona (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/TSMC_Arizona",
+     "date": "2026-03-01"
+    }
+   ]
+  },
+  {
+   "id": "intel-ohio-new-albany",
+   "name": "Intel Ohio fab",
+   "company": "Intel",
+   "site": "New Albany, Ohio",
+   "lat": 40.08,
+   "lon": -82.81,
+   "what": "Planned leading-edge chip factory to make Intel's own processors and contract chips.",
+   "closes_gap": "Advanced logic chip capacity outside Taiwan and Asia.",
+   "status": "delayed",
+   "status_detail": "Intel's February 2025 memo, reported March 3, 2025, moved Fab 1 production to 2030 (from late 2026) and Fab 2 to 2031; construction continues at a slower pace. Hoodline's 2026 coverage repeats the 2030 date but cites the 2025 memo, so no newer date is confirmed.",
+   "sources": [
+    {
+     "title": "Intel delays new Albany, Ohio chip manufacturing project again to 2030-2031",
+     "url": "https://www.manufacturingdive.com/news/intel-delays-new-albany-ohio-chip-manufacturing-project-again-2030-2031/741321/",
+     "date": "2025-03-03"
+    },
+    {
+     "title": "Intel's new Albany chip factory delayed to 2030 in slow burn buildout",
+     "url": "https://hoodline.com/2026/03/intel-s-new-albany-chip-factory-delayed-to-2030-in-slow-burn-buildout/",
+     "date": "2026-03-02"
+    }
+   ]
+  },
+  {
+   "id": "samsung-taylor",
+   "name": "Samsung Taylor fab",
+   "company": "Samsung Electronics",
+   "site": "Taylor, Texas",
+   "lat": 30.57,
+   "lon": -97.41,
+   "what": "Advanced chip factory that will make chips for AI and other customers.",
+   "closes_gap": "Advanced logic chips made only in Taiwan and South Korea.",
+   "status": "under construction",
+   "status_detail": "Samsung said on its Q2 2026 call (July 2026) that Fab 1 is on track to begin operations in 2026 or early 2027; Fab 2 construction starts by end of 2026 with mass production targeted around 2030.",
+   "sources": [
+    {
+     "title": "Samsung to begin construction of 2nd chip fab in Texas at end of 2026",
+     "url": "https://koreatimes.co.kr/business/companies/20260730/samsung-to-begin-construction-of-2nd-chip-fab-in-texas-at-end-of-2026",
+     "date": "2026-07-30"
+    },
+    {
+     "title": "Samsung targets late 2026 launch for advanced Texas chip fab following delays: report",
+     "url": "https://www.iclarified.com/97073/samsung-targets-late-2026-launch-for-advanced-texas-chip-fab-following-delays-report",
+     "date": "2026-05-20"
+    }
+   ]
+  },
+  {
+   "id": "micron-boise-idaho",
+   "name": "Micron Boise memory fab",
+   "company": "Micron",
+   "site": "Boise, Idaho",
+   "lat": 43.62,
+   "lon": -116.2,
+   "what": "Memory chip factory making DRAM, the fast memory used alongside AI chips.",
+   "closes_gap": "Advanced memory (DRAM/HBM) made mostly in Asia.",
+   "status": "under construction",
+   "status_detail": "Micron's FY2026 10-K puts first DRAM wafer output at mid-2027 for Idaho fab 1 and late 2028 for fab 2. Equipment move-in begins later in 2026.",
+   "sources": [
+    {
+     "title": "Micron Technology Form 10-K, FY2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm",
+     "date": "2026-09-03"
+    },
+    {
+     "title": "Micron posts record year as Boise fab nears production",
+     "url": "https://idahonews.com/news/local/micron-posts-record-year-as-boise-fab-nears-production",
+     "date": "2026-09-03"
+    }
+   ]
+  },
+  {
+   "id": "micron-clay-new-york",
+   "name": "Micron New York megafab",
+   "company": "Micron",
+   "site": "Clay, New York",
+   "lat": 43.2,
+   "lon": -76.18,
+   "what": "Planned large memory chip complex making DRAM for the US market.",
+   "closes_gap": "Advanced memory (DRAM) made mostly in Asia.",
+   "status": "under construction",
+   "status_detail": "Groundbreaking was set for January 16, 2026, for a complex of up to four fab modules (about $100 billion total); the first phase (about $20 billion) was targeted for completion around 2030.",
+   "sources": [
+    {
+     "title": "Micron groundbreaking date announcement",
+     "url": "https://spectrumlocalnews.com/central-ny/business/2026/01/07/micron-groundbreaking-date-announcement",
+     "date": "2026-01-07"
+    }
+   ]
+  },
+  {
+   "id": "sk-hynix-indiana-packaging",
+   "name": "SK hynix HBM packaging plant",
+   "company": "SK hynix",
+   "site": "West Lafayette, Indiana",
+   "lat": 40.43,
+   "lon": -86.92,
+   "what": "Plant that stacks memory chips into HBM modules used in AI accelerators.",
+   "closes_gap": "Advanced packaging of AI memory, done almost entirely in Asia.",
+   "status": "under construction",
+   "status_detail": "Groundbreaking held August 27, 2026, at Purdue Research Park; cleanroom targeted for October 2028 and mass production in 2028 or 2029 (sources conflict).",
+   "sources": [
+    {
+     "title": "SK hynix partners with Purdue University, ceremonially breaks ground on $4B memory chip facility",
+     "url": "https://www.wlfi.com/2026/08/27/sk-hynix-partners-with-purdue-university-ceremonially-breaks-ground-4b-memory-chip-facility/",
+     "date": "2026-08-27"
+    },
+    {
+     "title": "SK Hynix breaks ground on $4 billion packaging facility in Indiana",
+     "url": "https://evertiq.com/news/2026-08-28-sk-hynix-breaks-ground-on-4-billion-packaging-facility-in-indiana",
+     "date": "2026-08-28"
+    }
+   ]
+  },
+  {
+   "id": "amkor-peoria-arizona",
+   "name": "Amkor advanced packaging campus",
+   "company": "Amkor Technology",
+   "site": "Peoria, Arizona",
+   "lat": 33.58,
+   "lon": -112.24,
+   "what": "Packaging campus that connects and protects finished chips, including ones for TSMC Arizona.",
+   "closes_gap": "Advanced chip packaging, which is done mostly in Asia.",
+   "status": "under construction",
+   "status_detail": "Amkor added 67 acres in May 2026 and announced a phase 2 with about $12 billion in investment in September 2026. One trade report gives phase 1 completion in mid-2027 and production in early 2028; treat dates as unconfirmed.",
+   "sources": [
+    {
+     "title": "Amkor acquires additional land in Arizona to expand advanced packaging campus",
+     "url": "https://evertiq.com/design/2026-05-28-amkor-acquires-additional-land-in-arizona-to-expand-advanced-packaging-campus",
+     "date": "2026-05-28"
+    },
+    {
+     "title": "Amkor Technology expands U.S. advanced packaging footprint with additional land in Arizona",
+     "url": "https://amkortech.gcs-web.com/node/24366",
+     "date": "2026-05-28"
+    }
+   ]
+  },
+  {
+   "id": "mp-materials-mountain-pass",
+   "name": "MP Materials Mountain Pass",
+   "company": "MP Materials",
+   "site": "Mountain Pass, California",
+   "lat": 35.48,
+   "lon": -115.53,
+   "what": "The main US rare earth mine and processing site, producing neodymium-praseodymium oxide for magnets.",
+   "closes_gap": "Rare earth separation and magnet materials that China dominates.",
+   "status": "operating",
+   "status_detail": "On July 10, 2025, the Pentagon bought $400 million of convertible preferred stock (about 15% stake), agreed a 10-year price floor of $110/kg for NdPr, and provided a $150 million loan for heavy rare earth separation at Mountain Pass.",
+   "sources": [
+    {
+     "title": "MP Materials lands $400M Pentagon deal",
+     "url": "https://www.northernminer.com/news/mp-materials-lands-400m-pentagon-deal/1003880329",
+     "date": "2025-07-10"
+    },
+    {
+     "title": "MP Materials lands multibillion-dollar Pentagon deal to bolster US rare earth magnet supply",
+     "url": "https://www.engineeringnews.co.za/article/mp-materials-lands-multibillion-dollar-pentagon-deal-to-bolster-us-rare-earth-magnet-supply-2025-07-10",
+     "date": "2025-07-10"
+    }
+   ]
+  },
+  {
+   "id": "mp-materials-fort-worth-magnets",
+   "name": "MP Materials Fort Worth magnet plant",
+   "company": "MP Materials",
+   "site": "Fort Worth, Texas",
+   "lat": 32.75,
+   "lon": -97.33,
+   "what": "Plant that turns rare earth metal into permanent magnets, with Apple as a customer.",
+   "closes_gap": "Rare earth magnets, which China makes most of.",
+   "status": "operating",
+   "status_detail": "Independence facility has begun producing NdPr metal and magnets are made there, with ramp-up through 2026; Apple committed $500 million in November 2025, with recycled-magnet deliveries slated for 2027. Current output figures were not confirmed.",
+   "sources": [
+    {
+     "title": "Apple, MP Materials announce $500 million deal to expand US rare-earth supply chain",
+     "url": "https://www.businesswire.com/news/home/20251118096805/en",
+     "date": "2025-11-18"
+    },
+    {
+     "title": "MP Materials hits new high as it receives $150M Pentagon loan",
+     "url": "https://www.mining.com/mp-materials-hits-new-high-as-it-receives-150m-pentagon-loan/",
+     "date": "2025-07-10"
+    }
+   ]
+  },
+  {
+   "id": "atalco-gramercy-gallium",
+   "name": "Atalco Gramercy gallium circuit",
+   "company": "Atalco (Atlantic Alumina)",
+   "site": "Gramercy, Louisiana",
+   "lat": 30.06,
+   "lon": -90.7,
+   "what": "Alumina refinery adding a gallium extraction circuit, the first large-scale US primary gallium plan.",
+   "closes_gap": "Gallium, where China supplies roughly 98 to 99% of low-purity gallium.",
+   "status": "announced",
+   "status_detail": "January 2026 partnership with the US government and private investors; about $450 million total, with roughly $150 million from the Pentagon, targeting up to 50 tonnes per year. No completion date confirmed.",
+   "sources": [
+    {
+     "title": "Washington commits $450M to revive Atalco, build gallium capacity",
+     "url": "https://newsletter.en.creamermedia.com/article/washington-commits-450m-to-revive-atalco-build-gallium-capacity-2026-01-13",
+     "date": "2026-01-13"
+    },
+    {
+     "title": "Atlantic Alumina secures $800 million with U.S. government and Pinnacle as gallium production targets 50 metric tons annually",
+     "url": "https://pulse2.com/atlantic-alumina-secures-800-million-with-u-s-government-and-pinnacle-as-gallium-production-targets-50-metric-tons-annually/",
+     "date": "2026-01-13"
+    }
+   ]
+  },
+  {
+   "id": "novonix-chattanooga-graphite",
+   "name": "Novonix Riverside graphite plant",
+   "company": "Novonix",
+   "site": "Chattanooga, Tennessee",
+   "lat": 35.05,
+   "lon": -85.31,
+   "what": "Plant making synthetic graphite anode material for lithium-ion batteries.",
+   "closes_gap": "Battery anode graphite, where China dominates processing.",
+   "status": "under construction",
+   "status_detail": "Mass production for Panasonic is still expected in 2H 2027, but full capacity at Riverside was pushed to September 2031 and the second-site land purchase was dropped. A $103 million Section 48C tax credit was certified in April 2026.",
+   "sources": [
+    {
+     "title": "NOVONIX backs off land purchase next to Chattanooga plant, slows production ramp-up",
+     "url": "https://newschannel9.com/news/local/novonix-backs-off-land-purchase-next-to-chattanooga-plant-slows-production-ramp-up-riverside-synthetic-graphite-panasonic-battery-materials-175-acres",
+     "date": "2026-04-01"
+    },
+    {
+     "title": "Trump Administration certifies Novonix $103M tax credit for Chattanooga plant",
+     "url": "https://ground.news/article/novonix-us103-million-48c-tax-credits-certified-for-synthetic-graphite-facility",
+     "date": "2026-04-01"
+    }
+   ]
+  }
+ ],
+ "countries": {
+  "USA": {
+   "group": "us",
+   "reason": "Origin of US export controls on advanced chips and chipmaking tools",
+   "source": "https://www.malaymail.com/news/singapore/2025/03/13/singapore-prosecutors-say-us-servers-fraud-case-involves-us390m-of-transactions/169451"
+  },
+  "NLD": {
+   "group": "ally",
+   "reason": "ASML makes all EUV lithography machines; Dutch export licenses since 2023 and expanded to DUV immersion systems in Sept 2024",
+   "source": "https://www.trendforce.com/news/2024/09/09/news-netherlands-expands-export-control-over-asmls-two-duv-machines-effective-on-september-7th/"
+  },
+  "JPN": {
+   "group": "ally",
+   "reason": "Makes chipmaking tools (Tokyo Electron, Nikon, Kokusai); licensing on 23 advanced equipment types since July 2023",
+   "source": "https://technode.com/2023/05/24/japans-chip-export-restrictions-to-take-effect-in-july/"
+  },
+  "TWN": {
+   "group": "ally",
+   "reason": "TSMC makes most advanced AI chips; Taiwan began prosecuting chip-server smuggling to China in 2026",
+   "source": "https://www.fdd.org/analysis/2026/08/27/taiwans-chip-smuggling-case-shows-promise-for-allied-export-control-enforcement/"
+  },
+  "DEU": {
+   "group": "ally",
+   "reason": "Zeiss is the sole optics supplier for ASML's EUV machines",
+   "source": "https://view.asiae.co.kr/en/article/2026090314274339540"
+  },
+  "CHN": {
+   "group": "china",
+   "reason": "Target of US and allied chip controls; supplies about 98-99% of low-purity gallium"
+  },
+  "SGP": {
+   "group": "transit",
+   "reason": "Singapore prosecutors charged men in a US$390 million server fraud case over possible Nvidia chips bound for Malaysia and China",
+   "source": "https://www.malaymail.com/news/singapore/2025/03/13/singapore-prosecutors-say-us-servers-fraud-case-involves-us390m-of-transactions/169451"
+  },
+  "MYS": {
+   "group": "transit",
+   "reason": "US-origin AI chips needed a Malaysian trade permit from July 14, 2025 after reports of China-bound transshipment",
+   "source": "https://www.taipeitimes.com/News/biz/archives/2025/07/15/2003840290"
+  },
+  "THA": {
+   "group": "transit",
+   "reason": "US prosecutors say about 400 Nvidia A100 GPUs were transshipped to China via Malaysia and Thailand (Nov 2025 case)",
+   "source": "https://www.arabnews.pk/node/2623387/world"
+  },
+  "HKG": {
+   "group": "transit",
+   "reason": "Reported reexport hub for AI chips bound for mainland China; Taiwan cases in 2026 routed servers via Hong Kong and Macau",
+   "source": "https://www.fdd.org/analysis/2026/08/27/taiwans-chip-smuggling-case-shows-promise-for-allied-export-control-enforcement/"
+  },
+  "KOR": {
+   "group": "ally",
+   "reason": "SK Hynix and Samsung make most of the world's HBM memory; US treaty ally under US HBM controls.",
+   "source": "https://qatar-tribune.com/article/134915/business/chinese-firms-stock-high-end-samsung-chips-amid-pending-us-curbs"
+  },
+  "IDN": {
+   "group": "transit",
+   "reason": "Most servers in Taiwan's 2026 B300 smuggling case were routed through Indonesia.",
+   "source": "https://www.pbs.org/newshour/economy/taiwan-charges-9-over-illegal-ai-server-exports-to-china-including-nvidia-and-super-micro-staffers"
+  },
+  "RUS": {
+   "group": "partner",
+   "reason": "China supplies roughly 90% of Russia's sanctioned tech imports, including microelectronics.",
+   "source": "https://www.themoscowtimes.com/2026/08/04/china-now-supplies-90-of-russias-sanctioned-tech-imports-bloomberg"
+  },
+  "MMR": {
+   "group": "partner",
+   "reason": "Rebel-held Kachin mines ship heavy rare earth ore to China for processing.",
+   "source": "https://republicofmining.com/2025/03/28/insight-myanmar-rebels-disrupt-china-rare-earth-trade-sparking-regional-scramble-by-devjyot-ghoshal-poppy-mcpherson-amy-lv-and-neha-arora-reuters-march-27-2025"
+  },
+  "COD": {
+   "group": "partner",
+   "reason": "Chinese firms such as CMOC own major cobalt and copper mines whose output is refined in China.",
+   "source": "https://www.mining.com/web/chinas-cmoc-eyes-further-growth-in-congo-and-beyond-after-taking-cobalt-crown/"
+  }
+ }
+}
